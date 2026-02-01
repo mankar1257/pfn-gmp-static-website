@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               <span className="font-bold text-lg text-white">PFN-GMP</span>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed mb-6">
-              High-performance arbitrary-precision arithmetic SDK for enterprise finance, cryptography, and scientific computing.
+              Reimagining arbitrary-precision arithmetic for teams that need both speed and mathematical perfection.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-brand-400 transition-colors">

@@ -5,9 +5,9 @@ const Overview: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl font-bold text-white mb-6">Product Overview</h1>
+        <h1 className="text-4xl font-bold text-white mb-6">How PFN-GMP Works</h1>
         <p className="text-xl text-slate-400">
-          A high-performance arbitrary-precision arithmetic SDK built on proprietary number representation technology, seamlessly integrated with GMP.
+          We've built a new kind of arithmetic engine that handles multiplication and power operations differently than any existing library. Here's how we achieve those remarkable performance gains.
         </p>
       </div>
 
@@ -72,30 +72,30 @@ const Overview: React.FC = () => {
       {/* Core Features */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">What Makes It Different?</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">A Different Approach to Big Numbers</h2>
           <div className="prose prose-invert text-slate-400">
             <p className="mb-4">
-              Traditional arbitrary-precision libraries use magnitude-based representations. As numbers grow, performance degrades (O(n log n) to O(n²)).
+              Most arbitrary-precision libraries slow down dramatically as numbers get larger. That's because they represent numbers by their magnitude—and bigger magnitudes mean slower operations.
             </p>
             <p className="mb-4">
-              PFN-GMP uses a fundamentally different approach that maintains constant operation time for specific operations regardless of magnitude.
+              We took a different path. PFN-GMP uses a proprietary representation that keeps multiplication and power operations fast regardless of how large the numbers get. Yes, there's a trade-off: addition is slower. But if you're doing lots of multiplication? The difference is game-changing.
             </p>
             <div className="bg-slate-900 p-4 rounded-lg border-l-4 border-brand-500 mt-6">
               <p className="text-sm text-slate-300 italic">
-                "We made a trade-off: optimize multiplication, accept slower addition. For multiplicative-heavy workloads, this trade-off delivers massive speedups."
+                "We optimized for the operations that matter most in high-performance computing: multiplication and powers. For workloads dominated by these operations, the speedup is transformative."
               </p>
             </div>
           </div>
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">Black-Box Performance</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">You Don't Need to Know How—Just That It Works</h2>
           <div className="flex items-start gap-4 mb-6">
             <Lock className="text-slate-500 mt-1 flex-shrink-0" />
             <div>
-              <h3 className="text-white font-semibold">Proprietary Internals</h3>
+              <h3 className="text-white font-semibold">Black-Box by Design</h3>
               <p className="text-slate-400 text-sm">
-                The internal representation, algorithms, and mathematical foundations are proprietary. You don't need to understand how it works to use it or verify its performance.
+                Our internal algorithms are proprietary, but that doesn't mean you have to trust us blindly. We provide comprehensive benchmarks and test suites so you can verify every performance claim independently.
               </p>
             </div>
           </div>

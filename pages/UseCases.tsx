@@ -6,9 +6,9 @@ const UseCases: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="mb-16">
-        <h1 className="text-4xl font-bold text-white mb-4">Industry Applications</h1>
+        <h1 className="text-4xl font-bold text-white mb-4">Where PFN-GMP Makes a Difference</h1>
         <p className="text-xl text-slate-400 max-w-3xl">
-          PFN-GMP excels in specific, high-value niches where exact arithmetic and multiplicative performance are critical.
+          Some problems need both perfect accuracy and blazing speed. Here's where our technology has the biggest impact.
         </p>
       </div>
 
@@ -19,9 +19,9 @@ const UseCases: React.FC = () => {
             <div className="w-16 h-16 bg-blue-900/20 rounded-2xl flex items-center justify-center mb-6">
               <Landmark className="text-blue-400 h-8 w-8" />
             </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Financial & Accounting</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Financial Systems</h2>
             <p className="text-slate-400 mb-6">
-              Banks and trading firms require exact decimal arithmetic with zero drift over years of operations.
+              In finance, a single rounding error can compound into millions of dollars in discrepancies. Banks and trading systems need calculations that are both lightning-fast and mathematically perfect.
             </p>
             <ul className="space-y-3 text-sm text-slate-300 mb-8">
               <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>Core banking ledgers</li>
@@ -33,18 +33,18 @@ const UseCases: React.FC = () => {
             </Link>
           </div>
           <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">The PFN Advantage: Decimal Scaling</h3>
+            <h3 className="text-lg font-semibold text-white mb-6">Why Financial Teams Choose PFN-GMP</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">Problem</h4>
+                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Frequent scaling by powers of 10 (currency conversion, unit changes) is computationally expensive in binary systems or requires slow decimal types.
+                  Currency conversions and decimal scaling happen constantly in trading systems. Traditional binary arithmetic makes these operations expensive, while decimal libraries are painfully slow.
                 </p>
               </div>
               <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Solution</h4>
+                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  PFN-GMP handles <code className="bg-slate-800 px-1 rounded">× 10^k</code> and <code className="bg-slate-800 px-1 rounded">÷ 10^k</code> in constant time (O(1)). This allows for 100-500× faster decimal scaling phases in pricing pipelines.
+                  Multiplying or dividing by any power of 10 takes the same time—whether it's 10² or 10⁵⁰⁰⁰⁰. This makes pricing pipelines 100-500× faster while maintaining perfect decimal accuracy.
                 </p>
               </div>
             </div>
@@ -57,9 +57,9 @@ const UseCases: React.FC = () => {
             <div className="w-16 h-16 bg-purple-900/20 rounded-2xl flex items-center justify-center mb-6">
               <Key className="text-purple-400 h-8 w-8" />
             </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Cryptography & MPC</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Cryptography & Security</h2>
             <p className="text-slate-400 mb-6">
-              Cryptographic protocols require massive integer operations for key generation and multi-party computation.
+              Modern cryptography relies on huge prime numbers and complex mathematical operations. When setting up secure systems, every second counts—especially when you're dealing with thousands of operations.
             </p>
             <ul className="space-y-3 text-sm text-slate-300 mb-8">
               <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>RSA Key Generation</li>
@@ -71,18 +71,18 @@ const UseCases: React.FC = () => {
             </Link>
           </div>
           <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">The PFN Advantage: Large Moduli</h3>
+            <h3 className="text-lg font-semibold text-white mb-6">Why Security Engineers Choose PFN-GMP</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">Problem</h4>
+                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Multiplying 2048+ bit primes and setting up large moduli for FHE schemes creates significant latency during protocol initialization.
+                  Generating RSA keys or setting up homomorphic encryption schemes involves multiplying massive prime numbers. With traditional libraries, this creates noticeable delays during system initialization.
                 </p>
               </div>
               <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Solution</h4>
+                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Constant-time multiplication for arbitrarily large keys reduces setup latency from seconds to milliseconds. Deterministic computation is guaranteed across distributed nodes.
+                  Our constant-time multiplication handles arbitrarily large numbers with ease. What took seconds now happens in milliseconds—and you get bit-exact determinism across all your distributed nodes.
                 </p>
               </div>
             </div>
@@ -95,9 +95,9 @@ const UseCases: React.FC = () => {
             <div className="w-16 h-16 bg-emerald-900/20 rounded-2xl flex items-center justify-center mb-6">
               <FlaskConical className="text-emerald-400 h-8 w-8" />
             </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Scientific Computing</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Scientific & Research Computing</h2>
             <p className="text-slate-400 mb-6">
-              Scientific simulations need exact arithmetic for reproducibility and long computation chains without drift.
+              When you're running simulations or analyzing data, reproducibility matters. You need results that are not just fast, but mathematically exact and consistent across different systems.
             </p>
             <ul className="space-y-3 text-sm text-slate-300 mb-8">
               <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Combinatorics (Factorials)</li>
@@ -109,18 +109,18 @@ const UseCases: React.FC = () => {
             </Link>
           </div>
           <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">The PFN Advantage: Exactness</h3>
+            <h3 className="text-lg font-semibold text-white mb-6">Why Researchers Choose PFN-GMP</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">Problem</h4>
+                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Floating point errors accumulate over millions of operations. Traditional BigInts are too slow for massive factorial-like products.
+                  Floating-point arithmetic accumulates errors over long computation chains, making results unreproducible. Traditional big integer libraries work, but they're too slow for massive calculations like large factorials.
                 </p>
               </div>
               <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Solution</h4>
+                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  PFN-GMP provides 10-50× faster computation for large factorials and products while maintaining bit-exact results across all architectures (x86/ARM).
+                  We deliver 10-50× speedup for factorial and product-heavy workloads while guaranteeing bit-exact results on any architecture. Your simulations will produce identical results whether you run them on x86 or ARM.
                 </p>
               </div>
             </div>
