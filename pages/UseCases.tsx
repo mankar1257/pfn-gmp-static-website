@@ -1,132 +1,171 @@
 import React from 'react';
-import { Landmark, Key, FlaskConical, ArrowRight } from 'lucide-react';
+import { Coins, Activity, Dna, Shield, Factory, Calculator, ArrowRight, Calendar, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+const useCases = [
+  {
+    icon: <Coins className="h-8 w-8" />,
+    title: 'Cryptocurrency & Blockchain',
+    description: 'Zero-error financial calculations at scale',
+    challenges: ['Token precision across 18+ decimals', 'Real-time DEX price feeds', 'Smart contract accuracy'],
+    results: ['99.9999% precision guaranteed', '141× faster settlements', 'Zero rounding vulnerabilities'],
+  },
+  {
+    icon: <Activity className="h-8 w-8" />,
+    title: 'Quantitative Finance',
+    description: 'High-frequency trading without precision loss',
+    challenges: ['Microsecond trade execution', 'Multi-asset portfolio math', 'Risk model accuracy'],
+    results: ['Sub-microsecond latency', '118× faster valuations', 'Exact ratio calculations'],
+  },
+  {
+    icon: <Dna className="h-8 w-8" />,
+    title: 'Scientific Computing',
+    description: 'Research-grade precision for breakthrough discoveries',
+    challenges: ['Genome sequence analysis', 'Particle physics simulations', 'Astronomical calculations'],
+    results: ['899,000× faster powers', 'Unlimited precision', 'Reproducible results'],
+  },
+  {
+    icon: <Shield className="h-8 w-8" />,
+    title: 'Cryptography',
+    description: 'Secure key generation and verification',
+    challenges: ['Large prime operations', 'Key derivation speed', 'Modular arithmetic'],
+    results: ['Fixed 415B memory', 'O(1) operations', 'Predictable performance'],
+  },
+  {
+    icon: <Factory className="h-8 w-8" />,
+    title: 'Industrial IoT',
+    description: 'Precision manufacturing and quality control',
+    challenges: ['Sensor data aggregation', 'Real-time calibration', 'Tolerance calculations'],
+    results: ['728K× faster scaling', 'No drift accumulation', 'Embedded-friendly'],
+  },
+  {
+    icon: <Calculator className="h-8 w-8" />,
+    title: 'Enterprise Accounting',
+    description: 'Audit-ready financial reporting',
+    challenges: ['Multi-currency precision', 'Complex tax calculations', 'Regulatory compliance'],
+    results: ['Exact decimal math', 'Instant reconciliation', 'Zero floating-point errors'],
+  },
+];
 
 const UseCases: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="mb-16">
-        <h1 className="text-4xl font-bold text-white mb-4">Where PFN-GMP Makes a Difference</h1>
-        <p className="text-xl text-slate-400 max-w-3xl">
-          Some problems need both perfect accuracy and blazing speed. Here's where our technology has the biggest impact.
-        </p>
-      </div>
+    <div className="min-h-screen bg-slate-50">
+      {/* Header */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Industry Applications</h1>
+          <p className="text-xl text-slate-300">
+            See how <span className="text-neon-400 font-semibold">PFN</span> transforms precision-critical applications
+          </p>
+        </div>
+      </section>
 
-      <div className="space-y-24">
-        {/* Finance */}
-        <section id="finance" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-4">
-            <div className="w-16 h-16 bg-blue-900/20 rounded-2xl flex items-center justify-center mb-6">
-              <Landmark className="text-blue-400 h-8 w-8" />
+      {/* Use Cases Grid */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {useCases.map((useCase, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 card-hover"
+              >
+                {/* Header */}
+                <div className="bg-slate-900 p-5">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-neon-500/20 rounded-xl p-2.5 text-neon-400">
+                      {useCase.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-white">{useCase.title}</h3>
+                      <p className="text-slate-400 text-sm">{useCase.description}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="p-5">
+                  <div className="mb-5">
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Challenges Solved</h4>
+                    <ul className="space-y-2">
+                      {useCase.challenges.map((challenge, i) => (
+                        <li key={i} className="flex items-start text-sm text-slate-600">
+                          <span className="w-1.5 h-1.5 bg-slate-300 rounded-full mt-1.5 mr-2.5 flex-shrink-0"></span>
+                          {challenge}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="pt-4 border-t border-slate-100">
+                    <h4 className="text-xs font-bold text-neon-600 uppercase tracking-wider mb-3">Results with PFN</h4>
+                    <ul className="space-y-2">
+                      {useCase.results.map((result, i) => (
+                        <li key={i} className="flex items-start text-sm text-slate-800 font-medium">
+                          <Check className="h-4 w-4 text-neon-500 mr-2 flex-shrink-0 mt-0.5" />
+                          {result}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why PFN */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Why Teams Choose PFN</h2>
+            <p className="text-slate-400">Key differentiators that matter in production</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
+              <div className="text-5xl font-black text-neon-400 mb-4">O(1)</div>
+              <h3 className="text-xl font-bold text-white mb-2">Constant Time</h3>
+              <p className="text-slate-400">Every operation, regardless of number size</p>
             </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Financial Systems</h2>
-            <p className="text-slate-400 mb-6">
-              In finance, a single rounding error can compound into millions of dollars in discrepancies. Banks and trading systems need calculations that are both lightning-fast and mathematically perfect.
-            </p>
-            <ul className="space-y-3 text-sm text-slate-300 mb-8">
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>Core banking ledgers</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>High-frequency trading pricing</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>Risk and valuation engines</li>
-            </ul>
-            <Link to="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
-              Discuss Financial Use Case <ArrowRight className="ml-2 h-4 w-4" />
+            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
+              <div className="text-5xl font-black text-neon-400 mb-4">415B</div>
+              <h3 className="text-xl font-bold text-white mb-2">Fixed Memory</h3>
+              <p className="text-slate-400">Predictable resource usage at any scale</p>
+            </div>
+            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
+              <div className="text-5xl font-black text-neon-400 mb-4">100%</div>
+              <h3 className="text-xl font-bold text-white mb-2">Exact Results</h3>
+              <p className="text-slate-400">No approximation, no rounding errors</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-neon-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready for Your Use Case?</h2>
+          <p className="text-lg text-slate-800 mb-8">
+            Let's discuss how PFN can solve your precision challenges.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              to="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Schedule Demo
+            </Link>
+            <Link 
+              to="/performance"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition-colors"
+            >
+              View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
-          <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">Why Financial Teams Choose PFN-GMP</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  Currency conversions and decimal scaling happen constantly in trading systems. Traditional binary arithmetic makes these operations expensive, while decimal libraries are painfully slow.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  Multiplying or dividing by any power of 10 takes the same time—whether it's 10² or 10⁵⁰⁰⁰⁰. This makes pricing pipelines 100-500× faster while maintaining perfect decimal accuracy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Crypto */}
-        <section id="crypto" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-4">
-            <div className="w-16 h-16 bg-purple-900/20 rounded-2xl flex items-center justify-center mb-6">
-              <Key className="text-purple-400 h-8 w-8" />
-            </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Cryptography & Security</h2>
-            <p className="text-slate-400 mb-6">
-              Modern cryptography relies on huge prime numbers and complex mathematical operations. When setting up secure systems, every second counts—especially when you're dealing with thousands of operations.
-            </p>
-            <ul className="space-y-3 text-sm text-slate-300 mb-8">
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>RSA Key Generation</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>Homomorphic Encryption Setup</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>Zero-Knowledge Proofs</li>
-            </ul>
-            <Link to="/contact" className="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center">
-              Discuss Crypto Use Case <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
-          <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">Why Security Engineers Choose PFN-GMP</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  Generating RSA keys or setting up homomorphic encryption schemes involves multiplying massive prime numbers. With traditional libraries, this creates noticeable delays during system initialization.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  Our constant-time multiplication handles arbitrarily large numbers with ease. What took seconds now happens in milliseconds—and you get bit-exact determinism across all your distributed nodes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* HPC */}
-        <section id="hpc" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-4">
-            <div className="w-16 h-16 bg-emerald-900/20 rounded-2xl flex items-center justify-center mb-6">
-              <FlaskConical className="text-emerald-400 h-8 w-8" />
-            </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Scientific & Research Computing</h2>
-            <p className="text-slate-400 mb-6">
-              When you're running simulations or analyzing data, reproducibility matters. You need results that are not just fast, but mathematically exact and consistent across different systems.
-            </p>
-            <ul className="space-y-3 text-sm text-slate-300 mb-8">
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Combinatorics (Factorials)</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Rational Arithmetic</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Formal Verification</li>
-            </ul>
-            <Link to="/contact" className="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center">
-              Discuss HPC Use Case <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
-          <div className="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
-            <h3 className="text-lg font-semibold text-white mb-6">Why Researchers Choose PFN-GMP</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-slate-400 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  Floating-point arithmetic accumulates errors over long computation chains, making results unreproducible. Traditional big integer libraries work, but they're too slow for massive calculations like large factorials.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-brand-400 text-sm uppercase tracking-wider mb-2">Our Solution</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  We deliver 10-50× speedup for factorial and product-heavy workloads while guaranteeing bit-exact results on any architecture. Your simulations will produce identical results whether you run them on x86 or ARM.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };

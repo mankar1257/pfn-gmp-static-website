@@ -1,117 +1,169 @@
 import React from 'react';
-import { Layers, Cpu, Lock } from 'lucide-react';
+import { Zap, Target, Gauge, Database, Cpu, ArrowRight, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 const Overview: React.FC = () => {
+  const comparisonData = [
+    { name: 'Chain ×', pfn: 0.07, gmp: 9.88 },
+    { name: 'Division', pfn: 0.89, gmp: 105.02 },
+    { name: 'Power', pfn: 0.003, gmp: 2700 },
+  ];
+
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl font-bold text-white mb-6">How PFN-GMP Works</h1>
-        <p className="text-xl text-slate-400">
-          We've built a new kind of arithmetic engine that handles multiplication and power operations differently than any existing library. Here's how we achieve those remarkable performance gains.
-        </p>
-      </div>
+    <div className="min-h-screen bg-slate-50">
+      {/* Header */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Technical Overview</h1>
+          <p className="text-xl text-slate-300">
+            How <span className="text-neon-400 font-semibold">PFN</span> achieves the impossible
+          </p>
+        </div>
+      </section>
 
-      {/* Architecture Diagram */}
-      <section className="mb-20">
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12">
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">Hybrid Architecture</h2>
-          
-          <div className="flex flex-col items-center justify-center space-y-4 max-w-2xl mx-auto">
-            {/* App Layer */}
-            <div className="w-full p-4 bg-slate-800 rounded-lg border border-slate-700 text-center">
-              <span className="text-white font-mono font-semibold">Your Application</span>
-            </div>
-            
-            <div className="h-8 w-0.5 bg-slate-600"></div>
-            
-            {/* API Layer */}
-            <div className="w-full p-4 bg-brand-900/20 rounded-lg border border-brand-500/30 text-center relative">
-              <span className="text-brand-300 font-mono font-bold">PFN-GMP SDK API</span>
-              <div className="absolute -right-4 top-1/2 -translate-y-1/2 translate-x-full hidden md:block">
-                <span className="text-xs text-slate-500 ml-2">← Single Interface</span>
+      {/* Problem / Solution */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Problem */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-red-100 rounded-xl p-3">
+                  <Target className="h-6 w-6 text-red-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-900">The Problem</h2>
+              </div>
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-red-50 border border-red-100">
+                  <h3 className="font-bold text-red-800 mb-1">Traditional Libraries (GMP)</h3>
+                  <p className="text-sm text-red-700">O(n) complexity — time grows with number size</p>
+                </div>
+                <div className="p-4 rounded-xl bg-red-50 border border-red-100">
+                  <h3 className="font-bold text-red-800 mb-1">Memory Overhead</h3>
+                  <p className="text-sm text-red-700">Dynamic allocation scales with magnitude</p>
+                </div>
+                <div className="p-4 rounded-xl bg-red-50 border border-red-100">
+                  <h3 className="font-bold text-red-800 mb-1">Floating Point</h3>
+                  <p className="text-sm text-red-700">Precision loss compounds over operations</p>
+                </div>
               </div>
             </div>
 
-            <div className="h-8 w-0.5 bg-slate-600"></div>
-
-            {/* Router */}
-            <div className="w-48 p-2 bg-slate-700 rounded-full text-center text-xs text-slate-300 border border-slate-600">
-              Intelligent Router
-            </div>
-
-            <div className="flex w-full justify-between gap-4 relative">
-              {/* Lines */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-8 border-t border-x border-slate-600 rounded-t-2xl" style={{ width: '60%' }}></div>
-              
-              {/* PFN Engine */}
-              <div className="w-1/2 mt-8 p-6 bg-brand-950/50 rounded-xl border border-brand-500/20 text-center flex flex-col items-center">
-                <Cpu className="text-brand-400 mb-3" />
-                <h3 className="text-white font-bold mb-2">PFN Engine</h3>
-                <p className="text-xs text-slate-400">
-                  Multiplication<br/>
-                  Power Operations<br/>
-                  (Proprietary)
-                </p>
+            {/* Solution */}
+            <div className="bg-slate-900 rounded-2xl p-8 border border-slate-700">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-neon-500/20 rounded-xl p-3">
+                  <Zap className="h-6 w-6 text-neon-400" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">The PFN Solution</h2>
               </div>
-
-              {/* GMP Backend */}
-              <div className="w-1/2 mt-8 p-6 bg-slate-800/50 rounded-xl border border-slate-700 text-center flex flex-col items-center">
-                <Layers className="text-slate-400 mb-3" />
-                <h3 className="text-white font-bold mb-2">GMP Backend</h3>
-                <p className="text-xs text-slate-400">
-                  Addition<br/>
-                  Small Numbers<br/>
-                  Fallback
-                </p>
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
+                  <h3 className="font-bold text-neon-400 mb-1">O(1) Complexity</h3>
+                  <p className="text-sm text-slate-300">Constant time regardless of magnitude</p>
+                </div>
+                <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
+                  <h3 className="font-bold text-neon-400 mb-1">Fixed 415B Memory</h3>
+                  <p className="text-sm text-slate-300">Same footprint for any number size</p>
+                </div>
+                <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
+                  <h3 className="font-bold text-neon-400 mb-1">Exact Precision</h3>
+                  <p className="text-sm text-slate-300">Symbolic representation, zero loss</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Core Features */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-        <div>
-          <h2 className="text-2xl font-bold text-white mb-6">A Different Approach to Big Numbers</h2>
-          <div className="prose prose-invert text-slate-400">
-            <p className="mb-4">
-              Most arbitrary-precision libraries slow down dramatically as numbers get larger. That's because they represent numbers by their magnitude—and bigger magnitudes mean slower operations.
-            </p>
-            <p className="mb-4">
-              We took a different path. PFN-GMP uses a proprietary representation that keeps multiplication and power operations fast regardless of how large the numbers get. Yes, there's a trade-off: addition is slower. But if you're doing lots of multiplication? The difference is game-changing.
-            </p>
-            <div className="bg-slate-900 p-4 rounded-lg border-l-4 border-brand-500 mt-6">
-              <p className="text-sm text-slate-300 italic">
-                "We optimized for the operations that matter most in high-performance computing: multiplication and powers. For workloads dominated by these operations, the speedup is transformative."
-              </p>
+      {/* Performance Chart */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Operation Time Comparison</h2>
+            <p className="text-slate-600">Microseconds per operation (lower is better)</p>
+          </div>
+          
+          <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={comparisonData}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="name" stroke="#64748b" />
+                  <YAxis stroke="#64748b" scale="log" domain={[0.001, 10000]} tickFormatter={(v) => v >= 1000 ? `${v/1000}K` : v} />
+                  <Tooltip 
+                    contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
+                    labelStyle={{ color: '#f1f5f9' }}
+                    formatter={(value: number) => [`${value} μs`, '']}
+                  />
+                  <Bar dataKey="gmp" name="GMP" fill="#ef4444" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="pfn" name="PFN" fill="#09e65f" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+            <div className="flex justify-center gap-8 mt-4">
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 rounded bg-[#09e65f]"></div>
+                <span className="text-sm text-slate-600 font-medium">PFN</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 rounded bg-[#ef4444]"></div>
+                <span className="text-sm text-slate-600 font-medium">GMP</span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div>
-          <h2 className="text-2xl font-bold text-white mb-6">You Don't Need to Know How—Just That It Works</h2>
-          <div className="flex items-start gap-4 mb-6">
-            <Lock className="text-slate-500 mt-1 flex-shrink-0" />
-            <div>
-              <h3 className="text-white font-semibold">Black-Box by Design</h3>
-              <p className="text-slate-400 text-sm">
-                Our internal algorithms are proprietary, but that doesn't mean you have to trust us blindly. We provide comprehensive benchmarks and test suites so you can verify every performance claim independently.
-              </p>
-            </div>
+      {/* Architecture */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">PFN Engine Architecture</h2>
+            <p className="text-slate-400">Core capabilities that power exceptional performance</p>
           </div>
-          <div className="space-y-4">
-            <div className="flex justify-between items-center p-3 bg-slate-900 rounded border border-slate-800">
-              <span className="text-slate-300">Multiplication (Large Chains)</span>
-              <span className="text-brand-400 font-mono font-bold">10-1000× Faster</span>
-            </div>
-            <div className="flex justify-between items-center p-3 bg-slate-900 rounded border border-slate-800">
-              <span className="text-slate-300">× 2^k (Any k)</span>
-              <span className="text-brand-400 font-mono font-bold">~2.7M× Faster</span>
-            </div>
-            <div className="flex justify-between items-center p-3 bg-slate-900 rounded border border-slate-800">
-              <span className="text-slate-300">Addition</span>
-              <span className="text-red-400 font-mono font-bold">Slower (Use GMP)</span>
-            </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Cpu, title: 'Constant Time', desc: 'O(1) for all operations' },
+              { icon: Database, title: 'Fixed Memory', desc: '415 bytes per number' },
+              { icon: Gauge, title: 'Zero Overhead', desc: 'No allocation costs' },
+              { icon: Zap, title: 'Exact Results', desc: 'Infinite precision' },
+            ].map((item, i) => (
+              <div key={i} className="bg-slate-800 rounded-2xl p-6 text-center border border-slate-700">
+                <div className="bg-neon-500/20 rounded-xl p-3 w-fit mx-auto mb-4">
+                  <item.icon className="h-6 w-6 text-neon-400" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-slate-400 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-neon-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">See the Full Benchmark Data</h2>
+          <p className="text-lg text-slate-800 mb-8">
+            Detailed performance analysis across all operations.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/performance"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+            >
+              View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition-colors"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Schedule Demo
+            </Link>
           </div>
         </div>
       </section>

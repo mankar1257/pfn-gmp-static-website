@@ -1,107 +1,118 @@
-import React, { useState } from 'react';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import React from 'react';
+import { Mail, MapPin, Calendar, MessageSquare, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Contact: React.FC = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
-  if (submitted) {
-    return (
-      <div className="max-w-3xl mx-auto px-4 py-24 text-center">
-        <div className="w-16 h-16 bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
-          <Mail className="text-green-500 h-8 w-8" />
-        </div>
-        <h2 className="text-3xl font-bold text-white mb-4">Thanks for Reaching Out!</h2>
-        <p className="text-slate-400 text-lg">
-          We've received your message and will get back to you within 24 hours. Looking forward to discussing how PFN-GMP can help with your project.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div>
-          <h1 className="text-4xl font-bold text-white mb-6">Let's Talk About Your Needs</h1>
-          <p className="text-xl text-slate-400 mb-12">
-            Whether you're evaluating PFN-GMP for your project, need technical guidance, or want to explore how we can help accelerate your computations—we're here to help.
+    <div className="min-h-screen bg-slate-50">
+      {/* Header */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Get in Touch</h1>
+          <p className="text-xl text-slate-300">
+            Let's discuss how <span className="text-neon-400 font-semibold">PFN</span> can solve your precision challenges
           </p>
+        </div>
+      </section>
 
-          <div className="space-y-8">
-            <div className="flex items-start gap-4 p-4 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-brand-500/30 transition-colors">
-              <Mail className="text-brand-400 mt-1" />
-              <div>
-                <h3 className="text-white font-semibold">General Inquiries</h3>
-                <p className="text-slate-300 text-sm">sarvin@null-field.com</p>
-                <p className="text-slate-400 text-xs mt-1">We typically respond within 24 hours</p>
+      {/* Contact Options */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Schedule Demo */}
+            <div className="bg-neon-500 rounded-2xl p-8">
+              <div className="bg-slate-900/20 rounded-xl p-3 w-fit mb-6">
+                <Calendar className="h-8 w-8 text-slate-900" />
               </div>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">Schedule a Demo</h2>
+              <p className="text-slate-800 mb-6">
+                See PFN in action. We'll walk through benchmarks, integration, and answer your technical questions.
+              </p>
+              <a
+                href="mailto:viv@null-field.com?subject=PFN%20Demo%20Request"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                viv@null-field.com
+              </a>
             </div>
-            <div className="flex items-start gap-4 p-4 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-brand-500/30 transition-colors">
-              <Phone className="text-brand-400 mt-1" />
-              <div>
-                <h3 className="text-white font-semibold">Sales & Licensing</h3>
-                <p className="text-slate-300 text-sm">viv@null-field.com</p>
-                <p className="text-slate-400 text-xs mt-1">Evaluation licenses & custom solutions</p>
+
+            {/* General Inquiries */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+              <div className="bg-neon-500/20 rounded-xl p-3 w-fit mb-6">
+                <MessageSquare className="h-8 w-8 text-neon-600" />
               </div>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">General Inquiries</h2>
+              <p className="text-slate-600 mb-6">
+                Questions about licensing, technical specifications, or partnership opportunities.
+              </p>
+              <a
+                href="mailto:sarvin@null-field.com?subject=PFN%20Inquiry"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                sarvin@null-field.com
+              </a>
             </div>
-            <div className="flex items-start gap-4 p-4 rounded-lg bg-slate-900/50 border border-slate-800/50 hover:border-brand-500/30 transition-colors">
-              <MapPin className="text-brand-400 mt-1" />
+          </div>
+
+          {/* Location */}
+          <div className="mt-8 bg-white rounded-2xl p-8 border border-slate-200">
+            <div className="flex items-start gap-4">
+              <div className="bg-neon-500/20 rounded-xl p-3">
+                <MapPin className="h-6 w-6 text-neon-600" />
+              </div>
               <div>
-                <h3 className="text-white font-semibold">Our Location</h3>
-                <p className="text-slate-300 text-sm">
-                  Channi<br />
-                  Tamil Nadu, India
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Location</h3>
+                <p className="text-slate-600">
+                  Null Field Research<br />
+                  Channi, Tamil Nadu, India
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 shadow-lg">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-semibold text-slate-200 mb-2">Your Name</label>
-                <input type="text" required className="w-full bg-slate-950/50 border border-slate-700/50 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-slate-200 mb-2">Email Address</label>
-                <input type="email" required className="w-full bg-slate-950/50 border border-slate-700/50 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
-              </div>
+      {/* What to Expect */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">What to Expect</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+              <div className="text-4xl font-black text-neon-400 mb-2">1</div>
+              <h3 className="text-lg font-bold text-white mb-2">Discovery Call</h3>
+              <p className="text-slate-400 text-sm">Understand your precision requirements and use case</p>
             </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-slate-200 mb-2">Company (Optional)</label>
-              <input type="text" className="w-full bg-slate-950/50 border border-slate-700/50 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+              <div className="text-4xl font-black text-neon-400 mb-2">2</div>
+              <h3 className="text-lg font-bold text-white mb-2">Technical Demo</h3>
+              <p className="text-slate-400 text-sm">Live benchmarks and integration walkthrough</p>
             </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-slate-200 mb-2">What brings you here?</label>
-              <select className="w-full bg-slate-950/50 border border-slate-700/50 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
-                <option>I'd like to evaluate PFN-GMP</option>
-                <option>I need a production license quote</option>
-                <option>I'm interested in partnering</option>
-                <option>I have a technical question</option>
-                <option>Just exploring</option>
-              </select>
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+              <div className="text-4xl font-black text-neon-400 mb-2">3</div>
+              <h3 className="text-lg font-bold text-white mb-2">Evaluation</h3>
+              <p className="text-slate-400 text-sm">Free tier access to test with your workloads</p>
             </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-slate-200 mb-2">Tell us about your use case</label>
-              <textarea rows={4} className="w-full bg-slate-950/50 border border-slate-700/50 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="What kind of calculations are you working with? What performance challenges are you facing?"></textarea>
-            </div>
-
-            <button type="submit" className="w-full bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-500 hover:to-brand-600 text-white font-bold py-3.5 rounded-lg transition-all shadow-lg shadow-brand-600/30 hover:shadow-brand-500/40">
-              Submit Inquiry
-            </button>
-          </form>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-neon-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to See PFN in Action?</h2>
+          <p className="text-lg text-slate-800 mb-8">
+            Explore our benchmark data while you wait.
+          </p>
+          <Link
+            to="/performance"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+          >
+            View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };

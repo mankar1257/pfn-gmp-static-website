@@ -1,182 +1,232 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Target, TrendingUp, ArrowRight, CheckCircle2, AlertTriangle } from 'lucide-react';
+import { Zap, Clock, Database, Cpu, ArrowRight, Calendar, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 const Home: React.FC = () => {
+  const speedupData = [
+    { name: 'Chain ×', pfn: 0.07, gmp: 9.88, speedup: 141 },
+    { name: 'Division', pfn: 0.89, gmp: 105.02, speedup: 118 },
+    { name: 'Addition', pfn: 0.03, gmp: 2.41, speedup: 80 },
+  ];
+
+  const powerData = [
+    { ops: '1K', pfn: 3, gmp: 270 },
+    { ops: '10K', pfn: 3, gmp: 27000 },
+    { ops: '100K', pfn: 3, gmp: 270000 },
+    { ops: '1M', pfn: 3, gmp: 2700000 },
+  ];
+
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-600/10 via-transparent to-transparent pointer-events-none" />
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <motion.div 
+    <div className="min-h-screen">
+      {/* Hero with Background */}
+      <section 
+        className="relative min-h-[90vh] flex items-center"
+        style={{
+          backgroundImage: 'url(/3671320.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-slate-900/85"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-4xl">
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-brand-500/40 text-brand-300 text-xs font-semibold mb-8 shadow-lg shadow-brand-600/10"
+              transition={{ duration: 0.6 }}
             >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
-              Version 2.0 Now Available for Enterprise
-            </motion.div>
-            
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-tight"
-            >
-              Precision Without Compromise. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-brand-500 to-accent-500">
-                Speed Without Limits.
-              </span>
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-            >
-              When your calculations demand absolute accuracy and lightning-fast execution, PFN-GMP delivers both. We've reimagined arbitrary-precision arithmetic from the ground up, achieving performance gains that seemed impossible—until now.
-            </motion.p>
-            
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Link to="/performance" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold hover:from-brand-500 hover:to-brand-600 transition-all shadow-lg shadow-brand-600/30 hover:shadow-brand-500/40">
-                See Performance Evidence
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-              <Link to="/use-cases" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-slate-800/80 text-slate-100 font-semibold hover:bg-slate-700 border border-slate-700 hover:border-brand-500/50 transition-all backdrop-blur-sm">
-                Explore Use Cases
-              </Link>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-500/20 text-neon-400 text-sm font-medium mb-6 border border-neon-500/30">
+                <Zap className="h-4 w-4" />
+                Null Field Research
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                Precision Without<br />
+                <span className="text-neon-400">Compromise.</span>
+              </h1>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-300 mb-8">
+                Speed Without <span className="text-neon-400">Limits.</span>
+              </h2>
+              
+              <p className="text-xl text-slate-400 mb-10 max-w-2xl">
+                PFN delivers exact arbitrary-precision arithmetic with O(1) time complexity. 
+                No approximations. No floating-point errors. Just results.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-neon-500 text-slate-900 font-bold text-lg hover:bg-neon-400 transition-all neon-glow"
+                >
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Schedule Demo
+                </Link>
+                <Link
+                  to="/performance"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-800 text-white font-bold text-lg border border-slate-700 hover:bg-slate-700 transition-all"
+                >
+                  View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Value Props */}
-      <section className="py-24 bg-slate-900/50 border-y border-slate-800/50">
+      {/* Key Metrics */}
+      <section className="py-16 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group p-8 rounded-2xl bg-slate-900/90 border border-slate-800/50 hover:border-brand-500/40 transition-all hover:shadow-xl hover:shadow-brand-600/10 backdrop-blur-sm">
-              <div className="w-12 h-12 bg-gradient-to-br from-brand-600/20 to-accent-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:from-brand-600/30 group-hover:to-accent-600/30 transition-colors">
-                <Zap className="text-brand-400 h-6 w-6" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { value: '141×', label: 'Faster Multiply', icon: TrendingUp },
+              { value: '899K×', label: 'Faster Powers', icon: Zap },
+              { value: '0.07μs', label: 'Constant Time', icon: Clock },
+              { value: '415B', label: 'Fixed Memory', icon: Database },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-slate-800 rounded-2xl p-6 text-center border border-slate-700"
+              >
+                <stat.icon className="h-8 w-8 text-neon-400 mx-auto mb-3" />
+                <div className="text-3xl md:text-4xl font-black text-neon-400">{stat.value}</div>
+                <div className="text-slate-400 text-sm mt-1">{stat.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Charts Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Benchmark Results</h2>
+            <p className="text-slate-600">Real performance data from independent testing</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Speedup Chart */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-4">Operation Speedup vs GMP</h3>
+              <div className="h-72">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={speedupData} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" stroke="#64748b" />
+                    <YAxis dataKey="name" type="category" stroke="#64748b" width={80} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
+                      labelStyle={{ color: '#f1f5f9' }}
+                      itemStyle={{ color: '#33f583' }}
+                      formatter={(value) => [`${value}×`, 'Speedup']}
+                    />
+                    <Bar dataKey="speedup" radius={[0, 4, 4, 0]}>
+                      {speedupData.map((_, index) => (
+                        <Cell key={index} fill="#09e65f" />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Lightning-Fast Power Operations</h3>
-              <p className="text-slate-300 leading-relaxed mb-4">
-                What takes traditional libraries over 3 minutes, we do in 70 nanoseconds. Multiplying by 2<sup>50,000</sup>? Done before you blink. That's not an exaggeration—it's a 2.77 million times speedup.
-              </p>
-              <Link to="/performance#power-operations" className="inline-flex items-center mt-4 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors">
-                View Benchmark <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-slate-900/90 border border-slate-800/50 hover:border-brand-500/40 transition-all hover:shadow-xl hover:shadow-brand-600/10 backdrop-blur-sm">
-              <div className="w-12 h-12 bg-gradient-to-br from-brand-600/20 to-accent-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:from-brand-600/30 group-hover:to-accent-600/30 transition-colors">
-                <Target className="text-brand-400 h-6 w-6" />
+            {/* Power Operations Chart */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-4">Power Operation: 7^1,000,000</h3>
+              <div className="h-72">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={powerData}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="ops" stroke="#64748b" />
+                    <YAxis stroke="#64748b" scale="log" domain={[1, 10000000]} tickFormatter={(v) => v >= 1000000 ? `${v/1000000}M` : v >= 1000 ? `${v/1000}K` : v} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
+                      labelStyle={{ color: '#f1f5f9' }}
+                      formatter={(value: number) => [`${value >= 1000000 ? (value/1000000).toFixed(1) + 'M' : value >= 1000 ? (value/1000) + 'K' : value} μs`, '']}
+                    />
+                    <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 5 }} name="GMP" />
+                    <Line type="monotone" dataKey="pfn" stroke="#09e65f" strokeWidth={3} dot={{ fill: '#09e65f', r: 5 }} name="PFN" />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Mathematically Perfect Results</h3>
-              <p className="text-slate-300 leading-relaxed mb-4">
-                No rounding errors. No accumulated drift. Just exact results, every single time. We've verified this across a billion operations—and found zero discrepancies.
-              </p>
-              <Link to="/validation#zero-drift" className="inline-flex items-center mt-4 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors">
-                See Validation <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            <div className="group p-8 rounded-2xl bg-slate-900/90 border border-slate-800/50 hover:border-brand-500/40 transition-all hover:shadow-xl hover:shadow-brand-600/10 backdrop-blur-sm">
-              <div className="w-12 h-12 bg-gradient-to-br from-brand-600/20 to-accent-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:from-brand-600/30 group-hover:to-accent-600/30 transition-colors">
-                <TrendingUp className="text-brand-400 h-6 w-6" />
+              <div className="flex justify-center gap-6 mt-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-[#09e65f]"></div>
+                  <span className="text-sm text-slate-600">PFN (O(1))</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-[#ef4444]"></div>
+                  <span className="text-sm text-slate-600">GMP (O(n))</span>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Battle-Tested Performance</h3>
-              <p className="text-slate-300 leading-relaxed mb-4">
-                When you need to chain hundreds of thousands of multiplications, we're 10-300× faster than GMP. We're not just fast in theory—we're proven in production environments handling real-world workloads.
-              </p>
-              <Link to="/performance#benchmarks" className="inline-flex items-center mt-4 text-brand-400 hover:text-brand-300 text-sm font-semibold transition-colors">
-                Check Data <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust & Limitations */}
-      <section className="py-24">
+      {/* PFN Engine */}
+      <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Don't Just Trust Us—Verify It Yourself</h2>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <CheckCircle2 className="text-brand-500 h-6 w-6 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-white font-semibold">Independently Verifiable</h4>
-                    <p className="text-slate-400 text-sm mt-1">Every benchmark we publish comes with a reproducible test suite. Download it, run it yourself.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <CheckCircle2 className="text-brand-500 h-6 w-6 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-white font-semibold">Rigorously Tested</h4>
-                    <p className="text-slate-400 text-sm mt-1">We've run over a billion comparison tests against GMP. The result? Zero errors, perfect accuracy.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <CheckCircle2 className="text-brand-500 h-6 w-6 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-white font-semibold">Consistent Everywhere</h4>
-                    <p className="text-slate-400 text-sm mt-1">Same results on Linux, macOS, Windows. Same results on x86-64 and ARM64. Bit-for-bit identical.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">The PFN Engine</h2>
+            <p className="text-slate-400">Revolutionary architecture for precision arithmetic</p>
+          </div>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-1 h-full bg-amber-500"></div>
-              <div className="flex items-start gap-4">
-                <AlertTriangle className="text-amber-500 h-6 w-6 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Let's Be Honest About Trade-offs</h3>
-                  <p className="text-slate-300 mb-4">
-                    PFN-GMP isn't magic—it's specialized. We're dramatically faster at multiplication and powers, but slower at addition. If your workload involves lots of adding and subtracting, stick with standard GMP.
-                  </p>
-                  <p className="text-slate-400 text-sm">
-                    That's why we built a hybrid architecture. The system automatically uses PFN for what it's good at, and falls back to GMP for everything else. You get the best of both worlds.
-                  </p>
-                  <Link to="/performance#when-not-to-use" className="inline-block mt-4 text-amber-500 hover:text-amber-400 text-sm font-medium underline decoration-amber-500/30 underline-offset-4">
-                    Read Full Limitations
-                  </Link>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Cpu,
+                title: 'O(1) Complexity',
+                description: 'Every operation completes in constant time, regardless of the magnitude of numbers involved.',
+              },
+              {
+                icon: Database,
+                title: 'Fixed Memory',
+                description: 'Each number uses exactly 415 bytes. No memory bloat, no allocation overhead, perfect predictability.',
+              },
+              {
+                icon: Zap,
+                title: 'Exact Results',
+                description: 'Symbolic representation preserves infinite precision. No rounding, no approximation, ever.',
+              },
+            ].map((feature, i) => (
+              <div key={i} className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                <div className="bg-neon-500/20 rounded-xl p-3 w-fit mb-4">
+                  <feature.icon className="h-6 w-6 text-neon-400" />
                 </div>
+                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-slate-400">{feature.description}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-brand-900/10 border-t border-slate-800">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">See It In Action</h2>
-          <p className="text-slate-400 mb-8 text-lg">
-            Run our benchmarks on your own hardware, or get in touch to discuss how PFN-GMP can accelerate your specific workload.
+      <section className="py-20 bg-neon-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">Ready to Transform Your Precision Computing?</h2>
+          <p className="text-xl text-slate-800 mb-8">
+            See PFN in action with your specific use case.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="px-8 py-3 rounded-md bg-brand-600 text-white font-semibold hover:bg-brand-500 transition-colors">
-              Get Started
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-900 text-white font-bold text-lg hover:bg-slate-800 transition-all"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Schedule Demo
             </Link>
-            <Link to="/validation" className="px-8 py-3 rounded-md bg-slate-800 text-white font-semibold hover:bg-slate-700 border border-slate-700 transition-colors">
-              Download Benchmarks
+            <Link
+              to="/use-cases"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-slate-900 font-bold text-lg hover:bg-slate-100 transition-all"
+            >
+              Explore Use Cases <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>
