@@ -53,7 +53,7 @@ const Validation: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Validation & Quality</h1>
           <p className="text-xl text-slate-300">
-            Every claim is <span className="text-neon-400 font-semibold">verifiable</span>. Every result is <span className="text-neon-400 font-semibold">reproducible</span>.
+            Every claim is <span className="text-accent-400 font-semibold">verifiable</span>. Every result is <span className="text-accent-400 font-semibold">reproducible</span>.
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ const Validation: React.FC = () => {
       <section className="py-12 bg-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-4 text-center">
-            <ShieldCheck className="h-12 w-12 text-neon-400" />
+            <ShieldCheck className="h-12 w-12 text-accent-400" />
             <div>
               <h2 className="text-2xl font-bold text-white">Production-Ready Quality</h2>
               <p className="text-slate-400">Rigorous validation for mission-critical applications</p>
@@ -78,8 +78,8 @@ const Validation: React.FC = () => {
             {validationAreas.map((area, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-neon-500/20 rounded-xl p-3">
-                    <area.icon className="h-6 w-6 text-neon-600" />
+                  <div className="bg-accent-500/20 rounded-xl p-3">
+                    <area.icon className="h-6 w-6 text-accent-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-900">{area.title}</h3>
@@ -89,7 +89,7 @@ const Validation: React.FC = () => {
                 <ul className="space-y-3">
                   {area.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-neon-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-accent-500 flex-shrink-0 mt-0.5" />
                       <span className="text-slate-700">{point}</span>
                     </li>
                   ))}
@@ -110,7 +110,7 @@ const Validation: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-neon-500 flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-accent-500 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-black text-slate-900">1</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Formal Analysis</h3>
@@ -119,7 +119,7 @@ const Validation: React.FC = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-neon-500 flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-accent-500 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-black text-slate-900">2</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Empirical Testing</h3>
@@ -128,7 +128,7 @@ const Validation: React.FC = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-neon-500 flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-accent-500 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-black text-slate-900">3</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Customer Validation</h3>
@@ -152,7 +152,7 @@ const Validation: React.FC = () => {
               { value: '0', label: 'Rounding Errors' },
             ].map((item, i) => (
               <div key={i} className="bg-slate-800 rounded-2xl p-6 text-center border border-slate-700">
-                <div className="text-3xl font-black text-neon-400 mb-2">{item.value}</div>
+                <div className="text-3xl font-black text-accent-400 mb-2">{item.value}</div>
                 <div className="text-slate-400 text-sm">{item.label}</div>
               </div>
             ))}
@@ -161,7 +161,7 @@ const Validation: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Verify It Yourself</h2>
           <p className="text-lg text-slate-800 mb-8">

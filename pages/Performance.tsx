@@ -43,7 +43,7 @@ const Performance: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Performance Benchmarks</h1>
           <p className="text-xl text-slate-300">
-            Real data. Reproducible results. <span className="text-neon-400 font-semibold">Verified performance.</span>
+            Real data. Reproducible results. <span className="text-accent-400 font-semibold">Verified performance.</span>
           </p>
         </div>
       </section>
@@ -59,8 +59,8 @@ const Performance: React.FC = () => {
               { value: '118×', label: 'Division', icon: Database },
             ].map((stat, i) => (
               <div key={i} className="bg-slate-700 rounded-xl p-4 text-center border border-slate-600">
-                <stat.icon className="h-6 w-6 text-neon-400 mx-auto mb-2" />
-                <div className="text-2xl md:text-3xl font-black text-neon-400">{stat.value}</div>
+                <stat.icon className="h-6 w-6 text-accent-400 mx-auto mb-2" />
+                <div className="text-2xl md:text-3xl font-black text-accent-400">{stat.value}</div>
                 <div className="text-slate-400 text-xs">{stat.label}</div>
               </div>
             ))}
@@ -88,13 +88,13 @@ const Performance: React.FC = () => {
                       labelStyle={{ color: '#f1f5f9' }}
                     />
                     <Area type="monotone" dataKey="gmp" stroke="#ef4444" fill="#fecaca" strokeWidth={2} name="GMP" />
-                    <Area type="monotone" dataKey="pfn" stroke="#09e65f" fill="#bbffd2" strokeWidth={2} name="PFN" />
+                    <Area type="monotone" dataKey="pfn" stroke="#14b8a6" fill="#99f6e4" strokeWidth={2} name="PFN" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
               <div className="flex justify-center gap-6 mt-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#09e65f]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#14b8a6]"></div>
                   <span className="text-sm text-slate-600">PFN (constant)</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -120,7 +120,7 @@ const Performance: React.FC = () => {
                     />
                     <Bar dataKey="speedup" radius={[0, 4, 4, 0]}>
                       {speedupData.map((_, index) => (
-                        <Cell key={index} fill="#09e65f" />
+                        <Cell key={index} fill="#14b8a6" />
                       ))}
                     </Bar>
                   </BarChart>
@@ -143,13 +143,13 @@ const Performance: React.FC = () => {
                       formatter={(value: number) => [`${value >= 1000000 ? (value/1000000).toFixed(1) + 'M' : value >= 1000 ? (value/1000) + 'K' : value} μs`, '']}
                     />
                     <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 6 }} name="GMP" />
-                    <Line type="monotone" dataKey="pfn" stroke="#09e65f" strokeWidth={3} dot={{ fill: '#09e65f', r: 6 }} name="PFN" />
+                    <Line type="monotone" dataKey="pfn" stroke="#14b8a6" strokeWidth={3} dot={{ fill: '#14b8a6', r: 6 }} name="PFN" />
                   </LineChart>
                 </ResponsiveContainer>
               </div>
               <div className="flex justify-center gap-6 mt-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#09e65f]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#14b8a6]"></div>
                   <span className="text-sm text-slate-600">PFN (O(1))</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -174,13 +174,13 @@ const Performance: React.FC = () => {
                       formatter={(value: number) => [`${value} bytes`, '']}
                     />
                     <Bar dataKey="gmp" name="GMP" fill="#ef4444" radius={[4, 4, 0, 0]} />
-                    <Bar dataKey="pfn" name="PFN" fill="#09e65f" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="pfn" name="PFN" fill="#14b8a6" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
               <div className="flex justify-center gap-6 mt-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#09e65f]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#14b8a6]"></div>
                   <span className="text-sm text-slate-600">PFN (fixed 415B)</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -199,19 +199,19 @@ const Performance: React.FC = () => {
           <h2 className="text-2xl font-bold text-white mb-8 text-center">Benchmark Methodology</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-              <h3 className="text-lg font-bold text-neon-400 mb-2">Environment</h3>
+              <h3 className="text-lg font-bold text-accent-400 mb-2">Environment</h3>
               <p className="text-slate-400 text-sm">
                 Isolated test environment with controlled CPU affinity and memory allocation. No background processes.
               </p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-              <h3 className="text-lg font-bold text-neon-400 mb-2">Measurements</h3>
+              <h3 className="text-lg font-bold text-accent-400 mb-2">Measurements</h3>
               <p className="text-slate-400 text-sm">
                 High-resolution timers with multiple iterations. Statistical analysis to eliminate outliers.
               </p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-              <h3 className="text-lg font-bold text-neon-400 mb-2">Reproducibility</h3>
+              <h3 className="text-lg font-bold text-accent-400 mb-2">Reproducibility</h3>
               <p className="text-slate-400 text-sm">
                 All benchmarks are reproducible. We provide benchmark tools with commercial licenses.
               </p>
@@ -221,7 +221,7 @@ const Performance: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to See These Results Yourself?</h2>
           <p className="text-lg text-slate-800 mb-8">

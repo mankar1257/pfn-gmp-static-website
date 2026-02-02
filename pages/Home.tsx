@@ -37,17 +37,17 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-500/20 text-neon-400 text-sm font-medium mb-6 border border-neon-500/30">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-500/20 text-accent-400 text-sm font-medium mb-6 border border-accent-500/30">
                 <Zap className="h-4 w-4" />
                 Null Field Research
               </div>
               
               <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
                 Precision Without<br />
-                <span className="text-neon-400">Compromise.</span>
+                <span className="text-accent-400">Compromise.</span>
               </h1>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-300 mb-8">
-                Speed Without <span className="text-neon-400">Limits.</span>
+                Speed Without <span className="text-accent-400">Limits.</span>
               </h2>
               
               <p className="text-xl text-slate-400 mb-10 max-w-2xl">
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-neon-500 text-slate-900 font-bold text-lg hover:bg-neon-400 transition-all neon-glow"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-accent-500 text-slate-900 font-bold text-lg hover:bg-accent-400 transition-all accent-glow"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
                   Schedule Demo
@@ -92,8 +92,8 @@ const Home: React.FC = () => {
                 transition={{ delay: i * 0.1 }}
                 className="bg-slate-800 rounded-2xl p-6 text-center border border-slate-700"
               >
-                <stat.icon className="h-8 w-8 text-neon-400 mx-auto mb-3" />
-                <div className="text-3xl md:text-4xl font-black text-neon-400">{stat.value}</div>
+                <stat.icon className="h-8 w-8 text-accent-400 mx-auto mb-3" />
+                <div className="text-3xl md:text-4xl font-black text-accent-400">{stat.value}</div>
                 <div className="text-slate-400 text-sm mt-1">{stat.label}</div>
               </motion.div>
             ))}
@@ -122,12 +122,12 @@ const Home: React.FC = () => {
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
                       labelStyle={{ color: '#f1f5f9' }}
-                      itemStyle={{ color: '#33f583' }}
+                      itemStyle={{ color: '#2dd4bf' }}
                       formatter={(value) => [`${value}×`, 'Speedup']}
                     />
                     <Bar dataKey="speedup" radius={[0, 4, 4, 0]}>
                       {speedupData.map((_, index) => (
-                        <Cell key={index} fill="#09e65f" />
+                        <Cell key={index} fill="#14b8a6" />
                       ))}
                     </Bar>
                   </BarChart>
@@ -150,13 +150,13 @@ const Home: React.FC = () => {
                       formatter={(value: number) => [`${value >= 1000000 ? (value/1000000).toFixed(1) + 'M' : value >= 1000 ? (value/1000) + 'K' : value} μs`, '']}
                     />
                     <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 5 }} name="GMP" />
-                    <Line type="monotone" dataKey="pfn" stroke="#09e65f" strokeWidth={3} dot={{ fill: '#09e65f', r: 5 }} name="PFN" />
+                    <Line type="monotone" dataKey="pfn" stroke="#14b8a6" strokeWidth={3} dot={{ fill: '#14b8a6', r: 5 }} name="PFN" />
                   </LineChart>
                 </ResponsiveContainer>
               </div>
               <div className="flex justify-center gap-6 mt-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#09e65f]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#14b8a6]"></div>
                   <span className="text-sm text-slate-600">PFN (O(1))</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -196,8 +196,8 @@ const Home: React.FC = () => {
               },
             ].map((feature, i) => (
               <div key={i} className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-                <div className="bg-neon-500/20 rounded-xl p-3 w-fit mb-4">
-                  <feature.icon className="h-6 w-6 text-neon-400" />
+                <div className="bg-accent-500/20 rounded-xl p-3 w-fit mb-4">
+                  <feature.icon className="h-6 w-6 text-accent-400" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
                 <p className="text-slate-400">{feature.description}</p>
@@ -208,7 +208,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-neon-500">
+      <section className="py-20 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-slate-900 mb-6">Ready to Transform Your Precision Computing?</h2>
           <p className="text-xl text-slate-800 mb-8">

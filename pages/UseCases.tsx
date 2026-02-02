@@ -55,7 +55,7 @@ const UseCases: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Industry Applications</h1>
           <p className="text-xl text-slate-300">
-            See how <span className="text-neon-400 font-semibold">PFN</span> transforms precision-critical applications
+            See how <span className="text-accent-400 font-semibold">PFN</span> transforms precision-critical applications
           </p>
         </div>
       </section>
@@ -72,7 +72,7 @@ const UseCases: React.FC = () => {
                 {/* Header */}
                 <div className="bg-slate-900 p-5">
                   <div className="flex items-center gap-4">
-                    <div className="bg-neon-500/20 rounded-xl p-2.5 text-neon-400">
+                    <div className="bg-accent-500/20 rounded-xl p-2.5 text-accent-400">
                       {useCase.icon}
                     </div>
                     <div>
@@ -97,11 +97,11 @@ const UseCases: React.FC = () => {
                   </div>
                   
                   <div className="pt-4 border-t border-slate-100">
-                    <h4 className="text-xs font-bold text-neon-600 uppercase tracking-wider mb-3">Results with PFN</h4>
+                    <h4 className="text-xs font-bold text-accent-600 uppercase tracking-wider mb-3">Results with PFN</h4>
                     <ul className="space-y-2">
                       {useCase.results.map((result, i) => (
                         <li key={i} className="flex items-start text-sm text-slate-800 font-medium">
-                          <Check className="h-4 w-4 text-neon-500 mr-2 flex-shrink-0 mt-0.5" />
+                          <Check className="h-4 w-4 text-accent-500 mr-2 flex-shrink-0 mt-0.5" />
                           {result}
                         </li>
                       ))}
@@ -124,17 +124,17 @@ const UseCases: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-neon-400 mb-4">O(1)</div>
+              <div className="text-5xl font-black text-accent-400 mb-4">O(1)</div>
               <h3 className="text-xl font-bold text-white mb-2">Constant Time</h3>
               <p className="text-slate-400">Every operation, regardless of number size</p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-neon-400 mb-4">415B</div>
+              <div className="text-5xl font-black text-accent-400 mb-4">415B</div>
               <h3 className="text-xl font-bold text-white mb-2">Fixed Memory</h3>
               <p className="text-slate-400">Predictable resource usage at any scale</p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-neon-400 mb-4">100%</div>
+              <div className="text-5xl font-black text-accent-400 mb-4">100%</div>
               <h3 className="text-xl font-bold text-white mb-2">Exact Results</h3>
               <p className="text-slate-400">No approximation, no rounding errors</p>
             </div>
@@ -143,7 +143,7 @@ const UseCases: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready for Your Use Case?</h2>
           <p className="text-lg text-slate-800 mb-8">

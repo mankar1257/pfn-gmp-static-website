@@ -17,7 +17,7 @@ const Overview: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Technical Overview</h1>
           <p className="text-xl text-slate-300">
-            How <span className="text-neon-400 font-semibold">PFN</span> achieves the impossible
+            How <span className="text-accent-400 font-semibold">PFN</span> achieves the impossible
           </p>
         </div>
       </section>
@@ -53,22 +53,22 @@ const Overview: React.FC = () => {
             {/* Solution */}
             <div className="bg-slate-900 rounded-2xl p-8 border border-slate-700">
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-neon-500/20 rounded-xl p-3">
-                  <Zap className="h-6 w-6 text-neon-400" />
+                <div className="bg-accent-500/20 rounded-xl p-3">
+                  <Zap className="h-6 w-6 text-accent-400" />
                 </div>
                 <h2 className="text-2xl font-bold text-white">The PFN Solution</h2>
               </div>
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
-                  <h3 className="font-bold text-neon-400 mb-1">O(1) Complexity</h3>
+                  <h3 className="font-bold text-accent-400 mb-1">O(1) Complexity</h3>
                   <p className="text-sm text-slate-300">Constant time regardless of magnitude</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
-                  <h3 className="font-bold text-neon-400 mb-1">Fixed 415B Memory</h3>
+                  <h3 className="font-bold text-accent-400 mb-1">Fixed 415B Memory</h3>
                   <p className="text-sm text-slate-300">Same footprint for any number size</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800 border border-slate-700">
-                  <h3 className="font-bold text-neon-400 mb-1">Exact Precision</h3>
+                  <h3 className="font-bold text-accent-400 mb-1">Exact Precision</h3>
                   <p className="text-sm text-slate-300">Symbolic representation, zero loss</p>
                 </div>
               </div>
@@ -98,13 +98,13 @@ const Overview: React.FC = () => {
                     formatter={(value: number) => [`${value} μs`, '']}
                   />
                   <Bar dataKey="gmp" name="GMP" fill="#ef4444" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="pfn" name="PFN" fill="#09e65f" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="pfn" name="PFN" fill="#14b8a6" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
             <div className="flex justify-center gap-8 mt-4">
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded bg-[#09e65f]"></div>
+                <div className="w-4 h-4 rounded bg-[#14b8a6]"></div>
                 <span className="text-sm text-slate-600 font-medium">PFN</span>
               </div>
               <div className="flex items-center gap-2">
@@ -132,8 +132,8 @@ const Overview: React.FC = () => {
               { icon: Zap, title: 'Exact Results', desc: 'Infinite precision' },
             ].map((item, i) => (
               <div key={i} className="bg-slate-800 rounded-2xl p-6 text-center border border-slate-700">
-                <div className="bg-neon-500/20 rounded-xl p-3 w-fit mx-auto mb-4">
-                  <item.icon className="h-6 w-6 text-neon-400" />
+                <div className="bg-accent-500/20 rounded-xl p-3 w-fit mx-auto mb-4">
+                  <item.icon className="h-6 w-6 text-accent-400" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-slate-400 text-sm">{item.desc}</p>
@@ -144,7 +144,7 @@ const Overview: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">See the Full Benchmark Data</h2>
           <p className="text-lg text-slate-800 mb-8">

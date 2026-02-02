@@ -80,22 +80,22 @@ const Licensing: React.FC = () => {
                 key={tier.name}
                 className={`relative rounded-2xl p-8 ${
                   tier.featured
-                    ? 'bg-neon-500 ring-4 ring-neon-400 ring-offset-4 ring-offset-slate-50'
+                    ? 'bg-accent-500 ring-4 ring-accent-400 ring-offset-4 ring-offset-slate-50'
                     : 'bg-white border border-slate-200'
                 }`}
               >
                 {tier.featured && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="px-4 py-1 rounded-full text-xs font-bold bg-slate-900 text-neon-400">
+                    <span className="px-4 py-1 rounded-full text-xs font-bold bg-slate-900 text-accent-400">
                       Most Popular
                     </span>
                   </div>
                 )}
                 
                 <div className={`inline-flex p-3 rounded-xl mb-4 ${
-                  tier.featured ? 'bg-slate-900/20' : 'bg-neon-500/20'
+                  tier.featured ? 'bg-slate-900/20' : 'bg-accent-500/20'
                 }`}>
-                  <tier.icon className={`h-6 w-6 ${tier.featured ? 'text-slate-900' : 'text-neon-600'}`} />
+                  <tier.icon className={`h-6 w-6 ${tier.featured ? 'text-slate-900' : 'text-accent-600'}`} />
                 </div>
                 
                 <h3 className={`text-2xl font-bold mb-2 ${tier.featured ? 'text-slate-900' : 'text-slate-900'}`}>
@@ -120,7 +120,7 @@ const Licensing: React.FC = () => {
                       tier.featured ? 'text-slate-800' : 'text-slate-600'
                     }`}>
                       <Check className={`h-5 w-5 flex-shrink-0 ${
-                        tier.featured ? 'text-slate-900' : 'text-neon-500'
+                        tier.featured ? 'text-slate-900' : 'text-accent-500'
                       }`} />
                       {feature}
                     </li>
@@ -132,7 +132,7 @@ const Licensing: React.FC = () => {
                   className={`block w-full text-center py-3 rounded-xl font-semibold transition-all ${
                     tier.featured
                       ? 'bg-slate-900 text-white hover:bg-slate-800'
-                      : 'bg-neon-500 text-slate-900 hover:bg-neon-400'
+                      : 'bg-accent-500 text-slate-900 hover:bg-accent-400'
                   }`}
                 >
                   {tier.cta}
@@ -181,7 +181,7 @@ const Licensing: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Get Started?</h2>
           <p className="text-lg text-slate-800 mb-8">

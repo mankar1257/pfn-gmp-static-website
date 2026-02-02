@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Get in Touch</h1>
           <p className="text-xl text-slate-300">
-            Let's discuss how <span className="text-neon-400 font-semibold">PFN</span> can solve your precision challenges
+            Let's discuss how <span className="text-accent-400 font-semibold">PFN</span> can solve your precision challenges
           </p>
         </div>
       </section>
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Schedule Demo */}
-            <div className="bg-neon-500 rounded-2xl p-8">
+            <div className="bg-accent-500 rounded-2xl p-8">
               <div className="bg-slate-900/20 rounded-xl p-3 w-fit mb-6">
                 <Calendar className="h-8 w-8 text-slate-900" />
               </div>
@@ -39,8 +39,8 @@ const Contact: React.FC = () => {
 
             {/* General Inquiries */}
             <div className="bg-white rounded-2xl p-8 border border-slate-200">
-              <div className="bg-neon-500/20 rounded-xl p-3 w-fit mb-6">
-                <MessageSquare className="h-8 w-8 text-neon-600" />
+              <div className="bg-accent-500/20 rounded-xl p-3 w-fit mb-6">
+                <MessageSquare className="h-8 w-8 text-accent-600" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">General Inquiries</h2>
               <p className="text-slate-600 mb-6">
@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
           {/* Location */}
           <div className="mt-8 bg-white rounded-2xl p-8 border border-slate-200">
             <div className="flex items-start gap-4">
-              <div className="bg-neon-500/20 rounded-xl p-3">
-                <MapPin className="h-6 w-6 text-neon-600" />
+              <div className="bg-accent-500/20 rounded-xl p-3">
+                <MapPin className="h-6 w-6 text-accent-600" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Location</h3>
@@ -80,17 +80,17 @@ const Contact: React.FC = () => {
           <h2 className="text-2xl font-bold text-white mb-8 text-center">What to Expect</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
-              <div className="text-4xl font-black text-neon-400 mb-2">1</div>
+              <div className="text-4xl font-black text-accent-400 mb-2">1</div>
               <h3 className="text-lg font-bold text-white mb-2">Discovery Call</h3>
               <p className="text-slate-400 text-sm">Understand your precision requirements and use case</p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
-              <div className="text-4xl font-black text-neon-400 mb-2">2</div>
+              <div className="text-4xl font-black text-accent-400 mb-2">2</div>
               <h3 className="text-lg font-bold text-white mb-2">Technical Demo</h3>
               <p className="text-slate-400 text-sm">Live benchmarks and integration walkthrough</p>
             </div>
             <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
-              <div className="text-4xl font-black text-neon-400 mb-2">3</div>
+              <div className="text-4xl font-black text-accent-400 mb-2">3</div>
               <h3 className="text-lg font-bold text-white mb-2">Evaluation</h3>
               <p className="text-slate-400 text-sm">Free tier access to test with your workloads</p>
             </div>
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-neon-500">
+      <section className="py-16 bg-accent-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to See PFN in Action?</h2>
           <p className="text-lg text-slate-800 mb-8">

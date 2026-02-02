@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="bg-neon-500 rounded-lg p-1.5">
+            <div className="bg-accent-500 rounded-lg p-1.5">
               <Zap className="h-5 w-5 text-slate-900" />
             </div>
             <span className="text-xl font-bold text-white">PFN</span>
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 to={link.to}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive(link.to)
-                    ? 'bg-neon-500/20 text-neon-400'
+                    ? 'bg-accent-500/20 text-accent-400'
                     : 'text-slate-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               to="/contact"
-              className="inline-flex items-center px-4 py-2 rounded-lg bg-neon-500 text-slate-900 font-semibold text-sm hover:bg-neon-400 transition-colors"
+              className="inline-flex items-center px-4 py-2 rounded-lg bg-accent-500 text-slate-900 font-semibold text-sm hover:bg-accent-400 transition-colors"
             >
               <Calendar className="mr-2 h-4 w-4" />
               Schedule Demo
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 rounded-lg text-sm font-medium ${
                   isActive(link.to)
-                    ? 'bg-neon-500/20 text-neon-400'
+                    ? 'bg-accent-500/20 text-accent-400'
                     : 'text-slate-300 hover:bg-slate-800'
                 }`}
               >
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block px-4 py-2 mt-4 rounded-lg bg-neon-500 text-slate-900 font-semibold text-center"
+              className="block px-4 py-2 mt-4 rounded-lg bg-accent-500 text-slate-900 font-semibold text-center"
             >
               Schedule Demo
             </Link>

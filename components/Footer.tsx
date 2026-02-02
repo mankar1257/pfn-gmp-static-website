@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="bg-neon-500 rounded-lg p-1.5">
+              <div className="bg-accent-500 rounded-lg p-1.5">
                 <Zap className="h-5 w-5 text-slate-900" />
               </div>
               <span className="text-xl font-bold text-white">PFN</span>
@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Product</h3>
             <ul className="space-y-2">
-              <li><Link to="/overview" className="text-slate-400 hover:text-neon-400 text-sm">Overview</Link></li>
-              <li><Link to="/performance" className="text-slate-400 hover:text-neon-400 text-sm">Performance</Link></li>
-              <li><Link to="/use-cases" className="text-slate-400 hover:text-neon-400 text-sm">Use Cases</Link></li>
-              <li><Link to="/validation" className="text-slate-400 hover:text-neon-400 text-sm">Validation</Link></li>
+              <li><Link to="/overview" className="text-slate-400 hover:text-accent-400 text-sm">Overview</Link></li>
+              <li><Link to="/performance" className="text-slate-400 hover:text-accent-400 text-sm">Performance</Link></li>
+              <li><Link to="/use-cases" className="text-slate-400 hover:text-accent-400 text-sm">Use Cases</Link></li>
+              <li><Link to="/validation" className="text-slate-400 hover:text-accent-400 text-sm">Validation</Link></li>
             </ul>
           </div>
 
@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><Link to="/integration" className="text-slate-400 hover:text-neon-400 text-sm">Integration</Link></li>
-              <li><Link to="/licensing" className="text-slate-400 hover:text-neon-400 text-sm">Licensing</Link></li>
-              <li><Link to="/contact" className="text-slate-400 hover:text-neon-400 text-sm">Contact</Link></li>
+              <li><Link to="/integration" className="text-slate-400 hover:text-accent-400 text-sm">Integration</Link></li>
+              <li><Link to="/licensing" className="text-slate-400 hover:text-accent-400 text-sm">Licensing</Link></li>
+              <li><Link to="/contact" className="text-slate-400 hover:text-accent-400 text-sm">Contact</Link></li>
             </ul>
           </div>
 
@@ -47,15 +47,15 @@ const Footer: React.FC = () => {
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-slate-400 text-sm">
-                <Mail className="h-4 w-4 text-neon-500" />
-                <a href="mailto:sarvin@null-field.com" className="hover:text-neon-400">sarvin@null-field.com</a>
+                <Mail className="h-4 w-4 text-accent-500" />
+                <a href="mailto:sarvin@null-field.com" className="hover:text-accent-400">sarvin@null-field.com</a>
               </li>
               <li className="flex items-center gap-2 text-slate-400 text-sm">
-                <Calendar className="h-4 w-4 text-neon-500" />
-                <a href="mailto:viv@null-field.com" className="hover:text-neon-400">viv@null-field.com</a>
+                <Calendar className="h-4 w-4 text-accent-500" />
+                <a href="mailto:viv@null-field.com" className="hover:text-accent-400">viv@null-field.com</a>
               </li>
               <li className="flex items-start gap-2 text-slate-400 text-sm">
-                <MapPin className="h-4 w-4 text-neon-500 mt-0.5" />
+                <MapPin className="h-4 w-4 text-accent-500 mt-0.5" />
                 <span>Channi, Tamil Nadu, India</span>
               </li>
             </ul>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center px-4 py-2 rounded-lg bg-neon-500 text-slate-900 font-semibold text-sm hover:bg-neon-400 transition-colors"
+            className="inline-flex items-center px-4 py-2 rounded-lg bg-accent-500 text-slate-900 font-semibold text-sm hover:bg-accent-400 transition-colors"
           >
             <Calendar className="mr-2 h-4 w-4" />
             Schedule Demo
