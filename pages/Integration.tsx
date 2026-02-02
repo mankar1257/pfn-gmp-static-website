@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Download, BookOpen, Calendar, ArrowRight, Terminal, Package, Settings } from 'lucide-react';
+import { BookOpen, Calendar, ArrowRight, Terminal, Package, Settings } from 'lucide-react';
 
 const Integration: React.FC = () => {
   return (

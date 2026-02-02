@@ -147,7 +147,7 @@ const Home: React.FC = () => {
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
                       labelStyle={{ color: '#f1f5f9' }}
-                      formatter={(value: number) => [`${value >= 1000000 ? (value/1000000).toFixed(1) + 'M' : value >= 1000 ? (value/1000) + 'K' : value} μs`, '']}
+                      formatter={(value) => [`${Number(value) >= 1000000 ? (Number(value)/1000000).toFixed(1) + 'M' : Number(value) >= 1000 ? (Number(value)/1000) + 'K' : value} μs`, '']}
                     />
                     <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 5 }} name="GMP" />
                     <Line type="monotone" dataKey="pfn" stroke="#14b8a6" strokeWidth={3} dot={{ fill: '#14b8a6', r: 5 }} name="PFN" />

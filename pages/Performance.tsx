@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, TrendingUp, Zap, Clock, Database } from 'lucide-react';
-import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts';
+import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 const Performance: React.FC = () => {
   // Chain multiplication data
@@ -116,7 +116,7 @@ const Performance: React.FC = () => {
                     <YAxis dataKey="name" type="category" stroke="#64748b" width={80} />
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                      formatter={(value: number) => [`${value >= 1000 ? (value/1000).toFixed(0) + 'K' : value}×`, 'Speedup']}
+                      formatter={(value) => [`${Number(value) >= 1000 ? (Number(value)/1000).toFixed(0) + 'K' : value}×`, 'Speedup']}
                     />
                     <Bar dataKey="speedup" radius={[0, 4, 4, 0]}>
                       {speedupData.map((_, index) => (
@@ -140,7 +140,7 @@ const Performance: React.FC = () => {
                     <YAxis stroke="#64748b" scale="log" domain={[1, 10000000]} tickFormatter={(v) => v >= 1000000 ? `${v/1000000}M` : v >= 1000 ? `${v/1000}K` : v} />
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                      formatter={(value: number) => [`${value >= 1000000 ? (value/1000000).toFixed(1) + 'M' : value >= 1000 ? (value/1000) + 'K' : value} μs`, '']}
+                      formatter={(value) => [`${Number(value) >= 1000000 ? (Number(value)/1000000).toFixed(1) + 'M' : Number(value) >= 1000 ? (Number(value)/1000) + 'K' : value} μs`, '']}
                     />
                     <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 6 }} name="GMP" />
                     <Line type="monotone" dataKey="pfn" stroke="#14b8a6" strokeWidth={3} dot={{ fill: '#14b8a6', r: 6 }} name="PFN" />
@@ -171,7 +171,7 @@ const Performance: React.FC = () => {
                     <YAxis stroke="#64748b" />
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                      formatter={(value: number) => [`${value} bytes`, '']}
+                      formatter={(value) => [`${value} bytes`, '']}
                     />
                     <Bar dataKey="gmp" name="GMP" fill="#ef4444" radius={[4, 4, 0, 0]} />
                     <Bar dataKey="pfn" name="PFN" fill="#14b8a6" radius={[4, 4, 0, 0]} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zap, Target, Gauge, Database, Cpu, ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const Overview: React.FC = () => {
   const comparisonData = [
@@ -95,7 +95,7 @@ const Overview: React.FC = () => {
                   <Tooltip 
                     contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
                     labelStyle={{ color: '#f1f5f9' }}
-                    formatter={(value: number) => [`${value} μs`, '']}
+                    formatter={(value) => [`${value} μs`, '']}
                   />
                   <Bar dataKey="gmp" name="GMP" fill="#ef4444" radius={[4, 4, 0, 0]} />
                   <Bar dataKey="pfn" name="PFN" fill="#14b8a6" radius={[4, 4, 0, 0]} />

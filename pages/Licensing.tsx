@@ -75,7 +75,7 @@ const Licensing: React.FC = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {tiers.map((tier, index) => (
+            {tiers.map((tier) => (
               <div
                 key={tier.name}
                 className={`relative rounded-2xl p-8 ${
