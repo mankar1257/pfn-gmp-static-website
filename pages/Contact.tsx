@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Location</h3>
                 <p className="text-slate-600">
                   Null Field Research<br />
-                  Channi, Tamil Nadu, India
+                  Chennai, Tamil Nadu, India
                 </p>
               </div>
             </div>

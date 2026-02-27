@@ -1,0 +1,4448 @@
+[
+  {
+    "constituency": "Alandur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0352,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6643,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.1075,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7399,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.141,
+      "mean_share": 0.222
+    },
+    "constituency_rho": 0.506
+  },
+  {
+    "constituency": "Alangudi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.4915,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4093,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2258,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7486,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.594,
+      "mean_share": 0.386
+    },
+    "constituency_rho": 0.507
+  },
+  {
+    "constituency": "Alangulam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0019,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.726,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4088,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9458,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.285,
+      "mean_share": 0.325
+    },
+    "constituency_rho": 0.487
+  },
+  {
+    "constituency": "Ambasamudram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1731,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3268,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1462,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6525,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.506,
+      "mean_share": 0.366
+    },
+    "constituency_rho": 0.532
+  },
+  {
+    "constituency": "Ambattur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1232,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": 0,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": 0,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": 0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.347
+    },
+    "constituency_rho": 0.771
+  },
+  {
+    "constituency": "Ambur",
+    "actual_winner": "MNMK",
+    "actual_margin": -0.0404,
+    "scenario_A": "MNMK",
+    "scenario_A_margin": -0.6767,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.379,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "MNMK",
+    "scenario_C_margin": -0.8934,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.209,
+      "mean_share": 0.354
+    },
+    "constituency_rho": 0.477
+  },
+  {
+    "constituency": "Anaicut",
+    "actual_winner": "PMK",
+    "actual_margin": -0.5653,
+    "scenario_A": "PMK",
+    "scenario_A_margin": -1.0734,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "PMK",
+    "scenario_B_margin": -1.4395,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PMK",
+    "scenario_C_margin": -1.095,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.182
+    },
+    "constituency_rho": 0.523
+  },
+  {
+    "constituency": "Andhiyur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1848,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.9764,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5178,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1052,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.165,
+      "mean_share": 0.248
+    },
+    "constituency_rho": 0.519
+  },
+  {
+    "constituency": "Andipatti",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1267,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5691,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2372,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8169,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.492,
+      "mean_share": 0.293
+    },
+    "constituency_rho": 0.648
+  },
+  {
+    "constituency": "Anna Nagar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2454,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0599,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5417,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1534,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.133,
+      "mean_share": 0.213
+    },
+    "constituency_rho": 0.545
+  },
+  {
+    "constituency": "Arakkonam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1848,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6635,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2771,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8281,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.164,
+      "mean_share": 0.294
+    },
+    "constituency_rho": 0.565
+  },
+  {
+    "constituency": "Arani",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0459,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.5309,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.1225,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7076,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.299,
+      "mean_share": 0.272
+    },
+    "constituency_rho": 0.533
+  },
+  {
+    "constituency": "Aranthangi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1349,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6225,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5038,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9684,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.443,
+      "mean_share": 0.36
+    },
+    "constituency_rho": 0.493
+  },
+  {
+    "constituency": "Aravakurichi",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0319,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8212,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3772,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.416,
+      "mean_share": 0.343
+    },
+    "constituency_rho": 0.585
+  },
+  {
+    "constituency": "Arcot",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5473,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7172,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2043,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8004,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.057,
+      "mean_share": 0.237
+    },
+    "constituency_rho": 0.616
+  },
+  {
+    "constituency": "Ariyalur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1012,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3884,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0101,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5664,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.219,
+      "mean_share": 0.247
+    },
+    "constituency_rho": 0.591
+  },
+  {
+    "constituency": "Aruppukkottai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0729,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.9323,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4595,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1067,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.475,
+      "mean_share": 0.255
+    },
+    "constituency_rho": 0.566
+  },
+  {
+    "constituency": "Athoor",
+    "actual_winner": "DMK",
+    "actual_margin": 0.3065,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.3065,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.2455,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.6803,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.264,
+      "mean_share": 0.347
+    },
+    "constituency_rho": 0.486
+  },
+  {
+    "constituency": "Attur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1957,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4979,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3824,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.849,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.464,
+      "mean_share": 0.387
+    },
+    "constituency_rho": 0.653
+  },
+  {
+    "constituency": "Avadi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2346,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3387,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.3387,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3387,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.519,
+      "mean_share": 0.38
+    },
+    "constituency_rho": 0.654
+  },
+  {
+    "constituency": "Avanashi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.4044,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3872,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0511,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6271,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.458,
+      "mean_share": 0.299
+    },
+    "constituency_rho": 0.5
+  },
+  {
+    "constituency": "Bargur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5817,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.72,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0842,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8041,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.424,
+      "mean_share": 0.281
+    },
+    "constituency_rho": 0.517
+  },
+  {
+    "constituency": "Bhavani",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5706,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.2973,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -2.1115,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.5708,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.214,
+      "mean_share": 0.331
+    },
+    "constituency_rho": 0.519
+  },
+  {
+    "constituency": "Bhavanisagar",
+    "actual_winner": "CPI",
+    "actual_margin": 0.51,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.51,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.6732,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -1.1336,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.157,
+      "mean_share": 0.32
+    },
+    "constituency_rho": 0.518
+  },
+  {
+    "constituency": "Bhuvanagiri",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5266,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7156,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9427,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.323,
+      "mean_share": 0.345
+    },
+    "constituency_rho": 0.636
+  },
+  {
+    "constituency": "Bodinayakkanur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1823,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.27,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.034,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5601,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.459,
+      "mean_share": 0.346
+    },
+    "constituency_rho": 0.616
+  },
+  {
+    "constituency": "Chengalpattu",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.4623,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.7934,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.4012,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.9577,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.179,
+      "mean_share": 0.247
+    },
+    "constituency_rho": 0.557
+  },
+  {
+    "constituency": "Chengam",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0699,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.4099,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.2138,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7067,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.381,
+      "mean_share": 0.341
+    },
+    "constituency_rho": 0.589
+  },
+  {
+    "constituency": "Chepauk",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0721,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.0721,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "MNMK",
+    "scenario_B_margin": -0.9064,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "MNMK",
+    "scenario_C_margin": -0.4492,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.228
+    },
+    "constituency_rho": 0.625
+  },
+  {
+    "constituency": "Cheyyar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1474,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4611,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.2116,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7543,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.517,
+      "mean_share": 0.333
+    },
+    "constituency_rho": 0.647
+  },
+  {
+    "constituency": "Cheyyur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1949,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.321,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1604,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6557,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.225
+    },
+    "constituency_rho": 0.701
+  },
+  {
+    "constituency": "Chidambaram",
+    "actual_winner": "CPM",
+    "actual_margin": 0.4622,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.4622,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.049,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.6144,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.424,
+      "mean_share": 0.319
+    },
+    "constituency_rho": 0.606
+  },
+  {
+    "constituency": "Coimbatore North",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2582,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2582,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.3854,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.0821,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.379,
+      "mean_share": 0.315
+    },
+    "constituency_rho": 0.539
+  },
+  {
+    "constituency": "Coimbatore South",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1962,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1962,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.4154,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.0056,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.529,
+      "mean_share": 0.315
+    },
+    "constituency_rho": 0.53
+  },
+  {
+    "constituency": "Coonoor",
+    "actual_winner": "DMK",
+    "actual_margin": 0.4933,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.4933,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.6028,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -1.0645,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.164,
+      "mean_share": 0.312
+    },
+    "constituency_rho": 0.478
+  },
+  {
+    "constituency": "Cuddalore",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2388,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4532,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.134,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6943,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.416,
+      "mean_share": 0.32
+    },
+    "constituency_rho": 0.596
+  },
+  {
+    "constituency": "Cumbum",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0789,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.0789,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.9648,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.5347,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.439,
+      "mean_share": 0.309
+    },
+    "constituency_rho": 0.455
+  },
+  {
+    "constituency": "Dharapuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.095,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8512,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4481,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0525,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.428,
+      "mean_share": 0.293
+    },
+    "constituency_rho": 0.523
+  },
+  {
+    "constituency": "Dharmapuri",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.4986,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -1.2055,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.904,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.3933,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.307
+    },
+    "constituency_rho": 0.526
+  },
+  {
+    "constituency": "Dindigul",
+    "actual_winner": "CPM",
+    "actual_margin": 0.269,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.269,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "PMK",
+    "scenario_B_margin": -1.1814,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PMK",
+    "scenario_C_margin": -0.5259,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.205,
+      "mean_share": 0.478
+    },
+    "constituency_rho": 0.509
+  },
+  {
+    "constituency": "Dr. Radhakrishnan Nagar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2252,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0035,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.6397,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.1601,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.274
+    },
+    "constituency_rho": 0.503
+  },
+  {
+    "constituency": "Edappadi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5798,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8834,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.6564,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1373,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.22,
+      "mean_share": 0.346
+    },
+    "constituency_rho": 0.532
+  },
+  {
+    "constituency": "Egmore",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0018,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.5659,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.2716,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7573,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.348
+    },
+    "constituency_rho": 0.517
+  },
+  {
+    "constituency": "Erode East",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0808,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6167,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.229,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.8171,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.378,
+      "mean_share": 0.261
+    },
+    "constituency_rho": 0.572
+  },
+  {
+    "constituency": "Erode West",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2536,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5645,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.1767,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7512,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.298,
+      "mean_share": 0.229
+    },
+    "constituency_rho": 0.609
+  },
+  {
+    "constituency": "Gandharvakottai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1639,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1639,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.0376,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.4986,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.457
+    },
+    "constituency_rho": 0.832
+  },
+  {
+    "constituency": "Gangavalli",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0955,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.0955,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -0.8425,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.2854,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.254
+    },
+    "constituency_rho": 0.677
+  },
+  {
+    "constituency": "Gingee",
+    "actual_winner": "PMK",
+    "actual_margin": -0.4885,
+    "scenario_A": "PMK",
+    "scenario_A_margin": -0.7256,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "PMK",
+    "scenario_B_margin": -1.4971,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PMK",
+    "scenario_C_margin": -1.0132,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.423,
+      "mean_share": 0.363
+    },
+    "constituency_rho": 0.552
+  },
+  {
+    "constituency": "Gobichettipalayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6095,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4033,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0303,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6767,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.764,
+      "mean_share": 0.353
+    },
+    "constituency_rho": 0.785
+  },
+  {
+    "constituency": "Gudalur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.2451,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.2451,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.2821,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7093,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.18,
+      "mean_share": 0.355
+    },
+    "constituency_rho": 0.519
+  },
+  {
+    "constituency": "Gudiyattam",
+    "actual_winner": "CPI",
+    "actual_margin": 0.5036,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.5036,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2894,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7999,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.297
+    },
+    "constituency_rho": 0.494
+  },
+  {
+    "constituency": "Gummidipoondi",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.562,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.9008,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.3863,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0499,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.449,
+      "mean_share": 0.326
+    },
+    "constituency_rho": 0.585
+  },
+  {
+    "constituency": "Harbour",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2144,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2702,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.9142,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4307,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.338
+    },
+    "constituency_rho": 0.563
+  },
+  {
+    "constituency": "Harur",
+    "actual_winner": "CPM",
+    "actual_margin": 0.5357,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.0958,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.6354,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.1083,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.327
+    },
+    "constituency_rho": 0.582
+  },
+  {
+    "constituency": "Hosur",
+    "actual_winner": "INC",
+    "actual_margin": 0.1028,
+    "scenario_A": "INC",
+    "scenario_A_margin": 0.1028,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.155,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.6405,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.531,
+      "mean_share": 0.432
+    },
+    "constituency_rho": 0.553
+  },
+  {
+    "constituency": "Jayankondam",
+    "actual_winner": "PMK",
+    "actual_margin": -0.5259,
+    "scenario_A": "PMK",
+    "scenario_A_margin": -0.801,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "PMK",
+    "scenario_B_margin": -1.4221,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PMK",
+    "scenario_C_margin": -0.965,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.138,
+      "mean_share": 0.299
+    },
+    "constituency_rho": 0.603
+  },
+  {
+    "constituency": "Jolarpet",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5718,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1036,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.1036,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.1036,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.017
+    },
+    "constituency_rho": 0.691
+  },
+  {
+    "constituency": "Kadayanallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1026,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4667,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.1911,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7348,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.447,
+      "mean_share": 0.331
+    },
+    "constituency_rho": 0.584
+  },
+  {
+    "constituency": "Kalasapakkam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2547,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6311,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3508,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8896,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.404,
+      "mean_share": 0.322
+    },
+    "constituency_rho": 0.599
+  },
+  {
+    "constituency": "Kallakurichi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3525,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6017,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3044,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8513,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.401,
+      "mean_share": 0.32
+    },
+    "constituency_rho": 0.598
+  },
+  {
+    "constituency": "Kancheepuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.544,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6483,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2734,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8147,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.141,
+      "mean_share": 0.262
+    },
+    "constituency_rho": 0.606
+  },
+  {
+    "constituency": "Kangayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.272,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3044,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.9687,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5542,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.516,
+      "mean_share": 0.291
+    },
+    "constituency_rho": 0.575
+  },
+  {
+    "constituency": "Kanniyakumari",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1004,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5812,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1274,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7867,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.603,
+      "mean_share": 0.356
+    },
+    "constituency_rho": 0.527
+  },
+  {
+    "constituency": "Karaikudi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1143,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4819,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3322,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.851,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.67,
+      "mean_share": 0.379
+    },
+    "constituency_rho": 0.603
+  },
+  {
+    "constituency": "Karur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2768,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0821,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.7913,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3538,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.512,
+      "mean_share": 0.36
+    },
+    "constituency_rho": 0.654
+  },
+  {
+    "constituency": "Katpadi",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0199,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3299,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8054,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4131,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.091,
+      "mean_share": 0.226
+    },
+    "constituency_rho": 0.565
+  },
+  {
+    "constituency": "Kattumannarkoil",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2254,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2254,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.2629,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "VCK",
+    "scenario_C_margin": 0.1888,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.492,
+      "mean_share": 0.328
+    },
+    "constituency_rho": 0.682
+  },
+  {
+    "constituency": "Kavundampalayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3243,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3243,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMK",
+    "scenario_B_margin": 0.0924,
+    "scenario_B_alliance": "DMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.5972,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.283,
+      "mean_share": 0.351
+    },
+    "constituency_rho": 0.578
+  },
+  {
+    "constituency": "Killiyoor",
+    "actual_winner": "INC",
+    "actual_margin": 0.2029,
+    "scenario_A": "INC",
+    "scenario_A_margin": 0.0483,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.6516,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.2456,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.67,
+      "mean_share": 0.4
+    },
+    "constituency_rho": 0.608
+  },
+  {
+    "constituency": "Kilpennathur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0244,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0857,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.0857,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.0857,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.017
+    },
+    "constituency_rho": 0.68
+  },
+  {
+    "constituency": "Kilvaithinankuppam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0712,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7612,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.449,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9436,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.333
+    },
+    "constituency_rho": 0.472
+  },
+  {
+    "constituency": "Kilvelur",
+    "actual_winner": "CPM",
+    "actual_margin": 0.4985,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.0205,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.5413,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.0989,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.265
+    },
+    "constituency_rho": 0.574
+  },
+  {
+    "constituency": "Kinathukkadavu",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1835,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0647,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5062,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.124,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.217
+    },
+    "constituency_rho": 0.522
+  },
+  {
+    "constituency": "Kolathur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0196,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7257,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1507,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7767,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.222
+    },
+    "constituency_rho": 0.52
+  },
+  {
+    "constituency": "Kollachal",
+    "actual_winner": "INC",
+    "actual_margin": 0.082,
+    "scenario_A": "INC",
+    "scenario_A_margin": 0.082,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3482,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9456,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.673,
+      "mean_share": 0.386
+    },
+    "constituency_rho": 0.525
+  },
+  {
+    "constituency": "Kovilpatti",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5935,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4799,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4163,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8043,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.154,
+      "mean_share": 0.373
+    },
+    "constituency_rho": 0.494
+  },
+  {
+    "constituency": "Krishnagiri",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1862,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4913,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.9448,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6313,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.49,
+      "mean_share": 0.305
+    },
+    "constituency_rho": 0.607
+  },
+  {
+    "constituency": "Krishnarajapuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1538,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5802,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3088,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8472,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.428,
+      "mean_share": 0.392
+    },
+    "constituency_rho": 0.531
+  },
+  {
+    "constituency": "Kulithalai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1422,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2268,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.82,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4258,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.426,
+      "mean_share": 0.36
+    },
+    "constituency_rho": 0.609
+  },
+  {
+    "constituency": "Kumarapalayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1704,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.357,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.357,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.357,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.019
+    },
+    "constituency_rho": 0.68
+  },
+  {
+    "constituency": "Kumbakonam",
+    "actual_winner": "DMK",
+    "actual_margin": 0.008,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5505,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3009,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7642,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.363
+    },
+    "constituency_rho": 0.568
+  },
+  {
+    "constituency": "Kunnam",
+    "actual_winner": "DMK",
+    "actual_margin": 0.1415,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.1415,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.1247,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7112,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.271
+    },
+    "constituency_rho": 0.595
+  },
+  {
+    "constituency": "Kurinjipadi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1522,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5413,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1486,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7413,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.39,
+      "mean_share": 0.281
+    },
+    "constituency_rho": 0.659
+  },
+  {
+    "constituency": "Lalgudi",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0506,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.7742,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.467,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0137,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.371,
+      "mean_share": 0.344
+    },
+    "constituency_rho": 0.538
+  },
+  {
+    "constituency": "Madathukulam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.141,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0599,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1753,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0326,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.044
+    },
+    "constituency_rho": 0.569
+  },
+  {
+    "constituency": "Madavaram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1708,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2406,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.2406,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.2406,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.494,
+      "mean_share": 0.386
+    },
+    "constituency_rho": 0.695
+  },
+  {
+    "constituency": "Madurai Central",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1418,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.2304,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -0.8501,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.3787,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.294
+    },
+    "constituency_rho": 0.483
+  },
+  {
+    "constituency": "Madurai East",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1637,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5435,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0201,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6203,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.247
+    },
+    "constituency_rho": 0.507
+  },
+  {
+    "constituency": "Madurai North",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3318,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3318,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.6328,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.0645,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.271,
+      "mean_share": 0.445
+    },
+    "constituency_rho": 0.516
+  },
+  {
+    "constituency": "Madurai South",
+    "actual_winner": "CPM",
+    "actual_margin": 0.5977,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.1847,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.7042,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.1134,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.139,
+      "mean_share": 0.453
+    },
+    "constituency_rho": 0.493
+  },
+  {
+    "constituency": "Madurai West",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2499,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1094,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.778,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.2857,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.07,
+      "mean_share": 0.28
+    },
+    "constituency_rho": 0.465
+  },
+  {
+    "constituency": "Maduranthakam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1283,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3626,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.1078,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6374,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.425,
+      "mean_share": 0.326
+    },
+    "constituency_rho": 0.654
+  },
+  {
+    "constituency": "Maduravoyal",
+    "actual_winner": "CPM",
+    "actual_margin": 0.132,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.132,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "PMK",
+    "scenario_B_margin": 0,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PMK",
+    "scenario_C_margin": 0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.38
+    },
+    "constituency_rho": 0.5
+  },
+  {
+    "constituency": "Mailam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5534,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2377,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1809,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5995,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.354,
+      "mean_share": 0.348
+    },
+    "constituency_rho": 0.616
+  },
+  {
+    "constituency": "Manachanallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1249,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6261,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4146,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9212,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.417,
+      "mean_share": 0.405
+    },
+    "constituency_rho": 0.472
+  },
+  {
+    "constituency": "Manamadurai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.089,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0942,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.9739,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4597,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.562,
+      "mean_share": 0.435
+    },
+    "constituency_rho": 0.576
+  },
+  {
+    "constituency": "Manapparai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.4878,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3424,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.342,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7351,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.37,
+      "mean_share": 0.514
+    },
+    "constituency_rho": 0.547
+  },
+  {
+    "constituency": "Mannargudi",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0247,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3217,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8382,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4185,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.266
+    },
+    "constituency_rho": 0.64
+  },
+  {
+    "constituency": "Mayuram",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0231,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.8065,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.6201,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.1773,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.788,
+      "mean_share": 0.414
+    },
+    "constituency_rho": 0.607
+  },
+  {
+    "constituency": "Melur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1619,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0077,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8738,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3164,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.269,
+      "mean_share": 0.412
+    },
+    "constituency_rho": 0.48
+  },
+  {
+    "constituency": "Mettuppalayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1512,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8112,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.6328,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0847,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.192,
+      "mean_share": 0.338
+    },
+    "constituency_rho": 0.518
+  },
+  {
+    "constituency": "Mettur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.4917,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.8364,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.5606,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0632,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.204,
+      "mean_share": 0.298
+    },
+    "constituency_rho": 0.514
+  },
+  {
+    "constituency": "Modakkurichi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2752,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7252,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3311,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9149,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.334,
+      "mean_share": 0.241
+    },
+    "constituency_rho": 0.559
+  },
+  {
+    "constituency": "Mudhukulathur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1154,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.1047,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.7919,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.3184,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.236,
+      "mean_share": 0.363
+    },
+    "constituency_rho": 0.475
+  },
+  {
+    "constituency": "Musiri",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3515,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6225,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0274,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7334,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.462,
+      "mean_share": 0.308
+    },
+    "constituency_rho": 0.589
+  },
+  {
+    "constituency": "Mylapore",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2087,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4711,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0024,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6266,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.352,
+      "mean_share": 0.282
+    },
+    "constituency_rho": 0.581
+  },
+  {
+    "constituency": "Nagapattinam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0476,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.1445,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.371,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.0483,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.25
+    },
+    "constituency_rho": 0.625
+  },
+  {
+    "constituency": "Nagercoil",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0462,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6651,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.226,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8739,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.578,
+      "mean_share": 0.34
+    },
+    "constituency_rho": 0.538
+  },
+  {
+    "constituency": "Namakkal",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5912,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.9382,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.7899,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.26,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.388,
+      "mean_share": 0.346
+    },
+    "constituency_rho": 0.6
+  },
+  {
+    "constituency": "Nanguneri",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0874,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4179,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3483,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8268,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.669,
+      "mean_share": 0.408
+    },
+    "constituency_rho": 0.585
+  },
+  {
+    "constituency": "Nannilam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0584,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0405,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.4875,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.1265,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.191,
+      "mean_share": 0.256
+    },
+    "constituency_rho": 0.618
+  },
+  {
+    "constituency": "Natham",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.383,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4279,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4909,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8362,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.275,
+      "mean_share": 0.509
+    },
+    "constituency_rho": 0.527
+  },
+  {
+    "constituency": "Neyveli",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5111,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": 0,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": 0,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": 0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0
+    },
+    "constituency_rho": 0.554
+  },
+  {
+    "constituency": "Nilakkottai",
+    "actual_winner": "PT",
+    "actual_margin": -0.1725,
+    "scenario_A": "PT",
+    "scenario_A_margin": -0.7151,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5712,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PT",
+    "scenario_C_margin": -1.0464,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.431,
+      "mean_share": 0.368
+    },
+    "constituency_rho": 0.501
+  },
+  {
+    "constituency": "Oddamchatram",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0914,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.0914,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2392,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6809,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.298,
+      "mean_share": 0.365
+    },
+    "constituency_rho": 0.57
+  },
+  {
+    "constituency": "Omalur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.607,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7145,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4914,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9974,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.379,
+      "mean_share": 0.336
+    },
+    "constituency_rho": 0.541
+  },
+  {
+    "constituency": "Orathanadu",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2078,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2912,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.9453,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5579,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.645,
+      "mean_share": 0.342
+    },
+    "constituency_rho": 0.765
+  },
+  {
+    "constituency": "Ottapidaram",
+    "actual_winner": "PT",
+    "actual_margin": -0.2072,
+    "scenario_A": "PT",
+    "scenario_A_margin": -0.8887,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "PT",
+    "scenario_B_margin": -1.8276,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "PT",
+    "scenario_C_margin": -1.2265,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.226,
+      "mean_share": 0.397
+    },
+    "constituency_rho": 0.447
+  },
+  {
+    "constituency": "Padmanabhapuram",
+    "actual_winner": "DMK",
+    "actual_margin": 0.1416,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.1416,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -0.9274,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.5993,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.593,
+      "mean_share": 0.342
+    },
+    "constituency_rho": 0.573
+  },
+  {
+    "constituency": "Palacodu",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6294,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0105,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.8006,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.244,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.35
+    },
+    "constituency_rho": 0.561
+  },
+  {
+    "constituency": "Palani",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0106,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1543,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0793,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5007,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.317,
+      "mean_share": 0.389
+    },
+    "constituency_rho": 0.539
+  },
+  {
+    "constituency": "Palayamkottai",
+    "actual_winner": "DMK",
+    "actual_margin": 0.4135,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.4135,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.9228,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.3918,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.518,
+      "mean_share": 0.359
+    },
+    "constituency_rho": 0.596
+  },
+  {
+    "constituency": "Palladam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6853,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5575,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1477,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7472,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.38,
+      "mean_share": 0.27
+    },
+    "constituency_rho": 0.592
+  },
+  {
+    "constituency": "Pallavaram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0875,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8081,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4316,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9584,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.294
+    },
+    "constituency_rho": 0.57
+  },
+  {
+    "constituency": "Panruti",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0676,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.9816,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.374,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0381,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.179,
+      "mean_share": 0.233
+    },
+    "constituency_rho": 0.552
+  },
+  {
+    "constituency": "Papanasam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1144,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6155,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5063,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9557,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.381,
+      "mean_share": 0.434
+    },
+    "constituency_rho": 0.55
+  },
+  {
+    "constituency": "Pappireddippatti",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0721,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7587,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.7091,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0724,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.426
+    },
+    "constituency_rho": 0.529
+  },
+  {
+    "constituency": "Paramakudi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2374,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8361,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4867,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0467,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.325,
+      "mean_share": 0.268
+    },
+    "constituency_rho": 0.476
+  },
+  {
+    "constituency": "Paramathi-Velur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5977,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2689,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.2689,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.2689,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.019
+    },
+    "constituency_rho": 0.716
+  },
+  {
+    "constituency": "Pattukkottai",
+    "actual_winner": "INC",
+    "actual_margin": 0.0756,
+    "scenario_A": "INC",
+    "scenario_A_margin": 0.0756,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3288,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.8771,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.401,
+      "mean_share": 0.317
+    },
+    "constituency_rho": 0.589
+  },
+  {
+    "constituency": "Pennagaram",
+    "actual_winner": "CPI",
+    "actual_margin": 0.5053,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.5053,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.6589,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -1.1231,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.296
+    },
+    "constituency_rho": 0.507
+  },
+  {
+    "constituency": "Perambalur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1036,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.28,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8853,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4212,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.292
+    },
+    "constituency_rho": 0.562
+  },
+  {
+    "constituency": "Perambur",
+    "actual_winner": "CPM",
+    "actual_margin": 0.5187,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.5187,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.5102,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.1302,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.221
+    },
+    "constituency_rho": 0.504
+  },
+  {
+    "constituency": "Peravurani",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0688,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6192,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3316,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.8548,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.291,
+      "mean_share": 0.328
+    },
+    "constituency_rho": 0.555
+  },
+  {
+    "constituency": "Periyakulam",
+    "actual_winner": "CPM",
+    "actual_margin": 0.4769,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.4769,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.3079,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.8449,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.538,
+      "mean_share": 0.342
+    },
+    "constituency_rho": 0.575
+  },
+  {
+    "constituency": "Perundurai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6277,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6368,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2878,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8324,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.236,
+      "mean_share": 0.284
+    },
+    "constituency_rho": 0.583
+  },
+  {
+    "constituency": "Pollachi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5805,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.004,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3672,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0241,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.178
+    },
+    "constituency_rho": 0.597
+  },
+  {
+    "constituency": "Polur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5747,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3304,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1654,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.653,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.442,
+      "mean_share": 0.372
+    },
+    "constituency_rho": 0.634
+  },
+  {
+    "constituency": "Ponneri",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1959,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0644,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.4741,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.1876,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.519,
+      "mean_share": 0.32
+    },
+    "constituency_rho": 0.669
+  },
+  {
+    "constituency": "Poompuhar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5066,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4389,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2154,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7339,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.451,
+      "mean_share": 0.32
+    },
+    "constituency_rho": 0.591
+  },
+  {
+    "constituency": "Poonamallee",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2282,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6401,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4221,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9493,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.519,
+      "mean_share": 0.369
+    },
+    "constituency_rho": 0.58
+  },
+  {
+    "constituency": "Pudukkottai",
+    "actual_winner": "CPI",
+    "actual_margin": 0.4753,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.4753,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.994,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.4677,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.612,
+      "mean_share": 0.482
+    },
+    "constituency_rho": 0.707
+  },
+  {
+    "constituency": "Radhapuram",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1705,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -1.1814,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -2.0335,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.5304,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.547,
+      "mean_share": 0.384
+    },
+    "constituency_rho": 0.506
+  },
+  {
+    "constituency": "Rajapalayam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1478,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1478,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.9733,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3432,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.406,
+      "mean_share": 0.484
+    },
+    "constituency_rho": 0.595
+  },
+  {
+    "constituency": "Ramanathapuram",
+    "actual_winner": "MNMK",
+    "actual_margin": -0.1059,
+    "scenario_A": "MNMK",
+    "scenario_A_margin": -1.032,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.7688,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "MNMK",
+    "scenario_C_margin": -1.283,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.309,
+      "mean_share": 0.297
+    },
+    "constituency_rho": 0.48
+  },
+  {
+    "constituency": "Ranipet",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0914,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6067,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.315,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7993,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.374
+    },
+    "constituency_rho": 0.592
+  },
+  {
+    "constituency": "Rasipuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1546,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5981,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0638,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6695,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.224
+    },
+    "constituency_rho": 0.676
+  },
+  {
+    "constituency": "Rishivandiyam",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.192,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.5706,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4853,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.9342,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.448,
+      "mean_share": 0.409
+    },
+    "constituency_rho": 0.564
+  },
+  {
+    "constituency": "Royapuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1929,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1929,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.2376,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.0422,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.66,
+      "mean_share": 0.263
+    },
+    "constituency_rho": 0.72
+  },
+  {
+    "constituency": "Saidapet",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0794,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0409,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4926,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1053,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.216
+    },
+    "constituency_rho": 0.509
+  },
+  {
+    "constituency": "Salem North",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1828,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.425,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.2582,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.726,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.32,
+      "mean_share": 0.378
+    },
+    "constituency_rho": 0.572
+  },
+  {
+    "constituency": "Salem South",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3508,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": 0,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": 0,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": 0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0
+    },
+    "constituency_rho": 0.891
+  },
+  {
+    "constituency": "Salem West",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.165,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5457,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.379,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8336,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.243,
+      "mean_share": 0.379
+    },
+    "constituency_rho": 0.499
+  },
+  {
+    "constituency": "Sankarankovil",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0759,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0259,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5704,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1858,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.339,
+      "mean_share": 0.242
+    },
+    "constituency_rho": 0.535
+  },
+  {
+    "constituency": "Sankarapuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0728,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7872,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5315,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0094,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.118,
+      "mean_share": 0.333
+    },
+    "constituency_rho": 0.575
+  },
+  {
+    "constituency": "Sankari",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1956,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4114,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0709,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6207,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.291,
+      "mean_share": 0.257
+    },
+    "constituency_rho": 0.663
+  },
+  {
+    "constituency": "Sattur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.196,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7785,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3818,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9949,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.498,
+      "mean_share": 0.269
+    },
+    "constituency_rho": 0.629
+  },
+  {
+    "constituency": "Senthamangalam",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0558,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.2155,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -0.8447,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.3686,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.286
+    },
+    "constituency_rho": 0.546
+  },
+  {
+    "constituency": "Sholavandan",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6184,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2587,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0838,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6127,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.655,
+      "mean_share": 0.415
+    },
+    "constituency_rho": 0.75
+  },
+  {
+    "constituency": "Sholingur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.2895,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6956,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4077,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.9667,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.5,
+      "mean_share": 0.332
+    },
+    "constituency_rho": 0.57
+  },
+  {
+    "constituency": "Shozhinganallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2822,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4457,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1789,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6534,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.065,
+      "mean_share": 0.369
+    },
+    "constituency_rho": 0.529
+  },
+  {
+    "constituency": "Singanallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2197,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2197,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.4496,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.0447,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.436,
+      "mean_share": 0.285
+    },
+    "constituency_rho": 0.56
+  },
+  {
+    "constituency": "Sirkazhi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1924,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1924,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.4732,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "VCK",
+    "scenario_C_margin": 0.0144,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.43,
+      "mean_share": 0.365
+    },
+    "constituency_rho": 0.629
+  },
+  {
+    "constituency": "Sivaganga",
+    "actual_winner": "CPI",
+    "actual_margin": 0.4647,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.4647,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.287,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.7615,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.58,
+      "mean_share": 0.435
+    },
+    "constituency_rho": 0.507
+  },
+  {
+    "constituency": "Sivakasi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2475,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.965,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5666,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1975,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.598,
+      "mean_share": 0.31
+    },
+    "constituency_rho": 0.623
+  },
+  {
+    "constituency": "Sriperumbudur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.24,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2758,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0785,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5976,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.532,
+      "mean_share": 0.362
+    },
+    "constituency_rho": 0.63
+  },
+  {
+    "constituency": "Srirangam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2408,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0188,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.734,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.2773,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.417,
+      "mean_share": 0.348
+    },
+    "constituency_rho": 0.649
+  },
+  {
+    "constituency": "Srivaikuntam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1602,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3741,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.206,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7246,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.615,
+      "mean_share": 0.386
+    },
+    "constituency_rho": 0.618
+  },
+  {
+    "constituency": "Srivilliputhur",
+    "actual_winner": "CPI",
+    "actual_margin": 0.5151,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.5151,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3643,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9432,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.598,
+      "mean_share": 0.315
+    },
+    "constituency_rho": 0.538
+  },
+  {
+    "constituency": "Sulur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.577,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.577,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMK",
+    "scenario_B_margin": 0.0462,
+    "scenario_B_alliance": "DMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.5341,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.382,
+      "mean_share": 0.347
+    },
+    "constituency_rho": 0.542
+  },
+  {
+    "constituency": "T-Nagar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2577,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3206,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.9919,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5952,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.641,
+      "mean_share": 0.34
+    },
+    "constituency_rho": 0.651
+  },
+  {
+    "constituency": "Tambaram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0793,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7801,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3305,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8938,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.242
+    },
+    "constituency_rho": 0.535
+  },
+  {
+    "constituency": "Tenkasi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1377,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6357,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.439,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9588,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.538,
+      "mean_share": 0.407
+    },
+    "constituency_rho": 0.512
+  },
+  {
+    "constituency": "Thalli",
+    "actual_winner": "CPI",
+    "actual_margin": 0.4641,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.4641,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.7176,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.3092,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.475,
+      "mean_share": 0.345
+    },
+    "constituency_rho": 0.58
+  },
+  {
+    "constituency": "Thanjavur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0495,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5086,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.158,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6718,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.295
+    },
+    "constituency_rho": 0.545
+  },
+  {
+    "constituency": "Thiru-Vi-Ka-Nagar",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2413,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5105,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.108,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6676,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.167,
+      "mean_share": 0.292
+    },
+    "constituency_rho": 0.503
+  },
+  {
+    "constituency": "Thirumaiyam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2379,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5537,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3751,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.899,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.615,
+      "mean_share": 0.383
+    },
+    "constituency_rho": 0.556
+  },
+  {
+    "constituency": "Thirumangalam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1475,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8173,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.5877,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1273,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.557,
+      "mean_share": 0.373
+    },
+    "constituency_rho": 0.59
+  },
+  {
+    "constituency": "Thiruporur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5438,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6618,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2852,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.812,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.294
+    },
+    "constituency_rho": 0.607
+  },
+  {
+    "constituency": "Thirupparankundram",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.3264,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.2411,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.7106,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.4276,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.716,
+      "mean_share": 0.272
+    },
+    "constituency_rho": 0.737
+  },
+  {
+    "constituency": "Thiruthuraipoondi",
+    "actual_winner": "CPI",
+    "actual_margin": 0.5299,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.2014,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.2825,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "CPI",
+    "scenario_C_margin": 0.0986,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.181,
+      "mean_share": 0.248
+    },
+    "constituency_rho": 0.623
+  },
+  {
+    "constituency": "Thiruvaiyaru",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0746,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6915,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1358,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7521,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.233
+    },
+    "constituency_rho": 0.628
+  },
+  {
+    "constituency": "Thiruvallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1428,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4849,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.9558,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6263,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.447,
+      "mean_share": 0.297
+    },
+    "constituency_rho": 0.65
+  },
+  {
+    "constituency": "Thiruvarur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.2956,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.2756,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.2788,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.1599,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.264
+    },
+    "constituency_rho": 0.613
+  },
+  {
+    "constituency": "Thiruverumbur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0293,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.7262,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.4014,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.9568,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.37,
+      "mean_share": 0.34
+    },
+    "constituency_rho": 0.519
+  },
+  {
+    "constituency": "Thiruvidaimarudur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0025,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5867,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3836,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8984,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.49,
+      "mean_share": 0.362
+    },
+    "constituency_rho": 0.638
+  },
+  {
+    "constituency": "Thiruvottiyur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1669,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4345,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0166,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5641,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.282
+    },
+    "constituency_rho": 0.508
+  },
+  {
+    "constituency": "Thondamuthur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3352,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8251,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4086,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9872,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.237,
+      "mean_share": 0.219
+    },
+    "constituency_rho": 0.557
+  },
+  {
+    "constituency": "Thoothukkudi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1693,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.7271,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4168,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9475,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.268,
+      "mean_share": 0.298
+    },
+    "constituency_rho": 0.526
+  },
+  {
+    "constituency": "Thousand Lights",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0574,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4724,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8922,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5208,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.213
+    },
+    "constituency_rho": 0.662
+  },
+  {
+    "constituency": "Thuraiyur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0761,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": 0,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": 0,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": 0,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0
+    },
+    "constituency_rho": 0.911
+  },
+  {
+    "constituency": "Tindivanam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5374,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3738,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.156,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6338,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.229,
+      "mean_share": 0.366
+    },
+    "constituency_rho": 0.624
+  },
+  {
+    "constituency": "Tiruchendur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0045,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5947,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2034,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7658,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.216,
+      "mean_share": 0.275
+    },
+    "constituency_rho": 0.559
+  },
+  {
+    "constituency": "Tiruchengodu",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1754,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.5333,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0699,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.6707,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.23,
+      "mean_share": 0.262
+    },
+    "constituency_rho": 0.524
+  },
+  {
+    "constituency": "Tiruchirappalli East",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1376,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6107,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3993,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9137,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.463,
+      "mean_share": 0.401
+    },
+    "constituency_rho": 0.474
+  },
+  {
+    "constituency": "Tiruchirappalli West",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0471,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6236,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.4122,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9187,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.417,
+      "mean_share": 0.405
+    },
+    "constituency_rho": 0.462
+  },
+  {
+    "constituency": "Tiruchuli",
+    "actual_winner": "DMK",
+    "actual_margin": 0.1362,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.1362,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.491,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0273,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.426,
+      "mean_share": 0.396
+    },
+    "constituency_rho": 0.64
+  },
+  {
+    "constituency": "Tirukkoyilur",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0574,
+    "scenario_A": "DMK",
+    "scenario_A_margin": 0.4109,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -0.5436,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.0817,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0.13,
+      "mean_share": 0.327
+    },
+    "constituency_rho": 0.56
+  },
+  {
+    "constituency": "Tirunelveli",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2604,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6262,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2279,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.8162,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.348,
+      "mean_share": 0.282
+    },
+    "constituency_rho": 0.535
+  },
+  {
+    "constituency": "Tirupathur",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0094,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0394,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8124,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3521,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.566,
+      "mean_share": 0.395
+    },
+    "constituency_rho": 0.657
+  },
+  {
+    "constituency": "Tiruppattur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1483,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8774,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.7069,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.1306,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.349
+    },
+    "constituency_rho": 0.51
+  },
+  {
+    "constituency": "Tiruppur North",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.464,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1099,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.7439,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3111,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.319,
+      "mean_share": 0.229
+    },
+    "constituency_rho": 0.489
+  },
+  {
+    "constituency": "Tiruppur South",
+    "actual_winner": "CPM",
+    "actual_margin": 0.5904,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.0462,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -0.5878,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.1771,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.449,
+      "mean_share": 0.249
+    },
+    "constituency_rho": 0.54
+  },
+  {
+    "constituency": "Tiruttani",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1301,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.8674,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3348,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0003,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.407,
+      "mean_share": 0.252
+    },
+    "constituency_rho": 0.564
+  },
+  {
+    "constituency": "Tiruvadanai",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0066,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6224,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.4826,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.9429,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.355,
+      "mean_share": 0.401
+    },
+    "constituency_rho": 0.539
+  },
+  {
+    "constituency": "Tiruvannamalai",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0305,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4202,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2424,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6991,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.222,
+      "mean_share": 0.377
+    },
+    "constituency_rho": 0.538
+  },
+  {
+    "constituency": "Tittakudi",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1045,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.6903,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.1944,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7809,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.271
+    },
+    "constituency_rho": 0.532
+  },
+  {
+    "constituency": "Udhagamandalam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0634,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.803,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.7478,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.2027,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.572,
+      "mean_share": 0.419
+    },
+    "constituency_rho": 0.607
+  },
+  {
+    "constituency": "Udumalpet",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.6258,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8623,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3323,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.9709,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.257,
+      "mean_share": 0.252
+    },
+    "constituency_rho": 0.555
+  },
+  {
+    "constituency": "Ulundurpet",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2952,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.1439,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.8598,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3404,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.3
+    },
+    "constituency_rho": 0.682
+  },
+  {
+    "constituency": "Usilampatti",
+    "actual_winner": "AIFB",
+    "actual_margin": -0.0916,
+    "scenario_A": "AIFB",
+    "scenario_A_margin": -0.4813,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "AIFB",
+    "scenario_B_margin": -0.9372,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "AIFB",
+    "scenario_C_margin": -0.693,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.904,
+      "mean_share": 0.231
+    },
+    "constituency_rho": 0.631
+  },
+  {
+    "constituency": "Uthangarai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2691,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.2547,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0897,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.5914,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.525,
+      "mean_share": 0.424
+    },
+    "constituency_rho": 0.607
+  },
+  {
+    "constituency": "Uthiramerur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0845,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5101,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.1495,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6953,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.208,
+      "mean_share": 0.266
+    },
+    "constituency_rho": 0.642
+  },
+  {
+    "constituency": "Valparai",
+    "actual_winner": "CPI",
+    "actual_margin": 0.4807,
+    "scenario_A": "CPI",
+    "scenario_A_margin": 0.4807,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "BJP",
+    "scenario_B_margin": -1.3161,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.786,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.241,
+      "mean_share": 0.33
+    },
+    "constituency_rho": 0.461
+  },
+  {
+    "constituency": "Vandavasi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0772,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4754,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.3046,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7911,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.418,
+      "mean_share": 0.367
+    },
+    "constituency_rho": 0.628
+  },
+  {
+    "constituency": "Vaniyambadi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1258,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.9087,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.6604,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.123,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.378
+    },
+    "constituency_rho": 0.51
+  },
+  {
+    "constituency": "Vanur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1616,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4341,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.023,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.567,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.26
+    },
+    "constituency_rho": 0.616
+  },
+  {
+    "constituency": "Vasudevanallur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2049,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.6747,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.4427,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.96,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.419,
+      "mean_share": 0.371
+    },
+    "constituency_rho": 0.538
+  },
+  {
+    "constituency": "Vedaranyam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.671,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.0731,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.7023,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.2725,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.323,
+      "mean_share": 0.293
+    },
+    "constituency_rho": 0.658
+  },
+  {
+    "constituency": "Vedasandur",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3125,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.287,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.0526,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6335,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.786,
+      "mean_share": 0.368
+    },
+    "constituency_rho": 0.702
+  },
+  {
+    "constituency": "Veerapandi",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.151,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.5405,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0005,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7225,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.718,
+      "mean_share": 0.243
+    },
+    "constituency_rho": 0.789
+  },
+  {
+    "constituency": "Velachery",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.5718,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.4845,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.2178,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.7399,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.345,
+      "mean_share": 0.373
+    },
+    "constituency_rho": 0.533
+  },
+  {
+    "constituency": "Vellore",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.1146,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -1.0584,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.7289,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.262,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.225,
+      "mean_share": 0.289
+    },
+    "constituency_rho": 0.445
+  },
+  {
+    "constituency": "Veppanahalli",
+    "actual_winner": "DMK",
+    "actual_margin": 0.0495,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.3906,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.2387,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.7235,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.464,
+      "mean_share": 0.438
+    },
+    "constituency_rho": 0.557
+  },
+  {
+    "constituency": "Vikravandi",
+    "actual_winner": "CPM",
+    "actual_margin": 0.5344,
+    "scenario_A": "CPM",
+    "scenario_A_margin": 0.5344,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.3552,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.3552,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.02
+    },
+    "constituency_rho": 0.663
+  },
+  {
+    "constituency": "Vilathikulam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.179,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.9136,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.3916,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0356,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.312,
+      "mean_share": 0.262
+    },
+    "constituency_rho": 0.578
+  },
+  {
+    "constituency": "Vilavancode",
+    "actual_winner": "INC",
+    "actual_margin": 0.1775,
+    "scenario_A": "INC",
+    "scenario_A_margin": 0.1775,
+    "scenario_A_alliance": "DMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -0.7198,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "BJP",
+    "scenario_C_margin": -0.3276,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.663,
+      "mean_share": 0.418
+    },
+    "constituency_rho": 0.515
+  },
+  {
+    "constituency": "Villivakkam",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.0833,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3281,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -0.7977,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.4014,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.213
+    },
+    "constituency_rho": 0.454
+  },
+  {
+    "constituency": "Villupuram",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.071,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.489,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.0765,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -0.6213,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.254
+    },
+    "constituency_rho": 0.668
+  },
+  {
+    "constituency": "Viralimalai",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.3312,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.3312,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMK",
+    "scenario_B_margin": 0.0002,
+    "scenario_B_alliance": "DMK",
+    "scenario_C": "DMK",
+    "scenario_C_margin": 0.521,
+    "scenario_C_alliance": "DMK",
+    "inc_layer": {
+      "rho": 0,
+      "mean_share": 0.438
+    },
+    "constituency_rho": 0.857
+  },
+  {
+    "constituency": "Virudhunagar",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1735,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.9831,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5957,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.2126,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.548,
+      "mean_share": 0.292
+    },
+    "constituency_rho": 0.612
+  },
+  {
+    "constituency": "Virugampakkam",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.1013,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.5314,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "DMDK",
+    "scenario_B_margin": -1.0194,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -0.6139,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.238
+    },
+    "constituency_rho": 0.594
+  },
+  {
+    "constituency": "Vridhachalam",
+    "actual_winner": "DMDK",
+    "actual_margin": -0.0918,
+    "scenario_A": "DMDK",
+    "scenario_A_margin": -0.8815,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "INC",
+    "scenario_B_margin": -1.5112,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "DMDK",
+    "scenario_C_margin": -1.0899,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.374,
+      "mean_share": 0.331
+    },
+    "constituency_rho": 0.537
+  },
+  {
+    "constituency": "Yercaud",
+    "actual_winner": "ADMK",
+    "actual_margin": -0.2123,
+    "scenario_A": "ADMK",
+    "scenario_A_margin": -0.8401,
+    "scenario_A_alliance": "ADMK",
+    "scenario_B": "ADMK",
+    "scenario_B_margin": -1.614,
+    "scenario_B_alliance": "ADMK",
+    "scenario_C": "ADMK",
+    "scenario_C_margin": -1.0656,
+    "scenario_C_alliance": "ADMK",
+    "inc_layer": {
+      "rho": 0.05,
+      "mean_share": 0.329
+    },
+    "constituency_rho": 0.54
+  }
+]

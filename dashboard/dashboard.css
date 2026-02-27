@@ -1,0 +1,103 @@
+/* ─── Dashboard-specific styles ─────────────────────────────────────────────
+   Extracted from TN-POC-WEB index.css.
+   These styles apply only within the dashboard views.
+   The main website's Tailwind CDN handles all utility classes.
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* Custom scrollbar for dashboard */
+.dashboard-root ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.dashboard-root ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dashboard-root ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.dashboard-root ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Map tooltip animation */
+.dashboard-root .map-tooltip {
+  animation: dashTooltipFadeIn 0.15s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes dashTooltipFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card hover lift effect */
+.dashboard-root .card-hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.dashboard-root .card-hover:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+  transform: translateY(-1px);
+}
+
+/* Pill button styles (dashboard) */
+.dashboard-root .pill-active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  box-shadow: 0 2px 8px rgb(37 99 235 / 0.3);
+}
+
+/* Party chip */
+.dashboard-root .party-chip {
+  transition: all 0.15s ease;
+  font-variant-numeric: tabular-nums;
+}
+.dashboard-root .party-chip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+/* Data table rows */
+.dashboard-root .data-row {
+  transition: background-color 0.1s ease;
+}
+.dashboard-root .data-row:hover {
+  background-color: #f8fafc;
+}
+
+/* Constituency path hover */
+.dashboard-root .constituency-path {
+  transition: opacity 0.15s ease;
+}
+
+/* Fade in animation */
+@keyframes dashFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.dashboard-root .animate-fade-in {
+  animation: dashFadeIn 0.25s ease-out;
+}
+
+/* Slide up animation */
+@keyframes dashSlideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.dashboard-root .animate-slide-up {
+  animation: dashSlideUp 0.3s ease-out;
+}
+
+/* Number formatting */
+.dashboard-root .tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbar utility */
+.dashboard-root .scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.dashboard-root .scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
