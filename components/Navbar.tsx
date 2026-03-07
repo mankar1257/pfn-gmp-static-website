@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className={`border-b sticky top-0 z-50 ${isDashboard ? 'bg-white border-slate-200 shadow-sm' : 'bg-slate-900 border-slate-800'}`}>
+    <nav className={`border-b sticky top-0 z-50 ${isDashboard ? 'bg-white border-slate-200 shadow-sm' : 'bg-slate-900/80 backdrop-blur-md border-slate-800/50'}`}>
       <div className={`mx-auto px-4 sm:px-6 lg:px-8 ${isDashboard ? '' : 'max-w-7xl'}`}>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

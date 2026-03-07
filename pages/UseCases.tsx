@@ -1,112 +1,116 @@
 import React from 'react';
-import { Coins, Activity, Dna, Shield, Factory, Calculator, ArrowRight, Calendar, Check } from 'lucide-react';
+import { Coins, Activity, Dna, Shield, Factory, Calculator, ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const useCases = [
+const industries = [
   {
-    icon: <Coins className="h-8 w-8" />,
+    icon: Coins,
     title: 'Cryptocurrency & Blockchain',
-    description: 'Zero-error financial calculations at scale',
-    challenges: ['Token precision across 18+ decimals', 'Real-time DEX price feeds', 'Smart contract accuracy'],
-    results: ['99.9999% precision guaranteed', '141× faster settlements', 'Zero rounding vulnerabilities'],
+    tag: 'FinTech',
+    description: 'Zero-error financial calculations at scale. 141× faster settlements with 99.9999% precision across 18+ decimal tokens.',
+    features: ['DeFi Protocols', 'Settlement Engines', 'Token Math'],
+    iconColor: 'text-amber-400',
+    iconBg: 'bg-amber-500/10',
+    borderHover: 'hover:border-amber-500/20',
   },
   {
-    icon: <Activity className="h-8 w-8" />,
+    icon: Activity,
     title: 'Quantitative Finance',
-    description: 'High-frequency trading without precision loss',
-    challenges: ['Microsecond trade execution', 'Multi-asset portfolio math', 'Risk model accuracy'],
-    results: ['Sub-microsecond latency', '118× faster valuations', 'Exact ratio calculations'],
+    tag: 'Trading',
+    description: 'High-frequency trading without precision loss. Sub-microsecond latency, 118× faster valuations.',
+    features: ['HFT Systems', 'Risk Models', 'Exact Pricing'],
+    iconColor: 'text-teal-400',
+    iconBg: 'bg-teal-500/10',
+    borderHover: 'hover:border-teal-500/20',
   },
   {
-    icon: <Dna className="h-8 w-8" />,
+    icon: Dna,
     title: 'Scientific Computing',
-    description: 'Research-grade precision for breakthrough discoveries',
-    challenges: ['Genome sequence analysis', 'Particle physics simulations', 'Astronomical calculations'],
-    results: ['899,000× faster powers', 'Unlimited precision', 'Reproducible results'],
+    tag: 'Research',
+    description: 'Research-grade precision for breakthrough discoveries. 899,000× faster powers, unlimited precision.',
+    features: ['Genomics', 'Physics Sim', 'Astrophysics'],
+    iconColor: 'text-purple-400',
+    iconBg: 'bg-purple-500/10',
+    borderHover: 'hover:border-purple-500/20',
   },
   {
-    icon: <Shield className="h-8 w-8" />,
+    icon: Shield,
     title: 'Cryptography',
-    description: 'Secure key generation and verification',
-    challenges: ['Large prime operations', 'Key derivation speed', 'Modular arithmetic'],
-    results: ['Fixed 415B memory', 'O(1) operations', 'Predictable performance'],
+    tag: 'Security',
+    description: 'Secure key generation with O(1) operations. Fixed 415B memory, predictable performance for large primes.',
+    features: ['Prime Gen', 'Key Exchange', 'Modular Arith'],
+    iconColor: 'text-sky-400',
+    iconBg: 'bg-sky-500/10',
+    borderHover: 'hover:border-sky-500/20',
   },
   {
-    icon: <Factory className="h-8 w-8" />,
+    icon: Factory,
     title: 'Industrial IoT',
-    description: 'Precision manufacturing and quality control',
-    challenges: ['Sensor data aggregation', 'Real-time calibration', 'Tolerance calculations'],
-    results: ['728K× faster scaling', 'No drift accumulation', 'Embedded-friendly'],
+    tag: 'Manufacturing',
+    description: 'Precision manufacturing and quality control. 728K× faster scaling, no drift accumulation.',
+    features: ['Sensor Data', 'Calibration', 'Embedded'],
+    iconColor: 'text-emerald-400',
+    iconBg: 'bg-emerald-500/10',
+    borderHover: 'hover:border-emerald-500/20',
   },
   {
-    icon: <Calculator className="h-8 w-8" />,
+    icon: Calculator,
     title: 'Enterprise Accounting',
-    description: 'Audit-ready financial reporting',
-    challenges: ['Multi-currency precision', 'Complex tax calculations', 'Regulatory compliance'],
-    results: ['Exact decimal math', 'Instant reconciliation', 'Zero floating-point errors'],
+    tag: 'Finance',
+    description: 'Audit-ready financial reporting with exact decimal math, instant reconciliation, and zero floating-point errors.',
+    features: ['Tax Compliance', 'Multi-currency', 'Audit Trail'],
+    iconColor: 'text-rose-400',
+    iconBg: 'bg-rose-500/10',
+    borderHover: 'hover:border-rose-500/20',
   },
 ];
 
 const UseCases: React.FC = () => {
   return (
-    <div className="min-h-screen bg-slate-50">
-      {/* Header */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Industry Applications</h1>
-          <p className="text-xl text-slate-300">
-            See how <span className="text-accent-400 font-semibold">PFN</span> transforms precision-critical applications
+    <div className="min-h-screen">
+      {/* Hero Header */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900 to-transparent" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-500/[0.07] rounded-full blur-[100px]" />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm font-medium text-accent-400 tracking-wider uppercase mb-4">Applications</p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+            Built for Industries<br className="hidden sm:block" /> That Can't Afford Error
+          </h1>
+          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Precision-critical applications powered by PFN
           </p>
         </div>
       </section>
 
-      {/* Use Cases Grid */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {useCases.map((useCase, index) => (
-              <div 
-                key={index} 
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 card-hover"
+      {/* Industry Cards — unique per-industry styling, not BentoGrid */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {industries.map((item, i) => (
+              <div
+                key={i}
+                className={`group p-6 rounded-2xl bg-slate-900/50 border border-slate-800 transition-all duration-300 ${item.borderHover}`}
               >
-                {/* Header */}
-                <div className="bg-slate-900 p-5">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-accent-500/20 rounded-xl p-2.5 text-accent-400">
-                      {useCase.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">{useCase.title}</h3>
-                      <p className="text-slate-400 text-sm">{useCase.description}</p>
-                    </div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`w-10 h-10 rounded-xl ${item.iconBg} flex items-center justify-center`}>
+                    <item.icon className={`h-5 w-5 ${item.iconColor}`} />
                   </div>
+                  <span className="text-xs font-medium tracking-wider uppercase text-slate-500">{item.tag}</span>
                 </div>
-                
-                {/* Content */}
-                <div className="p-5">
-                  <div className="mb-5">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Challenges Solved</h4>
-                    <ul className="space-y-2">
-                      {useCase.challenges.map((challenge, i) => (
-                        <li key={i} className="flex items-start text-sm text-slate-600">
-                          <span className="w-1.5 h-1.5 bg-slate-300 rounded-full mt-1.5 mr-2.5 flex-shrink-0"></span>
-                          {challenge}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-slate-100">
-                    <h4 className="text-xs font-bold text-accent-600 uppercase tracking-wider mb-3">Results with PFN</h4>
-                    <ul className="space-y-2">
-                      {useCase.results.map((result, i) => (
-                        <li key={i} className="flex items-start text-sm text-slate-800 font-medium">
-                          <Check className="h-4 w-4 text-accent-500 mr-2 flex-shrink-0 mt-0.5" />
-                          {result}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+
+                <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed mb-5">{item.description}</p>
+
+                <div className="flex flex-wrap gap-2">
+                  {item.features.map((f, j) => (
+                    <span
+                      key={j}
+                      className="text-xs px-2.5 py-1 rounded-full bg-white/[0.05] text-slate-500 border border-white/[0.06]"
+                    >
+                      {f}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
@@ -114,52 +118,26 @@ const UseCases: React.FC = () => {
         </div>
       </section>
 
-      {/* Why PFN */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Why Teams Choose PFN</h2>
-            <p className="text-slate-400">Key differentiators that matter in production</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-accent-400 mb-4">O(1)</div>
-              <h3 className="text-xl font-bold text-white mb-2">Constant Time</h3>
-              <p className="text-slate-400">Every operation, regardless of number size</p>
-            </div>
-            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-accent-400 mb-4">415B</div>
-              <h3 className="text-xl font-bold text-white mb-2">Fixed Memory</h3>
-              <p className="text-slate-400">Predictable resource usage at any scale</p>
-            </div>
-            <div className="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700">
-              <div className="text-5xl font-black text-accent-400 mb-4">100%</div>
-              <h3 className="text-xl font-bold text-white mb-2">Exact Results</h3>
-              <p className="text-slate-400">No approximation, no rounding errors</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="py-16 bg-accent-500">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready for Your Use Case?</h2>
-          <p className="text-lg text-slate-800 mb-8">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent-500/[0.05] rounded-full blur-[100px]" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready for Your Use Case?</h2>
+          <p className="text-lg text-slate-400 mb-10">
             Let's discuss how PFN can solve your precision challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-accent-500 text-slate-900 font-semibold hover:bg-accent-400 transition-all accent-glow"
             >
               <Calendar className="mr-2 h-5 w-5" />
               Schedule Demo
             </Link>
-            <Link 
+            <Link
               to="/performance"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/[0.05] text-white font-semibold border border-white/[0.1] hover:bg-white/[0.08] transition-all"
             >
               View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

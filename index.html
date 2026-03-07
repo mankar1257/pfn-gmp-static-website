@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -44,15 +45,21 @@
         background-clip: text;
       }
       .accent-glow {
-        box-shadow: 0 0 20px rgba(20, 184, 166, 0.25);
+        box-shadow: 0 0 24px rgba(20, 184, 166, 0.2);
       }
-      .card-hover:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      /* Smooth page transitions */
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Selection color */
+      ::selection {
+        background-color: rgba(20, 184, 166, 0.3);
+        color: white;
       }
     </style>
   </head>
-  <body class="bg-slate-50 text-slate-900">
+  <body class="bg-slate-950 text-slate-100">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
