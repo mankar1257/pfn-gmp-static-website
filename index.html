@@ -1,65 +1,159 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PFN — Null Field Research</title>
+    <title>Null Field Research</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class',
         theme: {
           extend: {
             colors: {
+              paper: '#FAFAF9',
+              ink: '#171717',
+              muted: '#525252',
+              hairline: '#E5E5E5',
               accent: {
-                50: '#f0fdfa',
-                100: '#ccfbf1',
-                200: '#99f6e4',
-                300: '#5eead4',
-                400: '#2dd4bf',
-                500: '#14b8a6',
-                600: '#0d9488',
-                700: '#0f766e',
-                800: '#115e59',
-                900: '#134e4a',
-                950: '#042f2e',
+                DEFAULT: '#1D4ED8',
+                hover: '#1E3A8A',
               },
-              slate: {
-                850: '#1a2332',
-              }
+              /* Semantic flags — only for argumentative content (claim/reality, charts). Used sparingly. */
+              flag: {
+                red:   '#991B1B',
+                green: '#15803D',
+                gold:  '#A16207',
+              },
+            },
+            fontFamily: {
+              serif: ['"Crimson Pro"', 'Charter', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+              tamil: ['"Noto Serif Tamil"', '"Crimson Pro"', 'Charter', 'Georgia', 'serif'],
+            },
+            maxWidth: {
+              prose: '38rem',
+              measure: '46rem',
+              page: '70rem',
+            },
+            letterSpacing: {
+              tightish: '-0.011em',
             },
           },
         },
       }
     </script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600;700&display=swap');
+      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', system-ui, sans-serif;
+        background: #FAFAF9;
+        color: #171717;
+        font-size: 16px;
+        line-height: 1.6;
       }
-      .gradient-text {
-        background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 50%, #0d9488 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+      ::selection { background-color: #1D4ED8; color: #fff; }
+
+      /* Editorial display headings */
+      .display {
+        font-family: 'Crimson Pro', Charter, Georgia, serif;
+        letter-spacing: -0.012em;
+        line-height: 1.1;
       }
-      .accent-glow {
-        box-shadow: 0 0 24px rgba(20, 184, 166, 0.2);
+      .serif { font-family: 'Crimson Pro', Charter, Georgia, serif; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-feature-settings: 'tnum' 1; }
+
+      /* Editorial link style — used sparingly */
+      .link {
+        color: #1D4ED8;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
-      /* Smooth page transitions */
-      * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+      .link:hover { color: #1E3A8A; }
+
+      /* Subtle hairline rule */
+      .rule { border-top: 1px solid #E5E5E5; }
+
+      /* Pull-quote / abstract panel */
+      .abstract {
+        border-left: 2px solid #171717;
+        padding-left: 1.25rem;
+        font-family: 'Crimson Pro', Charter, Georgia, serif;
+        font-size: 1.25rem;
+        line-height: 1.55;
+        color: #171717;
       }
-      /* Selection color */
-      ::selection {
-        background-color: rgba(20, 184, 166, 0.3);
-        color: white;
+
+      /* Small caps eyebrow */
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #525252;
+      }
+
+      /* Data table */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-feature-settings: 'tnum' 1;
+      }
+      .data-table th,
+      .data-table td {
+        text-align: left;
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid #E5E5E5;
+        font-size: 0.95rem;
+      }
+      .data-table th {
+        font-weight: 500;
+        color: #525252;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .data-table tr:last-child td { border-bottom: none; }
+      .data-table .num { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+      /* Focus ring — accessibility */
+      :focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }
+
+      /* Editorial drop cap — first paragraph of an essay section */
+      .has-dropcap > p:first-of-type::first-letter {
+        font-family: 'Crimson Pro', Charter, Georgia, serif;
+        font-weight: 700;
+        font-size: 4.2em;
+        float: left;
+        line-height: 0.85;
+        margin: 0.06em 0.08em 0 -0.04em;
+        color: #171717;
+      }
+
+      /* Tamil text — proper line-height for ascenders/descenders */
+      .tamil-script {
+        font-family: 'Noto Serif Tamil', 'Crimson Pro', Charter, Georgia, serif;
+        line-height: 1.55;
+      }
+
+      /* Full-bleed inverted section — used sparingly in essays */
+      .bleed-dark {
+        background: #0E1116;
+        color: #FAFAF9;
+      }
+      .bleed-dark .eyebrow { color: #C2A269; }
+      .bleed-dark .link { color: #E5C77A; }
+      .bleed-dark .link:hover { color: #FAFAF9; }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
       }
     </style>
   </head>
-  <body class="bg-slate-950 text-slate-100">
+  <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

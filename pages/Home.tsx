@@ -1,252 +1,166 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Clock, Database, Cpu, ArrowRight, Calendar, TrendingUp } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { BentoGrid, type BentoItem } from '@/components/ui/bento-grid';
-import { DottedSurface } from '@/components/ui/dotted-surface';
 
 const Home: React.FC = () => {
-  const speedupData = [
-    { name: 'Chain ×', pfn: 0.07, gmp: 9.88, speedup: 141 },
-    { name: 'Division', pfn: 0.89, gmp: 105.02, speedup: 118 },
-    { name: 'Addition', pfn: 0.03, gmp: 2.41, speedup: 80 },
-  ];
-
-  const powerData = [
-    { ops: '1K', pfn: 3, gmp: 270 },
-    { ops: '10K', pfn: 3, gmp: 27000 },
-    { ops: '100K', pfn: 3, gmp: 270000 },
-    { ops: '1M', pfn: 3, gmp: 2700000 },
-  ];
-
-  const pfnFeatures: BentoItem[] = [
-    {
-      title: 'O(1) Complexity',
-      meta: 'Constant Time',
-      description:
-        'Every operation completes in constant time, regardless of the magnitude of numbers involved. No scaling overhead, ever.',
-      icon: <Cpu className="w-4 h-4 text-teal-500" />,
-      status: 'Core',
-      tags: ['Performance', 'Scalable', 'O(1)'],
-      colSpan: 2,
-      hasPersistentHover: true,
-    },
-    {
-      title: 'Fixed Memory',
-      meta: '415 bytes',
-      description:
-        'Each number uses exactly 415 bytes. No memory bloat, no allocation overhead, perfect predictability.',
-      icon: <Database className="w-4 h-4 text-emerald-500" />,
-      status: 'Optimized',
-      tags: ['Memory', 'Predictable'],
-    },
-    {
-      title: 'Exact Results',
-      meta: 'Zero error',
-      description:
-        'Symbolic representation preserves infinite precision. No rounding, no approximation, no floating-point errors.',
-      icon: <Zap className="w-4 h-4 text-amber-500" />,
-      status: 'Verified',
-      tags: ['Precision', 'Symbolic'],
-      colSpan: 2,
-    },
-    {
-      title: '141× Faster',
-      meta: 'vs GMP',
-      description:
-        'Outperforms GMP across all core operations — multiply, divide, and exponentiation benchmarks.',
-      icon: <TrendingUp className="w-4 h-4 text-sky-500" />,
-      status: 'Benchmarked',
-      tags: ['Speed', 'GMP'],
-    },
+  const benchmarks = [
+    { op: 'Chain multiplication', pfn: '0.07 μs', gmp: '9.88 μs', factor: '141×' },
+    { op: 'Division', pfn: '0.89 μs', gmp: '105.02 μs', factor: '118×' },
+    { op: 'Addition', pfn: '0.03 μs', gmp: '2.41 μs', factor: '80×' },
+    { op: 'Power (7^1,000,000)', pfn: '3 μs', gmp: '2,700,000 μs', factor: '899,000×' },
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero — DottedSurface only covers this section */}
-      <section 
-        className="relative flex items-center overflow-hidden bg-slate-950"
-        style={{ minHeight: 'clamp(500px, 70vh, 800px)' }}
-      >
-        <DottedSurface />
-        <div className="absolute inset-0 bg-slate-950/50" />
-        {/* Bottom fade to blend into next section */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent z-[1]" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-500/20 text-accent-400 text-sm font-medium mb-6 border border-accent-500/30">
-                <Zap className="h-4 w-4" />
-                Null Field Research
-              </div>
-              
-              <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-                Precision Without<br />
-                <span className="text-accent-400">Compromise.</span>
-              </h1>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-300 mb-8">
-                Speed Without <span className="text-accent-400">Limits.</span>
-              </h2>
-              
-              <p className="text-xl text-slate-400 mb-10 max-w-2xl">
-                PFN delivers exact arbitrary-precision arithmetic with O(1) time complexity. 
-                No approximations. No floating-point errors. Just results.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-accent-500 text-slate-900 font-bold text-lg hover:bg-accent-400 transition-all accent-glow"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule Demo
-                </Link>
-                <Link
-                  to="/performance"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white/[0.05] text-white font-bold text-lg border border-white/[0.1] hover:bg-white/[0.08] transition-all"
-                >
-                  View Benchmarks <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Metrics */}
-      <section className="relative z-10 py-6 bg-slate-950">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-800/50">
-            {[
-              { value: '141×', label: 'Faster Multiply', icon: TrendingUp },
-              { value: '899K×', label: 'Faster Powers', icon: Zap },
-              { value: '0.07μs', label: 'Constant Time', icon: Clock },
-              { value: '415B', label: 'Fixed Memory', icon: Database },
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-slate-950 p-8 text-center"
-              >
-                <stat.icon className="h-6 w-6 text-accent-400 mx-auto mb-3" />
-                <div className="text-3xl md:text-4xl font-bold text-accent-400">{stat.value}</div>
-                <div className="text-slate-500 text-sm mt-1">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Charts Section */}
-      <section className="relative z-10 py-20 bg-slate-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-white mb-3">Benchmark Results</h2>
-            <p className="text-slate-500">Real performance data from independent testing</p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Speedup Chart */}
-            <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-800">
-              <h3 className="text-lg font-semibold text-white mb-4">Operation Speedup vs GMP</h3>
-              <div className="h-72">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={speedupData} layout="vertical">
-                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                    <XAxis type="number" stroke="#64748b" />
-                    <YAxis dataKey="name" type="category" stroke="#64748b" width={80} />
-                    <Tooltip 
-                      contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                      labelStyle={{ color: '#f1f5f9' }}
-                      itemStyle={{ color: '#2dd4bf' }}
-                      formatter={(value) => [`${value}×`, 'Speedup']}
-                    />
-                    <Bar dataKey="speedup" radius={[0, 4, 4, 0]}>
-                      {speedupData.map((_, index) => (
-                        <Cell key={index} fill="#14b8a6" />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
-
-            {/* Power Operations Chart */}
-            <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-800">
-              <h3 className="text-lg font-semibold text-white mb-4">Power Operation: 7^1,000,000</h3>
-              <div className="h-72">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={powerData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                    <XAxis dataKey="ops" stroke="#64748b" />
-                    <YAxis stroke="#64748b" scale="log" domain={[1, 10000000]} tickFormatter={(v) => v >= 1000000 ? `${v/1000000}M` : v >= 1000 ? `${v/1000}K` : v} />
-                    <Tooltip 
-                      contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                      labelStyle={{ color: '#f1f5f9' }}
-                      formatter={(value) => [`${Number(value) >= 1000000 ? (Number(value)/1000000).toFixed(1) + 'M' : Number(value) >= 1000 ? (Number(value)/1000) + 'K' : value} μs`, '']}
-                    />
-                    <Line type="monotone" dataKey="gmp" stroke="#ef4444" strokeWidth={3} dot={{ fill: '#ef4444', r: 5 }} name="GMP" />
-                    <Line type="monotone" dataKey="pfn" stroke="#14b8a6" strokeWidth={3} dot={{ fill: '#14b8a6', r: 5 }} name="PFN" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-              <div className="flex justify-center gap-6 mt-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#14b8a6]"></div>
-                  <span className="text-sm text-slate-400">PFN (O(1))</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#ef4444]"></div>
-                  <span className="text-sm text-slate-400">GMP (O(n))</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PFN Engine */}
-      <section className="relative z-10 py-20 bg-slate-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-white mb-3">The PFN Engine</h2>
-            <p className="text-slate-500">Revolutionary architecture for precision arithmetic</p>
-          </div>
-
-          <BentoGrid items={pfnFeatures} />
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative z-10 py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent-500/[0.05] rounded-full blur-[100px]" />
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Precision Computing?</h2>
-          <p className="text-lg text-slate-400 mb-10">
-            See PFN in action with your specific use case.
+    <div>
+      {/* Masthead — typographic, editorial */}
+      <section className="max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-28 pb-16">
+        <div className="max-w-measure">
+          <p className="eyebrow mb-6">Null Field Research · Established 2024</p>
+          <h1 className="display text-5xl md:text-6xl lg:text-7xl font-semibold text-ink">
+            Exact arithmetic,<br />without scaling cost.
+          </h1>
+          <p className="mt-8 text-lg text-muted max-w-prose leading-relaxed">
+            We study computational structures that decouple precision from runtime.
+            Our flagship system, <span className="text-ink font-medium">PFN</span>, performs arbitrary-precision
+            arithmetic in constant time and fixed memory, replacing the size-dependent overhead of
+            classical bignum libraries.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-accent-500 text-slate-900 font-semibold hover:bg-accent-400 transition-all accent-glow"
-            >
-              <Calendar className="mr-2 h-5 w-5" />
-              Schedule Demo
-            </Link>
-            <Link
-              to="/use-cases"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-white/[0.05] text-white font-semibold border border-white/[0.1] hover:bg-white/[0.08] transition-all"
-            >
-              Explore Use Cases <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+
+          <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm">
+            <Link to="/overview" className="link">Read the research →</Link>
+            <Link to="/performance" className="text-muted hover:text-ink">Benchmark data</Link>
+            <Link to="/contact" className="text-muted hover:text-ink">Correspondence</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Abstract */}
+      <section className="max-w-page mx-auto px-6 lg:px-10 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-3">
+            <div className="eyebrow">Abstract</div>
+          </div>
+          <div className="md:col-span-9 max-w-measure">
+            <p className="abstract">
+              Conventional multi-precision libraries such as GMP store a number as a digit array
+              and operate on it digit-by-digit. The cost of every arithmetic step grows with the
+              size of its operands. PFN replaces this representation with a symbolic, fixed-width
+              encoding whose operations are O(1) in both time and memory. The result is exact
+              arithmetic that does not slow down as numbers grow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Headline numbers — clean table, no cards */}
+      <section className="max-w-page mx-auto px-6 lg:px-10 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-3">
+            <div className="eyebrow">Selected results</div>
+            <p className="text-sm text-muted mt-3">
+              Measured per operation on a single core, averaged over 10⁶ iterations.
+              <Link to="/performance" className="link block mt-2">Full methodology →</Link>
+            </p>
+          </div>
+          <div className="md:col-span-9">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Operation</th>
+                  <th className="text-right">PFN</th>
+                  <th className="text-right">GMP</th>
+                  <th className="text-right">Factor</th>
+                </tr>
+              </thead>
+              <tbody>
+                {benchmarks.map((b) => (
+                  <tr key={b.op}>
+                    <td className="text-ink">{b.op}</td>
+                    <td className="text-right num text-ink">{b.pfn}</td>
+                    <td className="text-right num text-muted">{b.gmp}</td>
+                    <td className="text-right num text-ink font-medium">{b.factor}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Properties of the system — numbered list, no bento */}
+      <section className="rule">
+        <div className="max-w-page mx-auto px-6 lg:px-10 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-3">
+              <div className="eyebrow">The system</div>
+              <h2 className="display text-3xl md:text-4xl text-ink mt-3">Properties of PFN</h2>
+            </div>
+            <div className="md:col-span-9 max-w-measure">
+              <ol className="space-y-8">
+                <li className="grid grid-cols-12 gap-4">
+                  <span className="col-span-1 mono text-sm text-muted pt-1">01</span>
+                  <div className="col-span-11">
+                    <h3 className="serif text-xl text-ink">Constant-time operations</h3>
+                    <p className="mt-2 text-muted leading-relaxed">
+                      Addition, multiplication, division and exponentiation complete in time
+                      independent of operand magnitude. Performance does not degrade with scale.
+                    </p>
+                  </div>
+                </li>
+                <li className="grid grid-cols-12 gap-4">
+                  <span className="col-span-1 mono text-sm text-muted pt-1">02</span>
+                  <div className="col-span-11">
+                    <h3 className="serif text-xl text-ink">Fixed memory footprint</h3>
+                    <p className="mt-2 text-muted leading-relaxed">
+                      Each number occupies <span className="mono text-ink">415 bytes</span>, regardless of magnitude.
+                      Allocation is predictable; there is no growth, no fragmentation.
+                    </p>
+                  </div>
+                </li>
+                <li className="grid grid-cols-12 gap-4">
+                  <span className="col-span-1 mono text-sm text-muted pt-1">03</span>
+                  <div className="col-span-11">
+                    <h3 className="serif text-xl text-ink">Exact symbolic results</h3>
+                    <p className="mt-2 text-muted leading-relaxed">
+                      Numbers are held in a symbolic form that preserves identity across operations.
+                      There is no rounding and no accumulated floating-point error.
+                    </p>
+                  </div>
+                </li>
+                <li className="grid grid-cols-12 gap-4">
+                  <span className="col-span-1 mono text-sm text-muted pt-1">04</span>
+                  <div className="col-span-11">
+                    <h3 className="serif text-xl text-ink">Empirically validated against GMP</h3>
+                    <p className="mt-2 text-muted leading-relaxed">
+                      Every reported figure is reproducible. Benchmark tooling and the underlying
+                      methodology are available under commercial licence.
+                      <Link to="/validation" className="link ml-1">Read validation notes →</Link>
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing note */}
+      <section className="rule">
+        <div className="max-w-page mx-auto px-6 lg:px-10 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-3">
+              <div className="eyebrow">Get in touch</div>
+            </div>
+            <div className="md:col-span-9 max-w-measure">
+              <p className="serif text-2xl md:text-3xl text-ink leading-snug">
+                If your work depends on numerical exactness — in cryptography, computational
+                geometry, simulation, or financial modelling — we would like to hear from you.
+              </p>
+              <p className="mt-6 text-muted">
+                Write to <a className="link" href="mailto:viv@null-field.com">viv@null-field.com</a> for
+                a technical conversation, or read the{' '}
+                <Link to="/overview" className="link">research overview</Link> to start.
+              </p>
+            </div>
           </div>
         </div>
       </section>

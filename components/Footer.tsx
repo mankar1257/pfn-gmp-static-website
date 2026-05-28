@@ -1,79 +1,52 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Mail, MapPin, Calendar } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="bg-slate-900 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="bg-accent-500 rounded-lg p-1.5">
-                <Zap className="h-5 w-5 text-slate-900" />
-              </div>
-              <span className="text-xl font-bold text-white">PFN</span>
-            </Link>
-            <p className="text-slate-400 text-sm">
-              Precision Without Compromise.<br />
-              Speed Without Limits.
+    <footer className="border-t border-hairline mt-24">
+      <div className="max-w-page mx-auto px-6 lg:px-10 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm">
+          <div className="md:col-span-5">
+            <div className="serif text-base font-semibold text-ink">Null Field Research</div>
+            <p className="mt-2 text-muted leading-relaxed max-w-prose">
+              An independent research group working on exact arbitrary-precision arithmetic
+              and applied mathematical software. Chennai, India.
             </p>
           </div>
 
-          {/* Product */}
-          <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Product</h3>
-            <ul className="space-y-2">
-              <li><Link to="/overview" className="text-slate-400 hover:text-accent-400 text-sm">Overview</Link></li>
-              <li><Link to="/performance" className="text-slate-400 hover:text-accent-400 text-sm">Performance</Link></li>
-              <li><Link to="/use-cases" className="text-slate-400 hover:text-accent-400 text-sm">Use Cases</Link></li>
-              <li><Link to="/validation" className="text-slate-400 hover:text-accent-400 text-sm">Validation</Link></li>
+          <div className="md:col-span-3">
+            <div className="eyebrow mb-3">Work</div>
+            <ul className="space-y-1.5">
+              <li><Link to="/overview" className="text-muted hover:text-ink">Research</Link></li>
+              <li><Link to="/writing" className="text-muted hover:text-ink">Writing</Link></li>
+              <li><Link to="/performance" className="text-muted hover:text-ink">Benchmarks</Link></li>
+              <li><Link to="/use-cases" className="text-muted hover:text-ink">Applications</Link></li>
+              <li><Link to="/validation" className="text-muted hover:text-ink">Validation</Link></li>
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li><Link to="/integration" className="text-slate-400 hover:text-accent-400 text-sm">Integration</Link></li>
-              <li><Link to="/licensing" className="text-slate-400 hover:text-accent-400 text-sm">Licensing</Link></li>
-              <li><Link to="/contact" className="text-slate-400 hover:text-accent-400 text-sm">Contact</Link></li>
+          <div className="md:col-span-2">
+            <div className="eyebrow mb-3">Use</div>
+            <ul className="space-y-1.5">
+              <li><Link to="/integration" className="text-muted hover:text-ink">Integration</Link></li>
+              <li><Link to="/licensing" className="text-muted hover:text-ink">Licensing</Link></li>
+              <li><Link to="/contact" className="text-muted hover:text-ink">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Contact</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-slate-400 text-sm">
-                <Mail className="h-4 w-4 text-accent-500" />
-                <a href="mailto:sarvin@null-field.com" className="hover:text-accent-400">sarvin@null-field.com</a>
-              </li>
-              <li className="flex items-center gap-2 text-slate-400 text-sm">
-                <Calendar className="h-4 w-4 text-accent-500" />
-                <a href="mailto:viv@null-field.com" className="hover:text-accent-400">viv@null-field.com</a>
-              </li>
-              <li className="flex items-start gap-2 text-slate-400 text-sm">
-                <MapPin className="h-4 w-4 text-accent-500 mt-0.5" />
-                <span>Chennai, Tamil Nadu, India</span>
-              </li>
+          <div className="md:col-span-2">
+            <div className="eyebrow mb-3">Correspondence</div>
+            <ul className="space-y-1.5 text-muted">
+              <li><a href="mailto:sarvin@null-field.com" className="hover:text-ink">sarvin@null-field.com</a></li>
+              <li><a href="mailto:viv@null-field.com" className="hover:text-ink">viv@null-field.com</a></li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 text-sm">
-            © 2026 Null Field Research. All rights reserved.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center px-4 py-2 rounded-lg bg-accent-500 text-slate-900 font-semibold text-sm hover:bg-accent-400 transition-colors"
-          >
-            <Calendar className="mr-2 h-4 w-4" />
-            Schedule Demo
-          </Link>
+        <div className="mt-10 pt-6 rule flex flex-col md:flex-row items-start md:items-center justify-between gap-2 text-xs text-muted">
+          <span>© {year} Null Field Research. All rights reserved.</span>
+          <span className="mono">Chennai · Tamil Nadu · India</span>
         </div>
       </div>
     </footer>
