@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-  const isDashboard = location.pathname.startsWith('/dashboard');
 
   const links = [
     { to: '/overview', label: 'Research' },
@@ -23,7 +22,7 @@ const Navbar: React.FC = () => {
       : location.pathname === path || location.pathname.startsWith(path + '/');
 
   return (
-    <nav className={`${isDashboard ? 'bg-white border-b border-slate-200' : 'bg-paper border-b border-hairline'}`}>
+    <nav className="bg-paper border-b border-hairline">
       <div className="max-w-page mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-16">
           {/* Wordmark */}
@@ -45,15 +44,6 @@ const Navbar: React.FC = () => {
                 {l.label}
               </Link>
             ))}
-            <span className="h-4 w-px bg-hairline" aria-hidden />
-            <Link
-              to="/dashboard"
-              className={`text-sm transition-colors ${
-                isActive('/dashboard') ? 'text-ink font-medium' : 'text-muted hover:text-ink'
-              }`}
-            >
-              Dashboard
-            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -80,13 +70,6 @@ const Navbar: React.FC = () => {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/dashboard"
-              onClick={() => setOpen(false)}
-              className={`block py-1.5 text-sm ${isActive('/dashboard') ? 'text-ink font-medium' : 'text-muted hover:text-ink'}`}
-            >
-              Dashboard
-            </Link>
           </div>
         </div>
       )}
