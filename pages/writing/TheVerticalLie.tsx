@@ -8,8 +8,8 @@ import {
 
 /* ───────────────────────── Chart styling tokens ───────────────────────── */
 const INK = '#171717';
-const MUTED = '#525252';
-const HAIRLINE = '#E5E5E5';
+const MUTED = '#5C5345';
+const HAIRLINE = '#DDD6C6';
 const FLAG_RED = '#991B1B';
 const FLAG_GREEN = '#15803D';
 const FLAG_GREEN_SOFT = '#4A7553';
@@ -20,10 +20,10 @@ const tooltipStyle = {
   borderRadius: '4px',
   fontFamily: 'JetBrains Mono, ui-monospace, monospace',
   fontSize: '11px',
-  color: '#FAFAF9',
+  color: '#F4F0E6',
   padding: '8px 10px',
 };
-const tooltipLabelStyle = { color: '#FAFAF9', fontFamily: 'Crimson Pro, serif', fontWeight: 600, fontSize: '13px', marginBottom: 4 };
+const tooltipLabelStyle = { color: '#F4F0E6', fontFamily: 'Crimson Pro, serif', fontWeight: 600, fontSize: '13px', marginBottom: 4 };
 
 const axisTick = { fontSize: 10, fontFamily: 'JetBrains Mono, monospace', fill: MUTED };
 const axisLabelStyle = { fill: MUTED, fontSize: 10, fontFamily: 'JetBrains Mono, monospace', letterSpacing: '0.06em' } as const;

@@ -6,8 +6,8 @@ import {
 } from 'recharts';
 
 const tooltipStyle = {
-  backgroundColor: '#FFFFFF',
-  border: '1px solid #E5E5E5',
+  backgroundColor: '#F4F0E6',
+  border: '1px solid #DDD6C6',
   borderRadius: '4px',
   fontSize: '12px',
   fontFamily: 'JetBrains Mono, ui-monospace, monospace',
@@ -124,8 +124,8 @@ const Performance: React.FC = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={chainMultiply} margin={{ top: 16, right: 16, bottom: 8, left: 8 }}>
                     <CartesianGrid stroke="#F3F3F2" vertical={false} />
-                    <XAxis dataKey="ops" stroke="#525252" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
-                    <YAxis stroke="#525252" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
+                    <XAxis dataKey="ops" stroke="#5C5345" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
+                    <YAxis stroke="#5C5345" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
                     <Tooltip contentStyle={tooltipStyle} formatter={(v) => [`${v} μs`, '']} />
                     <Bar dataKey="gmp" fill="#A3A3A3" name="GMP" />
                     <Bar dataKey="pfn" fill="#171717" name="PFN" />
@@ -147,8 +147,8 @@ const Performance: React.FC = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart data={powerData} margin={{ top: 16, right: 16, bottom: 8, left: 8 }}>
                     <CartesianGrid stroke="#F3F3F2" vertical={false} />
-                    <XAxis dataKey="name" stroke="#525252" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
-                    <YAxis stroke="#525252" scale="log" domain={[1, 10000000]}
+                    <XAxis dataKey="name" stroke="#5C5345" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
+                    <YAxis stroke="#5C5345" scale="log" domain={[1, 10000000]}
                       tickFormatter={(v: number) => v >= 1e6 ? `${v/1e6}M` : v >= 1e3 ? `${v/1e3}K` : `${v}`}
                       tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
                     <Tooltip contentStyle={tooltipStyle} formatter={(v) => [`${v} μs`, '']} />
@@ -172,10 +172,10 @@ const Performance: React.FC = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={speedups} layout="vertical" margin={{ top: 16, right: 16, bottom: 8, left: 8 }}>
                     <CartesianGrid stroke="#F3F3F2" horizontal={false} />
-                    <XAxis type="number" stroke="#525252" scale="log" domain={[1, 1000000]}
+                    <XAxis type="number" stroke="#5C5345" scale="log" domain={[1, 1000000]}
                       tickFormatter={(v: number) => v >= 1e3 ? `${v/1e3}K` : `${v}`}
                       tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
-                    <YAxis dataKey="op" type="category" stroke="#525252" width={80}
+                    <YAxis dataKey="op" type="category" stroke="#5C5345" width={80}
                       tick={{ fontSize: 11 }} />
                     <Tooltip contentStyle={tooltipStyle} formatter={(v) => [`${v}×`, 'speed-up']} />
                     <Bar dataKey="speedup" fill="#171717" />
@@ -194,8 +194,8 @@ const Performance: React.FC = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={memory} margin={{ top: 16, right: 16, bottom: 8, left: 8 }}>
                     <CartesianGrid stroke="#F3F3F2" vertical={false} />
-                    <XAxis dataKey="mag" stroke="#525252" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
-                    <YAxis stroke="#525252" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
+                    <XAxis dataKey="mag" stroke="#5C5345" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
+                    <YAxis stroke="#5C5345" tick={{ fontSize: 11, fontFamily: 'JetBrains Mono' }} />
                     <Tooltip contentStyle={tooltipStyle} formatter={(v) => [`${v} bytes`, '']} />
                     <Bar dataKey="gmp" fill="#A3A3A3" name="GMP" />
                     <Bar dataKey="pfn" fill="#171717" name="PFN" />
