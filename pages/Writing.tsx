@@ -26,6 +26,18 @@ const posts: Post[] = [
     author: 'Sarvin Samuel Bastin',
     topic: 'Chennai · Tamil Nadu · Urbanism',
   },
+  {
+    slug: 'the-dual-bubble-hypothesis',
+    title: 'The Dual Bubble Hypothesis',
+    kicker: 'Paper · Interactive · Theoretical Physics',
+    deck:
+      'Particle masses from hyperbolic knot volumes at the B³/H³ interface. Suppose the universe is two balls glued along a sphere — one spherical, one hyperbolic — and every particle is a knot threading the seam. Then a single formula, m = m₀·exp(V), reproduces all twelve Standard Model masses and the proton, with zero tunable parameters. Includes a live WebGL companion: orbit the geometry, sweep volumes across the mass spectrum, and walk the particle ladder.',
+    date: 'April 2026',
+    isoDate: '2026-04-01',
+    reading: '18 min',
+    author: 'Sarvin Samuel Bastin · Vaibhav Mankar',
+    topic: 'Knot theory · Particle physics · Chern–Simons',
+  },
 ];
 
 const Writing: React.FC = () => {

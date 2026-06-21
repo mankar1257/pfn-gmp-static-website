@@ -12,6 +12,7 @@ import Licensing from './pages/Licensing';
 import Contact from './pages/Contact';
 import Writing from './pages/Writing';
 import TheVerticalLie from './pages/writing/TheVerticalLie';
+import TheDualBubble from './pages/writing/TheDualBubble';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ const AppContent: React.FC = () => (
         <Route path="/licensing" element={<Licensing />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/writing/the-vertical-lie" element={<TheVerticalLie />} />
+        <Route path="/writing/the-dual-bubble-hypothesis" element={<TheDualBubble />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
