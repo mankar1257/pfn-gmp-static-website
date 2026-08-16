@@ -6,6 +6,7 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   const links = [
+    { to: '/deox', label: 'DEOX' },
     { to: '/overview', label: 'Research' },
     { to: '/writing', label: 'Writing' },
     { to: '/performance', label: 'Benchmarks' },

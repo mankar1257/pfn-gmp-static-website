@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-3">
             <div className="eyebrow mb-3">Work</div>
             <ul className="space-y-1.5">
+              <li><Link to="/deox" className="text-muted hover:text-ink">Project DEOX</Link></li>
               <li><Link to="/overview" className="text-muted hover:text-ink">Research</Link></li>
               <li><Link to="/writing" className="text-muted hover:text-ink">Writing</Link></li>
               <li><Link to="/performance" className="text-muted hover:text-ink">Benchmarks</Link></li>
