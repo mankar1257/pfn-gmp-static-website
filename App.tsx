@@ -10,7 +10,6 @@ import Validation from './pages/Validation';
 import Integration from './pages/Integration';
 import Licensing from './pages/Licensing';
 import Contact from './pages/Contact';
-import Deox from './pages/Deox';
 import Writing from './pages/Writing';
 import TheVerticalLie from './pages/writing/TheVerticalLie';
 import TheDualBubble from './pages/writing/TheDualBubble';
@@ -27,7 +26,6 @@ const AppContent: React.FC = () => (
     <main className="flex-grow">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/deox" element={<Deox />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/performance" element={<Performance />} />
         <Route path="/use-cases" element={<UseCases />} />
