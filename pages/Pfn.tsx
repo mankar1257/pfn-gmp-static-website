@@ -2,6 +2,9 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ParallaxImage from '../components/ParallaxImage';
+import BigIntRace from '../components/BigIntRace';
+import { PfnEncodingDiagram, GlyphConstantTime, GlyphFixedMemory, GlyphSymbolic, GlyphValidation } from '../components/diagrams';
+import PhotoPlate from '../components/PhotoPlate';
 import SectionNav from '../components/SectionNav';
 import { scrollToEl } from '../lib/smooth-scroll';
 import {
@@ -134,6 +137,9 @@ const Pfn: React.FC = () => {
               stable arithmetic at any operand scale.
             </p>
           </div>
+        </div>
+        <div className="mt-14">
+          <PfnEncodingDiagram />
         </div>
       </section>
 
@@ -295,6 +301,8 @@ const Pfn: React.FC = () => {
           </figure>
         </div>
 
+        <BigIntRace />
+
         <p className="mt-8 font-mono text-[11px] text-white/40 leading-relaxed max-w-3xl">
           Methodology — PFN 0.1.0 vs GMP 6.3.0 · single core, Apple Silicon · February 2026.
           Inputs pre-encoded; only chain operations timed; results validated against GMP for exactness.
@@ -307,11 +315,15 @@ const Pfn: React.FC = () => {
           <div className="eyebrow mb-6">§3 · System architecture</div>
           <h2 className="display text-4xl md:text-5xl text-white">Core Properties</h2>
         </div>
+
+        <div className="mb-16">
+          <PhotoPlate src="/assets/plate-super.jpg" alt="Rack doors of the Pleiades supercomputer receding down an aisle at NASA Ames" label="NASA Pleiades · Ames Research Center" height="h-56" />
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           <div className="relative group">
             <div className="absolute -inset-4 bg-white/0 group-hover:bg-white/5 transition-colors rounded-xl -z-10"></div>
-            <div className="font-mono text-brand-500 text-sm mb-4">SYS-01</div>
+            <div className="flex items-center gap-3 mb-4"><GlyphConstantTime /><span className="font-mono text-brand-500 text-sm">SYS-01</span></div>
             <h3 className="text-xl text-white font-medium mb-3">Constant-Time Operations</h3>
             <p className="text-muted leading-relaxed">
               Addition, multiplication, division and exponentiation complete in time
@@ -320,7 +332,7 @@ const Pfn: React.FC = () => {
           </div>
           <div className="relative group">
             <div className="absolute -inset-4 bg-white/0 group-hover:bg-white/5 transition-colors rounded-xl -z-10"></div>
-            <div className="font-mono text-brand-500 text-sm mb-4">SYS-02</div>
+            <div className="flex items-center gap-3 mb-4"><GlyphFixedMemory /><span className="font-mono text-brand-500 text-sm">SYS-02</span></div>
             <h3 className="text-xl text-white font-medium mb-3">Deterministic Memory</h3>
             <p className="text-muted leading-relaxed">
               Each state node occupies exactly <span className="font-mono text-white">415 bytes</span>, regardless of magnitude.
@@ -329,7 +341,7 @@ const Pfn: React.FC = () => {
           </div>
           <div className="relative group">
             <div className="absolute -inset-4 bg-white/0 group-hover:bg-white/5 transition-colors rounded-xl -z-10"></div>
-            <div className="font-mono text-brand-500 text-sm mb-4">SYS-03</div>
+            <div className="flex items-center gap-3 mb-4"><GlyphSymbolic /><span className="font-mono text-brand-500 text-sm">SYS-03</span></div>
             <h3 className="text-xl text-white font-medium mb-3">Symbolic Evaluation</h3>
             <p className="text-muted leading-relaxed">
               Numerical definitions are preserved symbolically across operation chains.
@@ -338,7 +350,7 @@ const Pfn: React.FC = () => {
           </div>
           <div className="relative group">
             <div className="absolute -inset-4 bg-white/0 group-hover:bg-white/5 transition-colors rounded-xl -z-10"></div>
-            <div className="font-mono text-brand-500 text-sm mb-4">SYS-04</div>
+            <div className="flex items-center gap-3 mb-4"><GlyphValidation /><span className="font-mono text-brand-500 text-sm">SYS-04</span></div>
             <h3 className="text-xl text-white font-medium mb-3">Empirical Validation</h3>
             <p className="text-muted leading-relaxed">
               Every telemetry point is actively reproducible. Testing infrastructure and the underlying

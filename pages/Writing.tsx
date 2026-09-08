@@ -12,6 +12,8 @@ interface Post {
   reading: string;
   author: string;
   topic: string;
+  image: string;      // cover thumbnail (local asset)
+  imageAlt: string;
 }
 
 const posts: Post[] = [
@@ -24,6 +26,8 @@ const posts: Post[] = [
     date: '27 May 2026',
     isoDate: '2026-05-27',
     reading: '14 min',
+    image: '/assets/essay-vertical-city.jpg',
+    imageAlt: 'Aerial view of a dense vertical city at dusk',
     author: 'Sarvin Samuel Bastin',
     topic: 'Chennai · Tamil Nadu · Urbanism',
   },
@@ -36,6 +40,8 @@ const posts: Post[] = [
     date: 'April 2026',
     isoDate: '2026-04-01',
     reading: '18 min',
+    image: '/assets/nebula-bubble.jpg',
+    imageAlt: 'The Bubble Nebula, photographed by Hubble',
     author: 'Sarvin Samuel Bastin · Vaibhav Mankar',
     topic: 'Knot theory · Particle physics · Chern–Simons',
   },
@@ -70,6 +76,14 @@ const Writing: React.FC = () => {
                     <time dateTime={p.isoDate} className="mono text-xs text-muted block mt-2">
                       {p.date}
                     </time>
+                    <div className="mt-5 overflow-hidden border border-hairline hidden md:block">
+                      <img
+                        src={p.image}
+                        alt={p.imageAlt}
+                        loading="lazy"
+                        className="w-full aspect-[4/3] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                      />
+                    </div>
                   </div>
                   <div className="md:col-span-9 max-w-measure">
                     <h2 className="display text-3xl md:text-4xl font-semibold text-ink group-hover:text-accent transition-colors">

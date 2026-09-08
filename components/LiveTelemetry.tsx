@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 /**
- * Live orbital-environment telemetry, assembled entirely from open sources
- * (NOAA SWPC space-weather feeds + the public ISS ephemeris). This is the
- * threat DEOX certifies against, shown as it stands right now — clearly
- * labelled as external open data, not our measurement. Degrades to a
- * "feed unreachable" state without breaking the page.
+ * Live orbital-environment telemetry (NOAA SWPC space-weather feeds + the
+ * public ISS ephemeris) — the threat DEOX certifies against, as it stands
+ * right now. Degrades to a "feed unreachable" state without breaking the page.
  */
 
 type Tile = { label: string; value: string; status: string; tone: 'ok' | 'warn' | 'muted'; note: string };
@@ -106,15 +104,12 @@ const LiveTelemetry: React.FC = () => {
           <span className={`inline-block w-1.5 h-1.5 rounded-full ${dead ? 'bg-white/30' : 'bg-emerald-500 animate-pulse'}`} aria-hidden="true" />
           The environment, right now
         </span>
-        <span className="font-mono text-[10px] text-white/40 tracking-wide">
-          [ live open data · NOAA SWPC / wheretheiss.at — not our measurement ]
-        </span>
+
       </div>
 
       {dead ? (
         <p className="px-5 py-8 font-mono text-xs text-white/50">
-          Live feed unreachable — values withheld rather than shown stale. The sources are public:
-          services.swpc.noaa.gov · wheretheiss.at.
+          Live feed unreachable — values withheld rather than shown stale.
         </p>
       ) : !tiles ? (
         <p className="px-5 py-8 font-mono text-xs text-white/40" role="status">Acquiring open telemetry…</p>
@@ -131,7 +126,7 @@ const LiveTelemetry: React.FC = () => {
             ))}
           </dl>
           <p className="px-5 py-3 border-t border-white/10 font-mono text-[10px] text-white/40 tracking-wide">
-            Refreshed every 5 minutes · {asOf} · Reading QUIET? Upsets happen anyway — galactic background
+            NOAA SWPC · wheretheiss.at · refreshed every 5 minutes · {asOf} · Reading QUIET? Upsets happen anyway — galactic background
             and South Atlantic Anomaly passes never sleep. DEOX assumes one unlucky particle.
           </p>
         </>

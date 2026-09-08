@@ -2,6 +2,8 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ParallaxImage from '../components/ParallaxImage';
+import { GlyphMath, GlyphPhysics, GlyphAI, GlyphData } from '../components/diagrams';
+import PhotoPlate from '../components/PhotoPlate';
 
 const FADE_UP: Variants = {
   initial: { opacity: 0, y: 20 },
@@ -100,7 +102,8 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
             <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
-              <div className="font-mono text-sm text-brand-500/80 mb-6">01</div>
+              <div className="flex items-center gap-3 mb-6"><GlyphMath /><span className="font-mono text-sm text-brand-500/80">01</span></div>
+              <div className="mb-6"><PhotoPlate src="/assets/plate-math.jpg" alt="A system of linear equations, in print" label="Exact systems" height="h-36" imgClassName="invert" /></div>
               <h3 className="serif text-3xl font-semibold text-white mb-6">Mathematics</h3>
               <p className="text-white/50 font-light leading-relaxed text-lg">
                 New approaches to representing and operating on information, eliminating classical computational bottlenecks.
@@ -108,7 +111,8 @@ const Home: React.FC = () => {
               <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">PFN · measured vs GMP 6.3.0</div>
             </div>
             <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
-              <div className="font-mono text-sm text-brand-500/80 mb-6">02</div>
+              <div className="flex items-center gap-3 mb-6"><GlyphPhysics /><span className="font-mono text-sm text-brand-500/80">02</span></div>
+              <div className="mb-6"><PhotoPlate src="/assets/nebula-bubble.jpg" alt="The Bubble Nebula photographed by Hubble" label="Field & geometry" height="h-36" /></div>
               <h3 className="serif text-3xl font-semibold text-white mb-6">Physics</h3>
               <p className="text-white/50 font-light leading-relaxed text-lg">
                 Physical principles and systems thinking applied to computation, intelligence, and edge environments.
@@ -116,7 +120,8 @@ const Home: React.FC = () => {
               <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">Single-event fault physics · Project DEOX threat model</div>
             </div>
             <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
-              <div className="font-mono text-sm text-brand-500/80 mb-6">03</div>
+              <div className="flex items-center gap-3 mb-6"><GlyphAI /><span className="font-mono text-sm text-brand-500/80">03</span></div>
+              <div className="mb-6"><PhotoPlate src="/assets/plate-ai.jpg" alt="NASA Robonaut's hand gripping a tool" label="Machine intelligence" height="h-36" /></div>
               <h3 className="serif text-3xl font-semibold text-white mb-6">AI</h3>
               <p className="text-white/50 font-light leading-relaxed text-lg">
                 Intelligence built on stronger, deterministic computational foundations for zero-trust mission critical systems.
@@ -124,7 +129,8 @@ const Home: React.FC = () => {
               <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">Gradient-free learning · manuscript complete</div>
             </div>
             <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
-              <div className="font-mono text-sm text-brand-500/80 mb-6">04</div>
+              <div className="flex items-center gap-3 mb-6"><GlyphData /><span className="font-mono text-sm text-brand-500/80">04</span></div>
+              <div className="mb-6"><PhotoPlate src="/assets/plate-data.jpg" alt="Server racks glowing in a dark aisle" label="Exact at scale" height="h-36" /></div>
               <h3 className="serif text-3xl font-semibold text-white mb-6">Data</h3>
               <p className="text-white/50 font-light leading-relaxed text-lg">
                 Information represented, verified, and processed exactly at massive orbital and terrestrial scale.

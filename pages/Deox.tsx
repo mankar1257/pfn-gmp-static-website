@@ -5,6 +5,10 @@ import ParallaxImage from '../components/ParallaxImage';
 import SectionNav from '../components/SectionNav';
 import { scrollToEl } from '../lib/smooth-scroll';
 import LiveTelemetry from '../components/LiveTelemetry';
+import OrbitalMap from '../components/OrbitalMap';
+import { DeoxFlowDiagram } from '../components/diagrams';
+import ParticleStrikeSim from '../components/ParticleStrikeSim';
+import PhotoPlate from '../components/PhotoPlate';
 
 /**
  * Project DEOX — flagship system page.
@@ -529,8 +533,11 @@ const Deox: React.FC = () => {
           </div>
         </div>
 
+        <ParticleStrikeSim />
+
         {/* Live orbital environment — open-source telemetry */}
         <LiveTelemetry />
+        <OrbitalMap />
 
         {/* Interactive fault console */}
         <FaultConsole />
@@ -555,7 +562,7 @@ const Deox: React.FC = () => {
             A silently wrong answer looks exactly like a right one — until the mission pays for it.
           </p>
           <p className="mt-4 font-mono text-[11px] text-white/40 leading-relaxed">
-            Open sources — Phobos-Grunt: official inquiry conclusion, 2012 · CFESat on-orbit upset rates, IEEE
+            Sources — Phobos-Grunt: official inquiry conclusion, 2012 · CFESat on-orbit upset rates, IEEE
             Aerospace 2009 · SDA Tranche 3 awards, Dec 2025.
           </p>
         </div>
@@ -573,6 +580,9 @@ const Deox: React.FC = () => {
             <p className="mt-6 text-emerald-100/60 font-light leading-relaxed">
               Requirements for onboard AI assurance are forming now. No product exists to satisfy them.
             </p>
+            <div className="mt-10">
+              <PhotoPlate src="/assets/plate-cleanroom.jpg" alt="Technicians in cleanroom suits integrating a spacecraft instrument" label="Payloads under integration, today" height="h-56" />
+            </div>
           </div>
           <div className="lg:col-span-8">
             <ol className="m-0 list-none p-0 border-t border-white/10">
@@ -638,7 +648,7 @@ const Deox: React.FC = () => {
             </p>
           </details>
           <p className="mt-6 font-mono text-[11px] text-white/40 leading-relaxed">
-            Open sources — DoDD 3000.09 · Regulation (EU) 2024/1689 Art. 15 · ESA Φ-sat BIST mandate · ESA FTMR
+            Sources — DoDD 3000.09 · Regulation (EU) 2024/1689 Art. 15 · ESA Φ-sat BIST mandate · ESA FTMR
             report · zkML literature · NVIDIA ABFT-for-CNNs research.
           </p>
         </div>
@@ -655,6 +665,8 @@ const Deox: React.FC = () => {
               Trained exactly as today — no retraining, no model surgery. DEOX FT Compiler handles fault-tolerant lowering, automatic certificate insertion, and generates a machine-readable coverage map of what is protected.
             </p>
           </div>
+
+          <DeoxFlowDiagram />
 
           {/* Compiler flow strip */}
           <div className="mb-16 flex flex-col md:flex-row items-stretch gap-0">
@@ -782,6 +794,9 @@ const Deox: React.FC = () => {
               Every boundary has a number. Some limits exist by design; all of them are tested, measured and
               published in the data room. Nothing waits to be discovered.
             </p>
+            <div className="mt-10">
+              <PhotoPlate src="/assets/plate-chamber.jpg" alt="The vast door of NASA JSC's thermal-vacuum Chamber A, two engineers dwarfed inside" label="The environment, rehearsed · NASA JSC" height="h-56" />
+            </div>
           </div>
         </div>
       </section>

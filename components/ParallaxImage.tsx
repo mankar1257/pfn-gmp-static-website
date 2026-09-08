@@ -34,7 +34,10 @@ const ParallaxImage: React.FC<{
       {reduced ? (
         <div className="absolute inset-0" style={bg} />
       ) : (
-        <motion.div className="absolute -inset-y-[14%] inset-x-0" style={{ y, ...bg }} />
+        <motion.div className="absolute -inset-y-[14%] inset-x-0" style={{ y }}>
+          {/* inner layer carries the slow cinematic drift; framer owns the outer transform */}
+          <div className={`absolute inset-0 ${mode === 'hero' ? 'kenburns' : ''}`} style={bg} />
+        </motion.div>
       )}
     </div>
   );
