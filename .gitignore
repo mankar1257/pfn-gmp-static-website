@@ -40,3 +40,8 @@ lerna-debug.log*
 *.log
 .temp
 check-errors.js
+
+# Local reference drops (not site source)
+deox-repo/
+pfn-gmp-static-website-new-update-ref/
+DEOX deck review.zip

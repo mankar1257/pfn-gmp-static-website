@@ -1,169 +1,186 @@
 import React from 'react';
+import { motion, Variants } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import ParallaxImage from '../components/ParallaxImage';
+
+const FADE_UP: Variants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+};
 
 const Home: React.FC = () => {
-  const benchmarks = [
-    { op: 'Chain multiplication', pfn: '0.07 μs', gmp: '9.88 μs', factor: '141×' },
-    { op: 'Division', pfn: '0.89 μs', gmp: '105.02 μs', factor: '118×' },
-    { op: 'Addition', pfn: '0.03 μs', gmp: '2.41 μs', factor: '80×' },
-    { op: 'Power (7^1,000,000)', pfn: '3 μs', gmp: '2,700,000 μs', factor: '899,000×' },
-  ];
-
   return (
-    <div>
-      {/* Masthead — typographic, editorial */}
-      <section className="max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-28 pb-16">
-        <div className="max-w-measure">
-          <p className="eyebrow mb-6">Null Field Research · Established 2024</p>
-          <h1 className="display text-5xl md:text-6xl lg:text-7xl font-semibold text-ink">
-            Exact arithmetic,<br />without scaling cost.
-          </h1>
-          <p className="mt-8 text-lg text-muted max-w-prose leading-relaxed">
-            We study computational structures that decouple precision from runtime.
-            Our flagship system, <span className="text-ink font-medium">PFN</span>, performs arbitrary-precision
-            arithmetic in constant time and fixed memory, replacing the size-dependent overhead of
-            classical bignum libraries.
-          </p>
+    <div className="min-h-screen text-white font-sans">
+      
+      {/* Brutalist Hero */}
+      <section className="relative min-h-screen flex items-center pt-24 overflow-hidden border-b border-white/10">
+        {/* Austere Background Grid */}
+        <div className="absolute inset-0 z-0">
+          {/* High-end Abstract Topography/Satellite Image */}
+          <ParallaxImage src="/assets/hero-earth-lights.jpg" mode="hero" className="opacity-60" />
+          
+          {/* Gradient masking for readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/50"></div>
+          
+          {/* Technical Grid Overlay */}
+          <div className="absolute inset-0 tech-grid opacity-[0.06]" style={{ backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 1) 1px, transparent 1px)', backgroundSize: '100px 100px' }}></div>
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+          
+          {/* subtle glow */}
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white/10 rounded-[100%] blur-[120px] pointer-events-none"></div>
+        </div>
+        
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 flex flex-col justify-center">
+          <motion.div 
+            initial="initial"
+            animate="animate"
+            transition={{ staggerChildren: 0.1 }}
+            className="max-w-6xl"
+          >
+            <motion.div variants={FADE_UP} className="flex items-center gap-6 mb-12">
+               <div className="h-[1px] w-12 bg-white/40"></div>
+               <span className="eyebrow text-white/50">Null Field Research</span>
+            </motion.div>
+            
+            <motion.h1 variants={FADE_UP} className="display text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] text-white mb-10">
+              Foundational Software <br className="hidden md:block"/>for the Edge.
+            </motion.h1>
 
-          <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm">
-            <Link to="/overview" className="link">Read the research →</Link>
-            <Link to="/performance" className="text-muted hover:text-ink">Benchmark data</Link>
-            <Link to="/contact" className="text-muted hover:text-ink">Correspondence</Link>
-          </div>
+            <motion.p variants={FADE_UP} className="text-2xl md:text-3xl text-white/40 font-light tracking-wide max-w-4xl mb-16 leading-relaxed">
+              Engineering new mathematical and physical architectures for Intelligence, Defence, and Space.
+            </motion.p>
+            
+            <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-8">
+              <Link to="/deox" className="px-8 py-5 bg-brand-500 text-black font-semibold uppercase tracking-widest text-xs hover:bg-brand-400 transition-colors">
+                Explore Project DEOX
+              </Link>
+              <Link to="/pfn" className="px-8 py-5 bg-transparent border border-white/20 text-white font-semibold uppercase tracking-widest text-xs hover:bg-white/5 transition-colors">
+                View Architecture
+              </Link>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Abstract */}
-      <section className="max-w-page mx-auto px-6 lg:px-10 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-3">
-            <div className="eyebrow">Abstract</div>
-          </div>
-          <div className="md:col-span-9 max-w-measure">
-            <p className="abstract">
-              Conventional multi-precision libraries such as GMP store a number as a digit array
-              and operate on it digit-by-digit. The cost of every arithmetic step grows with the
-              size of its operands. PFN replaces this representation with a symbolic, fixed-width
-              encoding whose operations are O(1) in both time and memory. The result is exact
-              arithmetic that does not slow down as numbers grow.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Headline numbers — clean table, no cards */}
-      <section className="max-w-page mx-auto px-6 lg:px-10 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-3">
-            <div className="eyebrow">Selected results</div>
-            <p className="text-sm text-muted mt-3">
-              Measured per operation on a single core, averaged over 10⁶ iterations.
-              <Link to="/performance" className="link block mt-2">Full methodology →</Link>
-            </p>
-          </div>
-          <div className="md:col-span-9">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Operation</th>
-                  <th className="text-right">PFN</th>
-                  <th className="text-right">GMP</th>
-                  <th className="text-right">Factor</th>
-                </tr>
-              </thead>
-              <tbody>
-                {benchmarks.map((b) => (
-                  <tr key={b.op}>
-                    <td className="text-ink">{b.op}</td>
-                    <td className="text-right num text-ink">{b.pfn}</td>
-                    <td className="text-right num text-muted">{b.gmp}</td>
-                    <td className="text-right num text-ink font-medium">{b.factor}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Properties of the system — numbered list, no bento */}
-      <section className="rule">
-        <div className="max-w-page mx-auto px-6 lg:px-10 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <div className="md:col-span-3">
-              <div className="eyebrow">The system</div>
-              <h2 className="display text-3xl md:text-4xl text-ink mt-3">Properties of PFN</h2>
-            </div>
-            <div className="md:col-span-9 max-w-measure">
-              <ol className="space-y-8">
-                <li className="grid grid-cols-12 gap-4">
-                  <span className="col-span-1 mono text-sm text-muted pt-1">01</span>
-                  <div className="col-span-11">
-                    <h3 className="serif text-xl text-ink">Constant-time operations</h3>
-                    <p className="mt-2 text-muted leading-relaxed">
-                      Addition, multiplication, division and exponentiation complete in time
-                      independent of operand magnitude. Performance does not degrade with scale.
-                    </p>
-                  </div>
-                </li>
-                <li className="grid grid-cols-12 gap-4">
-                  <span className="col-span-1 mono text-sm text-muted pt-1">02</span>
-                  <div className="col-span-11">
-                    <h3 className="serif text-xl text-ink">Fixed memory footprint</h3>
-                    <p className="mt-2 text-muted leading-relaxed">
-                      Each number occupies <span className="mono text-ink">415 bytes</span>, regardless of magnitude.
-                      Allocation is predictable; there is no growth, no fragmentation.
-                    </p>
-                  </div>
-                </li>
-                <li className="grid grid-cols-12 gap-4">
-                  <span className="col-span-1 mono text-sm text-muted pt-1">03</span>
-                  <div className="col-span-11">
-                    <h3 className="serif text-xl text-ink">Exact symbolic results</h3>
-                    <p className="mt-2 text-muted leading-relaxed">
-                      Numbers are held in a symbolic form that preserves identity across operations.
-                      There is no rounding and no accumulated floating-point error.
-                    </p>
-                  </div>
-                </li>
-                <li className="grid grid-cols-12 gap-4">
-                  <span className="col-span-1 mono text-sm text-muted pt-1">04</span>
-                  <div className="col-span-11">
-                    <h3 className="serif text-xl text-ink">Empirically validated against GMP</h3>
-                    <p className="mt-2 text-muted leading-relaxed">
-                      Every reported figure is reproducible. Benchmark tooling and the underlying
-                      methodology are available under commercial licence.
-                      <Link to="/validation" className="link ml-1">Read validation notes →</Link>
-                    </p>
-                  </div>
-                </li>
-              </ol>
+      {/* The Thesis */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-40 border-b border-white/5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div className="lg:col-span-4">
+            <div className="eyebrow text-white/40">
+              01 · Thesis
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Closing note */}
-      <section className="rule">
-        <div className="max-w-page mx-auto px-6 lg:px-10 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <div className="md:col-span-3">
-              <div className="eyebrow">Get in touch</div>
-            </div>
-            <div className="md:col-span-9 max-w-measure">
-              <p className="serif text-2xl md:text-3xl text-ink leading-snug">
-                If your work depends on numerical exactness — in cryptography, computational
-                geometry, simulation, or financial modelling — we would like to hear from you.
+          <div className="lg:col-span-8">
+            <h2 className="display text-3xl md:text-5xl text-white leading-[1.15]">
+              Modern intelligence and mission systems increasingly depend on how information is represented, processed, and understood.
+            </h2>
+            <div className="mt-12 space-y-8 text-xl text-white/50 font-light leading-relaxed max-w-3xl">
+              <p>
+                Null Field Research develops new foundations across mathematics, physics, AI, and data to approach difficult computational and real-world problems differently.
               </p>
-              <p className="mt-6 text-muted">
-                Write to <a className="link" href="mailto:viv@null-field.com">viv@null-field.com</a> for
-                a technical conversation, or read the{' '}
-                <Link to="/overview" className="link">research overview</Link> to start.
+              <p>
+                We do not build incremental improvements on legacy architectures. We rethink computation from the ground up, engineering systems capable of operating at the extreme edges of scale, reliability, and security.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Technology Foundations */}
+      <section className="relative z-10 bg-transparent border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-40">
+          <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div>
+              <div className="eyebrow text-white/40 mb-6">
+                02 · Capabilities
+              </div>
+              <h2 className="display text-4xl md:text-6xl text-white">Core Disciplines</h2>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
+            <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
+              <div className="font-mono text-sm text-brand-500/80 mb-6">01</div>
+              <h3 className="serif text-3xl font-semibold text-white mb-6">Mathematics</h3>
+              <p className="text-white/50 font-light leading-relaxed text-lg">
+                New approaches to representing and operating on information, eliminating classical computational bottlenecks.
+              </p>
+              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">PFN · measured vs GMP 6.3.0</div>
+            </div>
+            <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
+              <div className="font-mono text-sm text-brand-500/80 mb-6">02</div>
+              <h3 className="serif text-3xl font-semibold text-white mb-6">Physics</h3>
+              <p className="text-white/50 font-light leading-relaxed text-lg">
+                Physical principles and systems thinking applied to computation, intelligence, and edge environments.
+              </p>
+              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">Single-event fault physics · Project DEOX threat model</div>
+            </div>
+            <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
+              <div className="font-mono text-sm text-brand-500/80 mb-6">03</div>
+              <h3 className="serif text-3xl font-semibold text-white mb-6">AI</h3>
+              <p className="text-white/50 font-light leading-relaxed text-lg">
+                Intelligence built on stronger, deterministic computational foundations for zero-trust mission critical systems.
+              </p>
+              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">Gradient-free learning · manuscript complete</div>
+            </div>
+            <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
+              <div className="font-mono text-sm text-brand-500/80 mb-6">04</div>
+              <h3 className="serif text-3xl font-semibold text-white mb-6">Data</h3>
+              <p className="text-white/50 font-light leading-relaxed text-lg">
+                Information represented, verified, and processed exactly at massive orbital and terrestrial scale.
+              </p>
+              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">Per-answer certified inference · Project DEOX</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We're Building */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-40">
+        <div className="mb-24">
+           <div className="eyebrow text-white/40 mb-6">
+              03 · Projects
+            </div>
+          <h2 className="display text-4xl md:text-6xl text-white">What We're Building</h2>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* PFN */}
+          <div className="relative border border-white/10 bg-[#030303] p-12 lg:p-16 group overflow-hidden hover:border-white/30 transition-colors duration-500">
+            <div aria-hidden="true" className="absolute top-0 right-0 p-8 opacity-10 font-mono text-6xl font-bold tracking-tighter group-hover:opacity-20 transition-opacity">PFN</div>
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="font-mono text-white/50 text-xs mb-8 uppercase tracking-widest border-b border-white/10 pb-4">Core Technology</div>
+              <h3 className="display text-5xl text-white mb-6">PFN</h3>
+              <p className="text-2xl text-white/80 font-light mb-8">A new mathematical representation of information.</p>
+              <p className="text-white/50 font-light leading-relaxed mb-8 text-lg flex-grow">
+                A new arithmetic representation that decouples magnitude from execution cost: operations on arbitrarily large numbers in constant time, exact to the last digit. Chain operations measure up to 141× faster than GMP 6.3.0.
+              </p>
+              <div className="font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase mb-6">PFN 0.1.0 · measured vs GMP 6.3.0 · Feb 2026</div>
+              <Link to="/pfn" className="inline-flex items-center text-white font-medium hover:text-white/70 transition-colors tracking-widest uppercase text-xs border border-white/20 px-8 py-4 w-fit">
+                Explore Architecture <span aria-hidden="true" className="ml-3 group-hover:translate-x-2 transition-transform">→</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* DEOX */}
+          <div className="relative border border-white/10 bg-[#030303] p-12 lg:p-16 group overflow-hidden hover:border-white/30 transition-colors duration-500">
+            <div aria-hidden="true" className="absolute top-0 right-0 p-8 opacity-10 font-mono text-6xl font-bold tracking-tighter group-hover:opacity-20 transition-opacity">DEOX</div>
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="font-mono text-white/50 text-xs mb-8 uppercase tracking-widest border-b border-white/10 pb-4">Flagship System</div>
+              <h3 className="display text-5xl text-white mb-6">DEOX</h3>
+              <p className="text-2xl text-white/80 font-light mb-8">Certified compute execution in orbit.</p>
+              <p className="text-white/50 font-light leading-relaxed mb-8 text-lg flex-grow">
+                By leveraging PFN's exactness, DEOX gives every inference a per-answer, machine-checkable certificate — fault-soundness for orbital and edge missions against silent radiation-induced corruption on commercial hardware.
+              </p>
+              <div className="font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase mb-6">Simulation · pre-silicon · seeking design partners</div>
+              <Link to="/deox" className="inline-flex items-center text-white font-medium hover:text-white/70 transition-colors tracking-widest uppercase text-xs border border-white/20 px-8 py-4 w-fit">
+                Explore Platform <span aria-hidden="true" className="ml-3 group-hover:translate-x-2 transition-transform">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 };

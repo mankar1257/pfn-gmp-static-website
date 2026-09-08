@@ -91,7 +91,7 @@ const sources = [
 
 const TheVerticalLie: React.FC = () => {
   return (
-    <article>
+    <article className="editorial">
       {/* Masthead */}
       <header className="max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-24 pb-16 border-b border-ink/20">
         <p className="eyebrow mb-6 text-flag-red">— Essay · Urbanism · 27 May 2026</p>
@@ -287,11 +287,16 @@ const TheVerticalLie: React.FC = () => {
                   />
                   <Tooltip
                     cursor={{ stroke: HAIRLINE }}
-                    contentStyle={tooltipStyle}
-                    labelStyle={tooltipLabelStyle}
-                    formatter={(_v: any, _n: any, p: any) =>
-                      [`${p.payload.x} avg storeys · ${p.payload.y.toLocaleString()} / km²`, p.payload.city]
-                    }
+                    content={({ active, payload }: any) => {
+                      if (!active || !payload?.length) return null;
+                      const d = payload[0].payload;
+                      return (
+                        <div style={tooltipStyle as React.CSSProperties}>
+                          <div style={tooltipLabelStyle as React.CSSProperties}>{d.city}</div>
+                          <div>{`${d.x} avg storeys · ${d.y.toLocaleString()} / km²`}</div>
+                        </div>
+                      );
+                    }}
                   />
                   <Scatter name="Mid-rise cities" data={densityData.midRise} fill={FLAG_GREEN} shape="circle" />
                   <Scatter name="Vertical-led cities" data={densityData.verticalLed} fill={FLAG_RED} shape="triangle" />
@@ -308,9 +313,9 @@ const TheVerticalLie: React.FC = () => {
                 Vertical-led cities
               </span>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               Sources: City of Paris census; Robert Gordon (CNU); World Cities Database; Brandon Donnelly density analysis (2025). Houston density per US Census Bureau, 2023 estimates.
-            </figcaption>
+            </footer>
           </figure>
 
           {/* Closing paragraph for §02 */}
@@ -365,8 +370,8 @@ const TheVerticalLie: React.FC = () => {
                 of better-spaced layouts.
               </p>
             </figcaption>
-            <div className="h-72 md:h-80 p-4">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-72 md:h-80 p-4 overflow-x-auto">
+              <ResponsiveContainer width="100%" height="100%" minWidth={480}>
                 <BarChart data={tbData} layout="vertical" margin={{ top: 16, right: 32, bottom: 32, left: 16 }}>
                   <CartesianGrid stroke="#F3F3F2" horizontal={false} />
                   <XAxis
@@ -395,9 +400,9 @@ const TheVerticalLie: React.FC = () => {
                 </BarChart>
               </ResponsiveContainer>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               Source: Sapra, Bardhan &amp; Singh, “Association between architectural parameters and burden of tuberculosis in three resettlement colonies of M-East Ward, Mumbai,” Cities &amp; Health, 4(3), 2020. Lallubhai Compound: 145 / 1,640 households. Natwar Parekh Compound: 123 / 1,107 households. PMG Colony (better layout): 5 / 465 households.
-            </figcaption>
+            </footer>
           </figure>
 
           {/* Body */}
@@ -451,8 +456,8 @@ const TheVerticalLie: React.FC = () => {
                 per capita explain the green column far better than floor count. Height ranks last.
               </p>
             </figcaption>
-            <div className="h-[420px] md:h-[480px] p-4">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[420px] md:h-[480px] p-4 overflow-x-auto">
+              <ResponsiveContainer width="100%" height="100%" minWidth={560}>
                 <BarChart data={driversData} layout="vertical" margin={{ top: 16, right: 32, bottom: 32, left: 16 }}>
                   <CartesianGrid stroke="#F3F3F2" horizontal={false} />
                   <XAxis
@@ -483,9 +488,9 @@ const TheVerticalLie: React.FC = () => {
                 </BarChart>
               </ResponsiveContainer>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               Composite weighting from World Bank Urban Development indicators, Indian Census 2011 service-access data, and Bettencourt–Lobo urban scaling analysis (Krea / Imperial College, 2019). Floor count’s contribution is statistically indistinguishable from zero once governance variables are controlled.
-            </figcaption>
+            </footer>
           </figure>
         </div>
       </section>
@@ -518,7 +523,7 @@ const TheVerticalLie: React.FC = () => {
               <div key={t.tr}
                    className={`p-5 ${t.highlight ? '' : ''}`}
                    style={{ background: t.highlight ? 'linear-gradient(180deg, rgba(194,162,105,0.18), rgba(194,162,105,0.04))' : '#0E1116', border: t.highlight ? '1px solid #C2A269' : undefined }}>
-                <div className="tamil-script text-2xl" style={{ color: '#C2A269' }}>{t.ta}</div>
+                <div lang="ta" className="tamil-script text-2xl" style={{ color: '#C2A269' }}>{t.ta}</div>
                 <div className="mono text-[10px] tracking-[0.14em] uppercase text-paper/60 mt-1">{t.tr}</div>
                 <div className="serif text-lg font-semibold text-paper mt-3">{t.zone}</div>
                 <div className="text-sm text-paper/75 leading-relaxed mt-2">{t.desc}</div>
@@ -541,7 +546,7 @@ const TheVerticalLie: React.FC = () => {
 
               {/* Tamil pull quote */}
               <blockquote className="my-8 py-6 pl-6" style={{ borderLeft: '3px solid #C2A269', background: 'rgba(194,162,105,0.05)' }}>
-                <p className="tamil-script text-2xl" style={{ color: '#C2A269' }}>முந்நீர் வழக்கம் மகடூஉ வோடின்மை...</p>
+                <p lang="ta" className="tamil-script text-2xl" style={{ color: '#C2A269' }}>முந்நீர் வழக்கம் மகடூஉ வோடின்மை...</p>
                 <p className="serif italic text-lg text-paper/90 mt-3">“The sea is the women’s domain to engage in commerce…”</p>
                 <cite className="not-italic mono text-[10px] tracking-[0.14em] uppercase block mt-3" style={{ color: '#C2A269' }}>
                   — From Tolkappiyam, Porul-atikaram · circa 3rd century BCE – 5th century CE

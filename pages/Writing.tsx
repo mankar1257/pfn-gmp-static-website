@@ -1,4 +1,5 @@
 import React from 'react';
+import ParallaxImage from '../components/ParallaxImage';
 import { Link } from 'react-router-dom';
 
 interface Post {
@@ -31,7 +32,7 @@ const posts: Post[] = [
     title: 'The Dual Bubble Hypothesis',
     kicker: 'Paper · Interactive · Theoretical Physics',
     deck:
-      'Particle masses from hyperbolic knot volumes at the B³/H³ interface. Suppose the universe is two balls glued along a sphere — one spherical, one hyperbolic — and every particle is a knot threading the seam. Then a single formula, m = m₀·exp(V), reproduces all twelve Standard Model masses and the proton, with zero tunable parameters. Includes a live WebGL companion: orbit the geometry, sweep volumes across the mass spectrum, and walk the particle ladder.',
+      'Particle masses from hyperbolic knot volumes at the B³/H³ interface. Suppose the universe is two balls glued along a sphere — one spherical, one hyperbolic — and every particle is a knot threading the seam. Then a single formula, m = m₀·exp(V), fits all twelve Standard Model masses and the proton from one calibrated constant. Includes a live WebGL companion: orbit the geometry, sweep volumes across the mass spectrum, and walk the particle ladder.',
     date: 'April 2026',
     isoDate: '2026-04-01',
     reading: '18 min',
@@ -43,7 +44,10 @@ const posts: Post[] = [
 const Writing: React.FC = () => {
   return (
     <article>
-      <header className="max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-24 pb-12">
+      <header className="relative overflow-hidden">
+        <ParallaxImage src="/assets/nebula-bubble.jpg" className="opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black" aria-hidden="true"></div>
+        <div className="relative max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-24 pb-12">
         <p className="eyebrow mb-5">Writing</p>
         <h1 className="display text-4xl md:text-5xl lg:text-6xl font-semibold text-ink max-w-measure">
           Essays from the lab
@@ -52,6 +56,7 @@ const Writing: React.FC = () => {
           Long-form arguments about the systems, cities, and computations we work on. Published
           irregularly. Signed.
         </p>
+        </div>
       </header>
 
       <div className="max-w-page mx-auto px-6 lg:px-10 pb-24">
@@ -87,7 +92,7 @@ const Writing: React.FC = () => {
 
         <p className="mt-12 text-sm text-muted max-w-prose">
           Want to write with us, or respond to a piece? Write to{' '}
-          <a className="link" href="mailto:sarvin@null-field.com">sarvin@null-field.com</a>.
+          <a className="link" href="mailto:contact@null-field.com">contact@null-field.com</a>.
         </p>
       </div>
     </article>

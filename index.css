@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Base
+   ============================================================ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  scroll-padding-top: 112px;
+}
+/* Lenis drives smoothness; keep native smooth off so they don't fight */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  /* no background here: html carries the black canvas bg, so the fixed
+     -z-10 ambient layer (stars/glows/grain) can show through the body */
+  color: #F8FAFC;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+::selection { background-color: #10B981; color: #000; }
+
+.display {
+  font-family: 'Crimson Pro', Charter, Georgia, serif;
+  letter-spacing: -0.012em;
+  line-height: 1.08;
+  font-weight: 600;
+}
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-feature-settings: 'tnum' 1; }
+
+.link {
+  color: #10B981;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.link:hover { color: #34D399; }
+
+.rule { border-top: 1px solid #1E293B; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94A3B8;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ============================================================
+   Ambient background — aurora glows + film grain
+   (the starfield canvas lives in components/AmbientBackground)
+   ============================================================ */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  will-change: transform;
+}
+.ambient-glow-a {
+  width: 60vw; height: 60vw; left: -18vw; top: -22vh;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.18), transparent 66%);
+  animation: ambient-drift-a 52s ease-in-out infinite alternate;
+}
+.ambient-glow-b {
+  width: 50vw; height: 50vw; right: -14vw; top: 28vh;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12), transparent 66%);
+  animation: ambient-drift-b 64s ease-in-out infinite alternate;
+}
+.ambient-glow-c {
+  width: 55vw; height: 55vw; left: 18vw; bottom: -28vh;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.11), transparent 66%);
+  animation: ambient-drift-c 76s ease-in-out infinite alternate;
+}
+@keyframes ambient-drift-a { to { transform: translate(9vw, 7vh) scale(1.18); } }
+@keyframes ambient-drift-b { to { transform: translate(-7vw, -9vh) scale(1.12); } }
+@keyframes ambient-drift-c { to { transform: translate(-9vw, 5vh) scale(1.2); } }
+.ambient-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Tech grids & borders */
+.tech-border {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%);
+}
+.tech-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* ============================================================
+   Legacy editorial layer — the long-form essays under /writing
+   were designed as light "paper" documents. .editorial scopes
+   the original light palette to those pages only; everything
+   else keeps the dark theme above.
+   ============================================================ */
+.serif { font-family: 'Crimson Pro', Charter, Georgia, serif; }
+.tamil-script { font-family: 'Noto Serif Tamil', 'Crimson Pro', Charter, Georgia, serif; line-height: 1.55; }
+
+.editorial { background: #F4F0E6; color: #171717; }
+.editorial ::selection { background-color: #1D4ED8; color: #fff; }
+.editorial .display {
+  font-family: 'Crimson Pro', Charter, Georgia, serif;
+  letter-spacing: -0.012em;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.editorial .eyebrow {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: #5C5345;
+}
+/* Flag-coloured eyebrows must beat the scoped .eyebrow color above */
+.editorial .eyebrow.text-flag-red { color: #991B1B; }
+.editorial .eyebrow.text-flag-green { color: #15803D; }
+.editorial .eyebrow.text-flag-gold { color: #A16207; }
+.editorial .hover\:bg-ink\/\[0\.03\]:hover { background-color: rgba(23,23,23,0.03); }
+.editorial .link {
+  color: #1D4ED8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.editorial .link:hover { color: #1E3A8A; }
+.editorial .rule { border-top: 1px solid #DDD6C6; }
+.editorial :focus-visible { outline-color: #1D4ED8; }
+
+/* Token utilities re-grounded to the original light palette inside .editorial */
+.editorial .text-ink { color: #171717; }
+.editorial .text-ink\/80 { color: rgba(23,23,23,0.8); }
+.editorial .text-ink\/85 { color: rgba(23,23,23,0.85); }
+.editorial .hover\:text-ink:hover { color: #171717; }
+.editorial .bg-ink { background-color: #171717; }
+.editorial .hover\:bg-ink:hover { background-color: #171717; }
+.editorial .hover\:bg-ink\/90:hover { background-color: rgba(23,23,23,0.9); }
+.editorial .border-ink { border-color: #171717; }
+.editorial .border-ink\/10 { border-color: rgba(23,23,23,0.1); }
+.editorial .border-ink\/20 { border-color: rgba(23,23,23,0.2); }
+.editorial .border-ink\/30 { border-color: rgba(23,23,23,0.3); }
+.editorial .border-ink\/60 { border-color: rgba(23,23,23,0.6); }
+.editorial .hover\:border-ink:hover { border-color: #171717; }
+.editorial .text-muted { color: #5C5345; }
+.editorial .border-hairline { border-color: #DDD6C6; }
+.editorial .bg-hairline { background-color: #DDD6C6; }
+.editorial .bg-accent { background-color: #1D4ED8; }
+.editorial .text-paper { color: #F4F0E6; }
+.editorial .text-paper\/50 { color: rgba(244,240,230,0.5); }
+.editorial .text-paper\/60 { color: rgba(244,240,230,0.6); }
+.editorial .text-paper\/75 { color: rgba(244,240,230,0.75); }
+.editorial .text-paper\/85 { color: rgba(244,240,230,0.85); }
+.editorial .text-paper\/90 { color: rgba(244,240,230,0.9); }
+.editorial .text-paper\/95 { color: rgba(244,240,230,0.95); }
+.editorial .bg-paper { background-color: #F4F0E6; }
+.editorial .bg-paper\/10 { background-color: rgba(244,240,230,0.1); }
+.editorial .border-paper\/10 { border-color: rgba(244,240,230,0.1); }
+.editorial .border-paper\/15 { border-color: rgba(244,240,230,0.15); }
+.editorial .border-paper\/60 { border-color: rgba(244,240,230,0.6); }
+
+/* Pull-quote / abstract panel (essays only) */
+.abstract {
+  border-left: 2px solid #171717;
+  padding-left: 1.25rem;
+  font-family: 'Crimson Pro', Charter, Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: #171717;
+}
+
+/* Data table (essays only) */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-feature-settings: 'tnum' 1;
+}
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #DDD6C6;
+  font-size: 0.95rem;
+}
+.data-table th {
+  font-weight: 500;
+  color: #5C5345;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table .num { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+/* Editorial drop cap */
+.has-dropcap > p:first-of-type::first-letter {
+  font-family: 'Crimson Pro', Charter, Georgia, serif;
+  font-weight: 700;
+  font-size: 4.2em;
+  float: left;
+  line-height: 0.85;
+  margin: 0.06em 0.08em 0 -0.04em;
+  color: #171717;
+}
+
+/* Full-bleed inverted section inside essays */
+.bleed-dark {
+  background: #0E1116;
+  color: #F4F0E6;
+}
+.bleed-dark .eyebrow { color: #C2A269; }
+.bleed-dark .link { color: #E5C77A; }
+.bleed-dark .link:hover { color: #F4F0E6; }
+
+/* ============================================================
+   Accessibility
+   ============================================================ */
+:focus-visible { outline: 2px solid #0EA5E9; outline-offset: 2px; }
+
+/* Skip-to-content link — visible only when focused */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: #10B981;
+  color: #000;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: top 0.15s ease;
+}
+.skip-link:focus-visible { top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -3,158 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Null Field Research</title>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              paper: '#F4F0E6',
-              ink: '#171717',
-              muted: '#5C5345',
-              hairline: '#DDD6C6',
-              accent: {
-                DEFAULT: '#1D4ED8',
-                hover: '#1E3A8A',
-              },
-              /* Semantic flags — only for argumentative content (claim/reality, charts). Used sparingly. */
-              flag: {
-                red:   '#991B1B',
-                green: '#15803D',
-                gold:  '#A16207',
-              },
-            },
-            fontFamily: {
-              serif: ['"Crimson Pro"', 'Charter', 'Georgia', 'serif'],
-              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-              mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
-              tamil: ['"Noto Serif Tamil"', '"Crimson Pro"', 'Charter', 'Georgia', 'serif'],
-            },
-            maxWidth: {
-              prose: '38rem',
-              measure: '46rem',
-              page: '70rem',
-            },
-            letterSpacing: {
-              tightish: '-0.011em',
-            },
-          },
-        },
-      }
-    </script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600;700&display=swap');
-      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-      body {
-        font-family: 'Inter', system-ui, sans-serif;
-        background: #F4F0E6;
-        color: #171717;
-        font-size: 16px;
-        line-height: 1.6;
-      }
-      ::selection { background-color: #1D4ED8; color: #fff; }
+    <title>Null Field Research — Foundational Software for the Edge</title>
+    <meta
+      name="description"
+      content="Null Field Research engineers exact arbitrary-precision arithmetic (PFN) and certified onboard AI inference (Project DEOX) for intelligence, defence, and space."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      /* Editorial display headings */
-      .display {
-        font-family: 'Crimson Pro', Charter, Georgia, serif;
-        letter-spacing: -0.012em;
-        line-height: 1.1;
-      }
-      .serif { font-family: 'Crimson Pro', Charter, Georgia, serif; }
-      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-feature-settings: 'tnum' 1; }
+    <!-- Open Graph / social cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Null Field Research" />
+    <meta property="og:title" content="Null Field Research — Foundational Software for the Edge" />
+    <meta
+      property="og:description"
+      content="Exact arbitrary-precision arithmetic (PFN) and certified onboard AI inference (Project DEOX) for intelligence, defence, and space."
+    />
+    <meta property="og:url" content="https://null-field.com/" />
+    <meta property="og:image" content="https://null-field.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Null Field Research — Foundational Software for the Edge" />
+    <meta
+      name="twitter:description"
+      content="Exact arbitrary-precision arithmetic (PFN) and certified onboard AI inference (Project DEOX) for intelligence, defence, and space."
+    />
+    <meta name="twitter:image" content="https://null-field.com/og-image.png" />
 
-      /* Editorial link style — used sparingly */
-      .link {
-        color: #1D4ED8;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-      }
-      .link:hover { color: #1E3A8A; }
-
-      /* Subtle hairline rule */
-      .rule { border-top: 1px solid #DDD6C6; }
-
-      /* Pull-quote / abstract panel */
-      .abstract {
-        border-left: 2px solid #171717;
-        padding-left: 1.25rem;
-        font-family: 'Crimson Pro', Charter, Georgia, serif;
-        font-size: 1.25rem;
-        line-height: 1.55;
-        color: #171717;
-      }
-
-      /* Small caps eyebrow */
-      .eyebrow {
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: #5C5345;
-      }
-
-      /* Data table */
-      .data-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-feature-settings: 'tnum' 1;
-      }
-      .data-table th,
-      .data-table td {
-        text-align: left;
-        padding: 0.6rem 0.75rem;
-        border-bottom: 1px solid #DDD6C6;
-        font-size: 0.95rem;
-      }
-      .data-table th {
-        font-weight: 500;
-        color: #5C5345;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 0.06em;
-      }
-      .data-table tr:last-child td { border-bottom: none; }
-      .data-table .num { font-family: 'JetBrains Mono', ui-monospace, monospace; }
-
-      /* Focus ring — accessibility */
-      :focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }
-
-      /* Editorial drop cap — first paragraph of an essay section */
-      .has-dropcap > p:first-of-type::first-letter {
-        font-family: 'Crimson Pro', Charter, Georgia, serif;
-        font-weight: 700;
-        font-size: 4.2em;
-        float: left;
-        line-height: 0.85;
-        margin: 0.06em 0.08em 0 -0.04em;
-        color: #171717;
-      }
-
-      /* Tamil text — proper line-height for ascenders/descenders */
-      .tamil-script {
-        font-family: 'Noto Serif Tamil', 'Crimson Pro', Charter, Georgia, serif;
-        line-height: 1.55;
-      }
-
-      /* Full-bleed inverted section — used sparingly in essays */
-      .bleed-dark {
-        background: #0E1116;
-        color: #F4F0E6;
-      }
-      .bleed-dark .eyebrow { color: #C2A269; }
-      .bleed-dark .link { color: #E5C77A; }
-      .bleed-dark .link:hover { color: #F4F0E6; }
-
-      @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      }
-    </style>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;600;700&display=swap"
+    />
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <div style="font-family: ui-monospace, monospace; color: #94A3B8; background: #000; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+        Null Field Research — this site requires JavaScript.<br />
+        Write to contact@null-field.com.
+      </div>
+    </noscript>
+    <div id="root">
+      <div style="min-height: 100vh; background: #000; display: flex; align-items: center; justify-content: center;">
+        <span style="font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: 0.3em; color: rgba(248, 250, 252, 0.4); text-transform: uppercase;">Null Field //</span>
+      </div>
+    </div>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>

@@ -1,79 +1,47 @@
-# PFN-GMP Static Website
+# Null Field Research — Website
 
-A modern, professional static website for PFN-GMP - a high-performance arbitrary-precision arithmetic SDK.
+The public website of Null Field Research: exact arbitrary-precision arithmetic (**PFN**)
+and certified onboard AI inference (**Project DEOX**) for intelligence, defence, and space.
 
-## 🚀 Features
+## Pages
 
-- **Modern Dark Theme** - Professional design with blue and purple accents
-- **Fully Responsive** - Works perfectly on desktop, tablet, and mobile
-- **Fast & Lightweight** - Built with Vite for optimal performance
-- **Type-Safe** - Written in TypeScript
-- **Animated** - Smooth animations with Framer Motion
+| Route | Page |
+|---|---|
+| `/` | Home |
+| `/pfn` | PFN — exact arithmetic architecture, benchmarks & charts |
+| `/deox` | Project DEOX — certified compute execution in orbit |
+| `/writing` | Writing index |
+| `/writing/the-vertical-lie` | Essay (light editorial layout) |
+| `/writing/the-dual-bubble-hypothesis` | Essay with interactive 3D scene (light editorial layout) |
+| `/contact` | Contact |
 
-## 🛠️ Tech Stack
+The two long-form essays intentionally render as light "paper" documents inside the dark
+shell; the `.editorial` scope in `index.css` re-grounds the design tokens for them.
 
-- **React 18** - Modern React with hooks
-- **TypeScript** - Type-safe development
-- **Vite** - Lightning-fast build tool
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **Lucide Icons** - Beautiful icon set
-- **React Router** - Client-side routing
+## Tech stack
 
-## 📦 Installation
+- **React 19** + **TypeScript**, routed with `react-router-dom` (HashRouter)
+- **Vite 7** build; route-level code splitting (`React.lazy`) — three.js and recharts load
+  only on the routes that use them
+- **Tailwind CSS 3** compiled via PostCSS (`tailwind.config.js`, `index.css`)
+- **framer-motion** for entrance animation, **recharts** for benchmark charts,
+  **three.js** for the Dual Bubble scene
+- All imagery is served locally from `public/assets/` — no external image dependencies at runtime.
+  Photography sourced under the Unsplash License (free commercial use); the Earth and nebula
+  photographs are NASA imagery (public domain) distributed via Unsplash
+
+## Develop
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
+npm run dev        # http://localhost:3000
+npm run build      # tsc --noEmit && vite build → dist/
 npm run preview
 ```
 
-## 🌐 Pages
+## Content conventions
 
-- **Home** - Hero section with key value propositions
-- **Overview** - Technical architecture and capabilities
-- **Performance** - Benchmark data and performance metrics
-- **Use Cases** - Real-world applications
-- **Validation** - Testing and verification details
-- **Integration** - Integration guide and documentation
-- **Licensing** - Pricing and license information
-- **Contact** - Contact form and information
-
-## 🎨 Design
-
-The website features a sophisticated dark theme with:
-- Deep blue and purple gradient accents
-- Glass morphism effects
-- Smooth hover transitions
-- Professional typography with Inter and JetBrains Mono
-
-## 📱 Responsive Design
-
-Fully optimized for:
-- Desktop (1920px+)
-- Laptop (1024px+)
-- Tablet (768px+)
-- Mobile (375px+)
-
-## 🔧 Development
-
-The project uses:
-- Hot Module Replacement (HMR) for instant updates
-- ESLint for code quality
-- TypeScript for type checking
-
-## 📄 License
-
-Copyright © 2026 PFN-GMP. All rights reserved.
-
-## 🤝 Contributing
-
-This is a static website project. For questions or suggestions, please contact the development team.
+- Benchmark figures trace to `BENCHMARK_REPORT.md` (PFN 0.1.0 vs GMP 6.3.0, Feb 2026).
+- DEOX claims carry explicit status labels — `[ ours · simulation · pre-silicon ]` — at
+  every occurrence; simulation numbers are never presented as silicon numbers.
+- Public contact addresses: `contact@null-field.com` · `partnership@null-field.com`.

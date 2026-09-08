@@ -152,7 +152,7 @@ const TheDualBubble: React.FC = () => {
   const selectedPoint = [{ x: selected.actual, y: selected.pred, name: selected.name }];
 
   return (
-    <article>
+    <article className="editorial">
       {/* Masthead */}
       <header className="max-w-page mx-auto px-6 lg:px-10 pt-20 md:pt-24 pb-16 border-b border-ink/20">
         <p className="eyebrow mb-6 text-flag-gold">— Paper · Theoretical Physics · April 2026</p>
@@ -179,18 +179,20 @@ const TheDualBubble: React.FC = () => {
         </dl>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <a
-            href="#geometry"
+          <button
+            type="button"
+            onClick={() => document.getElementById('geometry')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-flex items-center gap-2 bg-ink text-paper px-5 py-2.5 text-sm font-medium hover:bg-ink/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             Orbit the dual bubble ↓
-          </a>
-          <a
-            href="#results"
+          </button>
+          <button
+            type="button"
+            onClick={() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-flex items-center gap-2 border border-ink/30 text-ink px-5 py-2.5 text-sm font-medium hover:border-ink transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             Sweep the mass spectrum ↓
-          </a>
+          </button>
         </div>
       </header>
 
@@ -321,13 +323,13 @@ const TheDualBubble: React.FC = () => {
               <span className="flex items-center gap-2"><span className="inline-block w-2.5 h-2.5 rounded-full" style={{ background: FLAG_RED }} /> interface crossing</span>
             </div>
 
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               Rendered live with Three.js / WebGL in the site palette. Knot curves are schematic visual
               aids — the figure-eight (4₁) for the electron, stylised torus knots of rising complexity
               for the rest — not literal SnapPy renders. For a hyperbolic knot K, the complement S³ ∖ K
               admits a complete hyperbolic structure (Thurston); its volume V(K) is a topological
               invariant by Mostow rigidity.
-            </figcaption>
+            </footer>
           </figure>
         </div>
       </section>
@@ -464,10 +466,10 @@ const TheDualBubble: React.FC = () => {
                 </div>
               </div>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               m₀ = 0.06712 MeV is the only scale, fixed by identifying the electron with the figure-eight
               knot 4₁ (V = 2.030).
-            </figcaption>
+            </footer>
           </figure>
         </div>
       </section>
@@ -520,8 +522,7 @@ const TheDualBubble: React.FC = () => {
                       onClick={() => setVol(p.V)}
                       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setVol(p.V); } }}
                       tabIndex={0}
-                      role="button"
-                      aria-pressed={active}
+                      aria-current={active}
                       aria-label={`Select ${p.name}`}
                       className={`cursor-pointer transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent ${active ? 'bg-accent/[0.06]' : 'hover:bg-ink/[0.03]'}`}
                     >
@@ -649,9 +650,9 @@ const TheDualBubble: React.FC = () => {
                 </BarChart>
               </ResponsiveContainer>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
-              Leptons (blue), quarks (green), bosons (dark green). Mean fermion error 0.28%.
-            </figcaption>
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+              Leptons (blue), quarks (muted green), bosons (green). Mean fermion error 0.28%.
+            </footer>
           </figure>
 
           {/* Significance panel */}
@@ -740,9 +741,9 @@ const TheDualBubble: React.FC = () => {
                 </BarChart>
               </ResponsiveContainer>
             </div>
-            <figcaption className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
+            <footer className="px-6 py-3 border-t border-hairline mono text-[10px] tracking-[0.08em] uppercase text-muted leading-relaxed">
               Proton link candidate o10_149348 · V = 9.540 · predicted mass 933.1 MeV vs actual 938.272 MeV (0.55% error).
-            </figcaption>
+            </footer>
           </figure>
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-12 gap-10">

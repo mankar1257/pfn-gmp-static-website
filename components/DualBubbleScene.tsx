@@ -347,8 +347,8 @@ const DualBubbleScene: React.FC<Props> = ({ particle, className }) => {
       <div
         ref={mountRef}
         className={`relative w-full ${className ?? 'aspect-[16/10] min-h-[420px]'}`}
-        role="img"
-        aria-label={`Interactive 3D model of the dual bubble: the ${particle.name} as the knot ${particle.knot} threading the B³/H³ interface. Drag to orbit, scroll to zoom.`}
+        role="application"
+        aria-label={`Interactive 3D model of the dual bubble: the ${particle.name} as the knot ${particle.knot} threading the B³/H³ interface. Drag to orbit, scroll to zoom, or use the Reset and Pause controls below.`}
         style={{ cursor: 'grab', background: 'radial-gradient(120% 120% at 50% 35%, #FBF8F0 0%, #F4F0E6 55%, #ECE5D4 100%)' }}
       >
         {!ready && (

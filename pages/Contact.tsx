@@ -25,8 +25,8 @@ const Contact: React.FC = () => {
               <div className="py-6 grid grid-cols-1 md:grid-cols-12 gap-4">
                 <dt className="md:col-span-4 eyebrow pt-1">Technical enquiries</dt>
                 <dd className="md:col-span-8">
-                  <a href="mailto:viv@null-field.com?subject=PFN%20technical%20enquiry" className="link serif text-xl">
-                    viv@null-field.com
+                  <a href="mailto:contact@null-field.com?subject=Technical%20enquiry" className="link mono text-lg">
+                    contact@null-field.com
                   </a>
                   <p className="text-sm text-muted mt-1">
                     Integration, benchmarks, technical discussion.
@@ -36,8 +36,8 @@ const Contact: React.FC = () => {
               <div className="py-6 grid grid-cols-1 md:grid-cols-12 gap-4">
                 <dt className="md:col-span-4 eyebrow pt-1">Licensing &amp; partnership</dt>
                 <dd className="md:col-span-8">
-                  <a href="mailto:sarvin@null-field.com?subject=PFN%20licensing" className="link serif text-xl">
-                    sarvin@null-field.com
+                  <a href="mailto:partnership@null-field.com?subject=Partnership%20enquiry" className="link mono text-lg">
+                    partnership@null-field.com
                   </a>
                   <p className="text-sm text-muted mt-1">
                     Evaluation access, commercial terms, partnership.
@@ -54,18 +54,10 @@ const Contact: React.FC = () => {
               </div>
             </dl>
 
-            <section className="mt-16">
-              <div className="eyebrow mb-3">What to include</div>
-              <ul className="space-y-2 pl-5 list-disc marker:text-muted text-ink">
-                <li>A short description of the system you'd like to evaluate against.</li>
-                <li>The arithmetic operations that dominate your workload.</li>
-                <li>The platform you intend to deploy on (OS, architecture).</li>
-                <li>Whether the contact is a technical evaluation or a commercial enquiry.</li>
-              </ul>
-              <p className="mt-6 text-sm text-muted">
-                We try to respond within two working days.
-              </p>
-            </section>
+            <p className="mt-8 text-sm text-muted">
+              We try to respond within two working days. Investors: write to{' '}
+              <a href="mailto:partnership@null-field.com" className="link mono">partnership@null-field.com</a>.
+            </p>
           </div>
         </div>
       </div>
