@@ -41,7 +41,11 @@ npm run preview
 
 ## Content conventions
 
-- Benchmark figures trace to `BENCHMARK_REPORT.md` (PFN 0.1.0 vs GMP 6.3.0, Feb 2026).
+- PFN figures trace to the published **PFN Benchmark Report** (measured 2026-09-21 against
+  GMP 6.3.0, Apple M2, single-threaded). That PDF is the company's externally-facing document
+  and is the **disclosure ceiling for this site**: what PFN exploits may be published; how it
+  is built may not. Internal engineering documents are gitignored and must never be committed
+  to this public repository — see the note at the top of `components/Evidence.tsx`.
 - DEOX claims carry explicit status labels — `[ ours · simulation · pre-silicon ]` — at
   every occurrence; simulation numbers are never presented as silicon numbers.
 - Public contact addresses: `contact@null-field.com` · `partnership@null-field.com`.

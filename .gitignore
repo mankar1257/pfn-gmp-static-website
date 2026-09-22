@@ -45,3 +45,11 @@ check-errors.js
 deox-repo/
 pfn-gmp-static-website-new-update-ref/
 DEOX deck review.zip
+
+# Internal engineering documents — NOT for the public repo.
+# The only PFN document cleared for publication is PFN_Benchmark_Report.pdf
+# (the externally-facing benchmark report). Capability reports and raw
+# benchmark notes describe internals and must stay out of version control.
+PFN_CAPABILITY_REPORT.md
+PFN_CAPABILITY_REPORT_*.md
+BENCHMARK_REPORT.md

@@ -108,7 +108,7 @@ const Home: React.FC = () => {
               <p className="text-white/50 font-light leading-relaxed text-lg">
                 New approaches to representing and operating on information, eliminating classical computational bottlenecks.
               </p>
-              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">PFN · measured vs GMP 6.3.0</div>
+              <div className="mt-5 font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase">PFN · measured vs GMP 6.3.0, expert baselines</div>
             </div>
             <div className="group border-t border-white/10 pt-8 hover:border-white/40 transition-colors">
               <div className="flex items-center gap-3 mb-6"><GlyphPhysics /><span className="font-mono text-sm text-brand-500/80">02</span></div>
@@ -159,9 +159,9 @@ const Home: React.FC = () => {
               <h3 className="display text-5xl text-white mb-6">PFN</h3>
               <p className="text-2xl text-white/80 font-light mb-8">A new mathematical representation of information.</p>
               <p className="text-white/50 font-light leading-relaxed mb-8 text-lg flex-grow">
-                A new arithmetic representation that decouples magnitude from execution cost: operations on arbitrarily large numbers in constant time, exact to the last digit. Chain operations measure up to 141× faster than GMP 6.3.0.
+                A drop-in replacement for GMP's integer type. On the multiplicative workloads it targets, changing one type in your source is worth a factor of 220× — and 1.73× even against a hand-optimized expert schedule, with a bit-identical answer. The expertise moves into the library.
               </p>
-              <div className="font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase mb-6">PFN 0.1.0 · measured vs GMP 6.3.0 · Feb 2026</div>
+              <div className="font-mono text-[10px] text-white/40 tracking-[0.15em] uppercase mb-6">Measured vs GMP 6.3.0 · expert baselines</div>
               <Link to="/pfn" className="inline-flex items-center text-white font-medium hover:text-white/70 transition-colors tracking-widest uppercase text-xs border border-white/20 px-8 py-4 w-fit">
                 Explore Architecture <span aria-hidden="true" className="ml-3 group-hover:translate-x-2 transition-transform">→</span>
               </Link>

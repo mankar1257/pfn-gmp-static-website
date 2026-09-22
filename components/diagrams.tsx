@@ -24,68 +24,68 @@ const Frame: React.FC<{ title: string; caption: string; children: React.ReactNod
 );
 
 /* ────────────────────────────────────────────────────────────────────
-   PFN — the core concept, drawn: a dynamic array that grows with the
-   operand vs a fixed-width node that does not.
+   PFN — what the library sees. Deliberately shows the INFORMATION a
+   conventional library discards versus the information PFN retains and
+   acts on. It does not depict any internal representation: see the
+   disclosure rule in components/Evidence.tsx.
    ──────────────────────────────────────────────────────────────────── */
-export const PfnEncodingDiagram: React.FC = () => {
-  const cells = Array.from({ length: 12 });
-  return (
-    <Frame
-      title="Fig. 00 · The abstract, drawn"
-      caption="Dynamic representations scale with operand magnitude; the PFN node stays 415 bytes at any magnitude — the property behind every O(1) figure on this page."
-    >
-      <svg viewBox="0 0 860 260" className="w-full min-w-[640px]" role="img"
-        aria-label="Diagram contrasting a conventional bignum digit array that grows with magnitude against PFN's fixed-width 415-byte node">
-        <style>{`
-          .pfn-cell { animation: pfnCellIn 9s linear infinite; }
-          @keyframes pfnCellIn { 0%, 3% { opacity: 0; } 6%, 82% { opacity: 1; } 88%, 100% { opacity: 0; } }
-          .pfn-mag { animation: pfnMag 9s linear infinite; opacity: 0; }
-          @keyframes pfnMag { 0%, 4% { opacity: 0; } 8%, 28% { opacity: 1; } 32%, 100% { opacity: 0; } }
-          .pfn-glow { animation: pfnGlow 4s ease-in-out infinite alternate; }
-          @keyframes pfnGlow { from { opacity: 0.25; } to { opacity: 0.6; } }
-        `}</style>
+export const PfnEncodingDiagram: React.FC = () => (
+  <Frame
+    title="Fig. 00 · The same operands, two amounts of information"
+    caption="A conventional library receives opaque values and can only schedule the multiplications well. PFN retains the structure the stream already carries — repetition, shared factors, the relationships a formula implies — and reorganises the computation accordingly. The call site is unchanged."
+  >
+    <svg viewBox="0 0 880 250" className="w-full min-w-[660px]" role="img"
+      aria-label="Diagram contrasting a conventional library, which sees a sequence of opaque values, with PFN, which retains the repetition and shared structure carried by the same stream">
+      <style>{`
+        .pf-op { animation: pfOp 8s linear infinite; }
+        @keyframes pfOp { 0%, 4% { opacity: 0; } 9%, 84% { opacity: 1; } 92%, 100% { opacity: 0; } }
+        .pf-link { animation: pfLink 8s ease-in-out infinite; }
+        @keyframes pfLink { 0%, 26% { opacity: 0; } 38%, 84% { opacity: 1; } 92%, 100% { opacity: 0; } }
+        .pf-glow { animation: pfGlow 4s ease-in-out infinite alternate; }
+        @keyframes pfGlow { from { opacity: 0.2; } to { opacity: 0.5; } }
+      `}</style>
 
-        {/* left panel — conventional */}
-        <text x="30" y="34" fontFamily={MONO} fontSize="11" letterSpacing="2" fill="rgba(148,163,184,0.9)">CONVENTIONAL BIGNUM · DYNAMIC ARRAY</text>
-        <rect x="20" y="52" width="400" height="150" fill="none" stroke="rgba(255,255,255,0.12)" />
-        <clipPath id="pfnClip"><rect x="20" y="52" width="400" height="150" /></clipPath>
-        <g clipPath="url(#pfnClip)">
-          {cells.map((_, i) => (
-            <g key={i} className="pfn-cell" style={{ animationDelay: `${i * 0.55}s` }}>
-              <rect x={40 + i * 33} y={106} width={27} height={40} fill="rgba(148,163,184,0.10)" stroke="rgba(148,163,184,0.55)" />
-              <text x={53.5 + i * 33} y={131} textAnchor="middle" fontFamily={MONO} fontSize="12" fill="rgba(248,250,252,0.7)">
-                {(i * 7) % 10}
-              </text>
-            </g>
-          ))}
+      {/* ── left: conventional ── */}
+      <text x="26" y="32" fontFamily={MONO} fontSize="11" letterSpacing="2" fill="rgba(148,163,184,0.9)">CONVENTIONAL LIBRARY · OPAQUE VALUES</text>
+      <rect x="18" y="50" width="398" height="140" fill="none" stroke="rgba(255,255,255,0.12)" />
+      {[0, 1, 2, 3, 4, 5].map((i) => (
+        <g key={i} className="pf-op" style={{ animationDelay: `${i * 0.5}s` }}>
+          <rect x={44 + i * 60} y={92} width={46} height={40} fill="rgba(148,163,184,0.08)" stroke="rgba(148,163,184,0.5)" />
+          <text x={67 + i * 60} y={117} textAnchor="middle" fontFamily={MONO} fontSize="11" fill="rgba(248,250,252,0.55)">?</text>
         </g>
-        {/* magnitude ticker */}
-        <g fontFamily={MONO} fontSize="12" fill="rgba(148,163,184,0.9)">
-          <text className="pfn-mag" x="40" y="185" style={{ animationDelay: '0s' }}>operand ≈ 10⁸</text>
-          <text className="pfn-mag" x="40" y="185" style={{ animationDelay: '2.2s' }}>operand ≈ 10⁶⁴</text>
-          <text className="pfn-mag" x="40" y="185" style={{ animationDelay: '4.4s' }}>operand ≈ 10⁵¹²</text>
-          <text className="pfn-mag" x="40" y="185" style={{ animationDelay: '6.6s' }}>operand ≈ 10⁴⁰⁹⁶ …</text>
-        </g>
-        <text x="410" y="88" textAnchor="end" fontFamily={MONO} fontSize="11" fill="rgba(245,158,11,0.85)">→ keeps growing</text>
-        <text x="30" y="228" fontFamily={MONO} fontSize="10" letterSpacing="1" fill="rgba(148,163,184,0.6)">COST FOLLOWS MAGNITUDE — LINEAR TO QUADRATIC</text>
+      ))}
+      <text x="217" y="162" textAnchor="middle" fontFamily={MONO} fontSize="10" fill="rgba(245,158,11,0.85)">no relationship visible — schedule only</text>
+      <text x="26" y="218" fontFamily={MONO} fontSize="10" letterSpacing="1" fill="rgba(148,163,184,0.6)">ACCUMULATING INTO ONE VALUE IS Θ(N²)</text>
 
-        {/* divider */}
-        <line x1="440" y1="60" x2="440" y2="200" stroke="rgba(255,255,255,0.12)" strokeDasharray="3 5" />
+      {/* divider */}
+      <line x1="440" y1="58" x2="440" y2="190" stroke="rgba(255,255,255,0.12)" strokeDasharray="3 5" />
 
-        {/* right panel — PFN */}
-        <text x="470" y="34" fontFamily={MONO} fontSize="11" letterSpacing="2" fill="rgba(52,211,153,0.95)">PFN · SYMBOLIC FIXED-WIDTH NODE</text>
-        <rect x="460" y="52" width="380" height="150" fill="none" stroke="rgba(255,255,255,0.12)" />
-        <rect className="pfn-glow" x="596" y="92" width="108" height="68" fill="rgba(16,185,129,0.12)" />
-        <rect x="596" y="92" width="108" height="68" fill="none" stroke="#10B981" strokeWidth="1.5" />
-        <text x="650" y="121" textAnchor="middle" fontFamily={MONO} fontSize="15" fill="#F8FAFC">415 B</text>
-        <text x="650" y="141" textAnchor="middle" fontFamily={MONO} fontSize="9" letterSpacing="1.5" fill="rgba(52,211,153,0.9)">FIXED</text>
-        <line x1="480" y1="185" x2="820" y2="185" stroke="#10B981" strokeWidth="1.5" />
-        <text x="650" y="176" textAnchor="middle" fontFamily={MONO} fontSize="10" fill="rgba(148,163,184,0.9)">same node at 10⁸ … 10⁴⁰⁹⁶</text>
-        <text x="470" y="228" fontFamily={MONO} fontSize="10" letterSpacing="1" fill="rgba(52,211,153,0.75)">COST CONSTANT — O(1) TIME · O(1) MEMORY</text>
-      </svg>
-    </Frame>
-  );
-};
+      {/* ── right: PFN ── */}
+      <text x="464" y="32" fontFamily={MONO} fontSize="11" letterSpacing="2" fill="rgba(52,211,153,0.95)">PFN · THE SAME STREAM, WITH ITS STRUCTURE</text>
+      <rect x="456" y="50" width="404" height="140" fill="none" stroke="rgba(255,255,255,0.12)" />
+      <rect className="pf-glow" x="456" y="50" width="404" height="140" fill="rgba(16,185,129,0.07)" />
+      {[0, 1, 2, 3, 4, 5].map((i) => {
+        const repeat = i === 1 || i === 3 || i === 5;
+        return (
+          <g key={i} className="pf-op" style={{ animationDelay: `${i * 0.5}s` }}>
+            <rect x={482 + i * 60} y={92} width={46} height={40}
+              fill={repeat ? 'rgba(16,185,129,0.16)' : 'rgba(148,163,184,0.08)'}
+              stroke={repeat ? '#10B981' : 'rgba(148,163,184,0.5)'} />
+            <text x={505 + i * 60} y={117} textAnchor="middle" fontFamily={MONO} fontSize="11"
+              fill={repeat ? 'rgba(52,211,153,0.95)' : 'rgba(248,250,252,0.55)'}>{repeat ? 'a' : 'b'}</text>
+          </g>
+        );
+      })}
+      {/* links joining the repeated operands */}
+      <g className="pf-link" fill="none" stroke="#10B981" strokeWidth="1.5" strokeOpacity="0.75">
+        <path d="M565 92 q30 -24 60 0" />
+        <path d="M625 92 q60 -34 120 0" />
+      </g>
+      <text x="658" y="162" textAnchor="middle" fontFamily={MONO} fontSize="10" fill="rgba(52,211,153,0.9)">repetition and shared factors retained</text>
+      <text x="464" y="218" fontFamily={MONO} fontSize="10" letterSpacing="1" fill="rgba(52,211,153,0.75)">THE WORK IS REORGANISED — NOT JUST RESCHEDULED</text>
+    </svg>
+  </Frame>
+);
 
 /* ────────────────────────────────────────────────────────────────────
    DEOX — the signal path, drawn: model → FT compiler → answer + certificate.
